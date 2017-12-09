@@ -1,5 +1,4 @@
 /* General styling*/
-@import url('//fonts.googleapis.com/css?family=Roboto+Condensed');
 @import url('//fonts.googleapis.com/css?family=Raleway+Extra-Bold:400,900&subset=latin,latin-ext');
 @import url('//fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext');
 @font-face {
@@ -15,8 +14,7 @@
     src: url("../fonts/Raleway-Thin.ttf");
 }
 *{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-family: RalewayExtraBold, sans-serif;
+    font-family: RalewaySemiBold, sans-serif;
 }
 
 a {
@@ -44,7 +42,7 @@ h4{
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: white;
 }
 
 /* Sections */
@@ -55,6 +53,7 @@ p {
     display:table;
     padding-left: 10%;
     padding-right: 10%;
+    color:white;
 }
 
 .cover-content {
@@ -74,12 +73,24 @@ p {
     padding-right: 2px;
 }
 
+#mlh-trust-badge-cover {
+    display:block;
+    max-width:100px;
+    min-width:60px;
+    position:fixed;
+    right:2%;
+    top:0;
+    width:10%;
+    z-index:10000;
+}
+
 #header {
-    color:white;
+
 }
 
 #about {
-    background: white;
+    background: url("../images/rahma.jpg");
+    background-size: 100%, 100em;
 }
 #footer {
     background: white;
