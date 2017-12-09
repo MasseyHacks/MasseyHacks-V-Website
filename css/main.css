@@ -1,0 +1,122 @@
+/* General styling*/
+@import url('//fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('//fonts.googleapis.com/css?family=Raleway+Extra-Bold:400,900&subset=latin,latin-ext');
+@import url('//fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext');
+@font-face {
+    font-family: RalewayExtraBold;
+    src: url("../fonts/Raleway-ExtraBold.ttf");
+}
+@font-face {
+    font-family: RalewaySemiBold;
+    src: url("../fonts/Raleway-SemiBold.ttf");
+}
+@font-face{
+    font-family: RalewayThin;
+    src: url("../fonts/Raleway-Thin.ttf");
+}
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: RalewayExtraBold, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 5em;
+    text-align:center;
+    margin: 30px;
+}
+h3{
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    text-align:left;
+}
+
+h4{
+    font-size: 2.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    text-align: left;
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+
+/* Sections */
+
+.slide {
+    min-height:100vh;
+    width:100%;
+    display:table;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.cover-content {
+    width: 610px;
+
+    position:absolute;
+    left:0; right:0;
+    top:50%;
+    margin:auto;
+
+    transform: translateY(-50%);
+
+    max-width:100%;
+    max-height:100%;
+
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#header {
+    color:white;
+}
+
+#about {
+    background: white;
+}
+#footer {
+    background: white;
+}
+
+/* Tints */
+.translucent-1{
+    background: rgb(151, 160, 230); /* Fallback for older browsers without RGBA-support */
+    background: rgba(151, 160, 230, 0.5);
+}
+.translucent-2{
+    background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+    background: rgba(59, 70, 85, 0.8);
+}
+.translucent-3{
+    background: rgb(151, 160, 230); /* Fallback for older browsers without RGBA-support */
+    background: rgba(49, 60, 75, 0.8);
+}
+.translucent-4{
+    background: rgb(59, 70, 85); /* Fallback for older browsers without RGBA-support */
+    background: rgba(59, 70, 85, 1.0);
+}
+
+/* Override */
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    header {
+        height: 60px;
+        line-height: 60px;
+    }
+
+    header img {
+        height: 44px;
+        margin-top: 8px;
+        margin-left: 0;
+    }
+}
