@@ -64,16 +64,44 @@ p {
 }
 
 #header {
-
+    margin-top: 0px;
 }
 
 #about {
+    margin-top: 0px;
     background: url("../images/rahma.jpg");
     background-size: cover;
     background-position: center;
 }
+
+#faq {
+    background: url("../images/aaron.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#schedule {
+    background: url("../images/pineapple.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#sponsors {
+    background: url("../images/chen.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#team {
+    background: white;
+    background-size: cover;
+    background-position: center;
+}
+
 #footer {
     background: white;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Larger Screens */
@@ -81,6 +109,7 @@ p {
     /* Sections */
 
     .slide {
+        margin-top: 25%;
         min-height:100vh;
         width:100%;
         display:table;
