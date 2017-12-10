@@ -46,6 +46,8 @@ p {
 }
 
 #particles-js {
+    margin-bottom: 0%;
+    margin-top: 0%;
     height: 100%;
 }
 
@@ -60,6 +62,12 @@ p {
     z-index:10000;
 }
 
+#mainnav {
+    font-family: RalewayThin;
+    background-color: darkblue;
+    background: transparent;
+}
+
 #cover {
     background: url('../images/nicebg.jpg');
     background-size: cover;
@@ -68,31 +76,36 @@ p {
 }
 
 #header {
+    color: white;
     margin-top: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
 
 #about {
     margin-top: 0px;
-    background: url("../images/rahma.jpg");
+    background: white;
     background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
 #faq {
-    background: url("../images/aaron.jpg");
+    background: white;
     background-size: cover;
     background-position: center;
 }
 
 #schedule {
-    background: url("../images/pineapple.jpg");
+    background: white;
     background-size: cover;
     background-position: center;
 }
 
 #sponsors {
-    background: url("../images/chen.jpg");
+    background: white;
     background-size: cover;
     background-position: center;
 }
@@ -120,11 +133,12 @@ p {
         display:table;
         padding-left: 10%;
         padding-right: 10%;
-        color:white;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 
     .cover-content {
-        width: 620px;
+        width: 66em;
 
         position:absolute;
         left:0; right:0;
