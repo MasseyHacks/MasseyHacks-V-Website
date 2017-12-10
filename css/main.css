@@ -45,6 +45,10 @@ p {
     color: white;
 }
 
+#particles-js {
+    height: 100%;
+}
+
 #mlh-trust-badge-cover {
     display:block;
     max-width:100px;
@@ -70,6 +74,7 @@ p {
 #about {
     margin-top: 0px;
     background: url("../images/rahma.jpg");
+    background-size: cover;
     background-size: cover;
     background-position: center;
 }
