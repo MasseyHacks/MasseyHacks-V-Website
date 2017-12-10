@@ -114,10 +114,12 @@ p {
     background: white;
     background-size: cover;
     background-position: center;
+    margin-bottom: 25%;
 }
 
 #footer {
-    background: white;
+    height: 40px;
+    background: darkblue;
     background-size: cover;
     background-position: center;
 }
