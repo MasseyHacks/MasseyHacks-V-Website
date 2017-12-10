@@ -104,6 +104,8 @@ p {
 
         padding-left: 2px;
         padding-right: 2px;
+
+        text-align: center;
     }
 }
 
@@ -146,5 +148,4 @@ p {
 .translucent-4{
     background: rgb(59, 70, 85); /* Fallback for older browsers without RGBA-support */
     background: rgba(59, 70, 85, 1.0);
-}
 }
