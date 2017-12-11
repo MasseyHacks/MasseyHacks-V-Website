@@ -127,21 +127,21 @@ p {
     background-position: center;
 }
 
+.slide {
+    margin-top: 25%;
+    min-height:100vh;
+    width:100%;
+    display:table;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
 /* Larger Screens */
 @media screen and (min-width: 720px) {
     /* Sections */
-
-    .slide {
-        margin-top: 25%;
-        min-height:100vh;
-        width:100%;
-        display:table;
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
     .cover-content {
         width: 66em;
 
@@ -169,7 +169,7 @@ p {
         width: 90em;
 
         position: absolute;
-        left: 0;
+        left: 0; right:0;
         right: 0;
         top: 50%;
         margin: auto;
@@ -181,6 +181,8 @@ p {
 
         padding-left: 2px;
         padding-right: 2px;
+
+        text-align: center;
     }
 
 }
