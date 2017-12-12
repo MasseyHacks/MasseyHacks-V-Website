@@ -41,7 +41,7 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 6,
         "random": false,
         "anim": {
           "enable": false,
@@ -51,7 +51,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 0,
+        "value": 1,
         "random": true,
         "anim": {
           "enable": false,
@@ -69,11 +69,12 @@ particlesJS('particles-js',
       },
       "move": {
         "enable": true,
-        "speed": 2,
+        "speed": 0.5,
         "direction": "none",
-        "random": true,
+        "random": false,
         "straight": false,
         "out_mode": "bounce",
+        "bounce": true,
         "attract": {
           "enable": false,
           "rotateX": 600,

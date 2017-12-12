@@ -73,7 +73,7 @@ var pJS = function(tag_id, params){
       },
       move: {
         enable: true,
-        speed: 2,
+        speed: 6,
         direction: 'none',
         random: false,
         straight: false,
@@ -498,8 +498,10 @@ var pJS = function(tag_id, params){
 
 
   pJS.fn.particlesCreate = function(){
-    for(var i = 0; i < pJS.particles.number.value; i++) {
-      pJS.particles.array.push(new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value));
+    for(var i = 0; i < pJS.canvas.h; i+=(Math.random()+0.3)*150) {
+      for (var j = 0; j < pJS.canvas.w; j+=(Math.random()+0.3)*150) {
+          pJS.particles.array.push(new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value, {'x': j+(Math.random()-0.5)*50, 'y': i+(Math.random()-0.5)*50}));
+      }
     }
   };
 
