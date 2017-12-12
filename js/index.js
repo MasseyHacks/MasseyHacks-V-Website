@@ -12,7 +12,6 @@ $(document).ready(function(){
             $("#navmain").removeClass("navbar-fixed-top");
         }
     });
-
     $('#mc-embedded-subscribe').click(function() {
         var email = $('#mce-EMAIL').val()
         $.ajax({
