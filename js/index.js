@@ -12,4 +12,18 @@ $(document).ready(function(){
             $("#navmain").removeClass("navbar-fixed-top");
         }
     });
+
+    $('#mc-embedded-subscribe').click(function() {
+        var email = $('#mce-EMAIL').val()
+        $.ajax({
+            url: './php/emailSub.php',
+            type: 'POST',
+            data: {
+                email: email
+            },
+            success: function (msg) {
+                alert('Email Sent');
+            }
+        });
+    });
 });
