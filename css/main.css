@@ -67,7 +67,23 @@ p {
 #mainnav {
     font-family: RalewayThin;
     background-color: darkblue;
+    border-color: transparent;
     background: transparent;
+}
+
+#mainnav a {
+    color:white;
+    text-decoration: none;
+}
+
+#mainnav a:hover {
+    color:white;
+    text-decoration: none;
+}
+
+#mainnav a:active {
+    color:white;
+    text-decoration: none;
 }
 
 #cover {
