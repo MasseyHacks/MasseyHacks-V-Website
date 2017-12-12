@@ -13,7 +13,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         'email_address' => $email,
         'status'        => 'subscribed',
     ]);
-
     print_r($result);
 }
 ?>
