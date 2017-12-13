@@ -64,13 +64,6 @@ p {
     z-index:10000;
 }
 
-#mainnav {
-    font-family: RalewayThin;
-    background-color: darkblue;
-    border-color: transparent;
-    background: transparent;
-}
-
 #mainnav a {
     color:white;
     text-decoration: none;
@@ -84,6 +77,21 @@ p {
 #mainnav a:active {
     color:white;
     text-decoration: none;
+}
+
+.unlocked {
+    font-family: RalewayThin;
+    background-color: darkblue;
+    border-color: transparent;
+    background: transparent;
+}
+
+.locked {
+    font-family: RalewayThin;
+    background-color: darkblue;
+    border-color: transparent;
+    background: rgb(151, 160, 230); /* Fallback for older browsers without RGBA-support */
+    background: rgba(49, 60, 75, 0.8);
 }
 
 #cover {

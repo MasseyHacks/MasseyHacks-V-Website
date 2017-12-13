@@ -7,9 +7,11 @@ $(document).ready(function(){
     });
     $(document).scroll(function(){
         if($(window).scrollTop() >= $("#about").offset().top){
-            $("#navmain").addClass("navbar-fixed-top");
+            $("#mainnav").addClass("navbar-fixed-top locked");
+            $("#mainnav").removeClass("unlocked");
         } else{
-            $("#navmain").removeClass("navbar-fixed-top");
+            $("#mainnav").removeClass("navbar-fixed-top locked");
+            $("#mainnav").addClass("unlocked");
         }
     });
     $('#mc-embedded-subscribe').click(function() {

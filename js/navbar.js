@@ -11,10 +11,4 @@ document.addEventListener("DOMContentLoaded", function(){
             window.location.hash = target;
         });
     });
-
-    // === Navbar === //
-    document.getElementById("js-navbar-hamburger").addEventListener("click", function(){
-        document.getElementById("js-navbar-items").classList.toggle("active");
-        document.getElementById("js-navbar-hamburger").classList.toggle("is-active");
-    });
 });
