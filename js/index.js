@@ -47,6 +47,8 @@ $(document).ready(function(){
         }
     }
 
+    $(".navsocial").css("height", $("#mainnav").height() / 2);
+
     $(document).scroll(updateScroll);
     updateScroll();
 });
