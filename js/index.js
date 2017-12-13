@@ -42,6 +42,7 @@ $(document).ready(function(){
             if ($(window).scrollTop() >= $("#" + sections[i]).offset().top) {
                 $("#cover").removeClass();
                 $("#cover").addClass(sections[i] + "-image");
+                $("#cover").css("background-position-y", -1 * ($(window).scrollTop() - $("#" + sections[i]).offset().top) / 2);
             }
         }
     }
