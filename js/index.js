@@ -1,3 +1,5 @@
+var sections = ["cover", "about", "faq", "schedule", "sponsors", "team"];
+
 $(document).ready(function(){
     $('a.scrollLink').click(function(){
         var href = $(this).attr('href');
@@ -5,15 +7,7 @@ $(document).ready(function(){
         $('body').animate({ scrollTop: anchor.top-50 });
         return false;
     });
-    $(document).scroll(function(){
-        if($(window).scrollTop() >= $("#about").offset().top){
-            $("#mainnav").addClass("navbar-fixed-top locked");
-            $("#mainnav").removeClass("unlocked");
-        } else{
-            $("#mainnav").removeClass("navbar-fixed-top locked");
-            $("#mainnav").addClass("unlocked");
-        }
-    });
+
     $('#mc-embedded-subscribe').click(function() {
         var email = $('#mce-EMAIL').val()
         $.ajax({
@@ -32,4 +26,26 @@ $(document).ready(function(){
             }
         });
     });
+
+    function updateScroll() {
+        if($(window).scrollTop() >= $("#about").offset().top){
+            $("#mainnav").addClass("navbar-fixed-top locked");
+            $("#mainnav").removeClass("unlocked");
+        } else{
+            $("#mainnav").removeClass("navbar-fixed-top locked");
+            $("#mainnav").addClass("unlocked");
+        }
+
+        // Time for the noice background changer
+        for (var i = 0; i < sections.length; i++)
+        {
+            if ($(window).scrollTop() >= $("#" + sections[i]).offset().top) {
+                $("#cover").removeClass();
+                $("#cover").addClass(sections[i] + "-image");
+            }
+        }
+    }
+
+    $(document).scroll(updateScroll);
+    updateScroll();
 });
