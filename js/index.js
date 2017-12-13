@@ -29,6 +29,7 @@ $(document).ready(function(){
 
     function updateScroll() {
         if($(window).scrollTop() >= $("#about").offset().top){
+            $("#mlhlogo").href("https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg");
             $("#mainnav").addClass("navbar-fixed-top locked");
             $("#mainnav").removeClass("unlocked");
         } else{
