@@ -35,6 +35,7 @@ $(document).ready(function(){
             $("#mainnav").removeClass("navbar-fixed-top locked");
             $("#mainnav").addClass("unlocked");
         }
+
         // Time for the noice background changer
         for (var i = 0; i < sections.length; i++)
         {
