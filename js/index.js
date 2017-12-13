@@ -39,7 +39,7 @@ $(document).ready(function(){
         // Time for the noice background changer
         for (var i = 0; i < sections.length; i++)
         {
-            if ($(window).scrollTop() >= $("#" + sections[i]).offset().top) {
+            if ((true) && ($(window).scrollTop() >= $("#" + sections[i]).offset().top)) {
                 $("#cover").removeClass();
                 $("#cover").addClass(sections[i] + "-image");
                 $("#cover").css("background-position-y", -1 * ($(window).scrollTop() - $("#" + sections[i]).offset().top) / 2);
