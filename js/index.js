@@ -28,15 +28,30 @@ $(document).ready(function(){
     });
 
     function updateScroll() {
+
+        $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
+
         if($(window).scrollTop() >= $("#about").offset().top){
             $("#mlhlogo").attr("src", "https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg");
-            $("#mainnav").addClass("navbar-fixed-top locked");
-            $("#mainnav").removeClass("unlocked");
+            //$("#mainnav").addClass("navbar-fixed-top locked");
+            //$("#mainnav").removeClass("unlocked");
         } else{
-            $("#mlhlogo").attr("src", "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg");
-            $("#mainnav").removeClass("navbar-fixed-top locked");
-            $("#mainnav").addClass("unlocked");
+            $("#mlhlogo").attr("src", "https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg");
+            //$("#mainnav").removeClass("navbar-fixed-top locked");
+            //$("#mainnav").addClass("unlocked");
         }
+
+        var opacity;
+        var dist = $("#about").offset().top - $(window).scrollTop();
+
+        if (dist > 0) {
+            opacity = 0.8 * (1 - dist / $("#about").offset().top);
+        }
+        else  {
+            opacity = 0.8;
+        }
+
+        $("#mainnav").css("background", "rgba(49, 60, 75, " + opacity + ")");
 
         // Time for the noice background changer
         for (var i = 0; i < sections.length; i++)
