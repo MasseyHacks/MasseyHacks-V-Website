@@ -58,7 +58,7 @@ p {
     top: 0%;
     display:block;
     position:fixed;
-    right:2%;
+    right:10px;
     max-width:100px;
     min-width:60px;
     width:8%;
@@ -116,6 +116,25 @@ p {
 .team-image {
     background: url('../images/rahma.jpg');
 }
+.profile {
+    width: 15em;
+    line-height: 10px;
+    text-align: center;
+}
+.profile .name {
+    font-size: 1.3em;
+    font-family: RalewaySemiBold, sans-serif;
+}
+.profile .title {
+    margin-top: 0px;
+    font-size: 1em;
+    font-family: RalewaySemiBold, sans-serif;
+}
+.profile img {
+    border-radius: 50%;
+    width: 165px;
+    height: 165px;
+}
 
 #cover {
     background-size: cover;
@@ -146,18 +165,21 @@ p {
     background: white;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 #schedule {
     background: white;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 #sponsors {
     background: white;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 #team {
@@ -165,6 +187,7 @@ p {
     background-size: cover;
     background-position: center;
     margin-bottom: 25%;
+    text-align: center;
 }
 
 #footer {
