@@ -260,8 +260,9 @@ var pJS = function(tag_id, params){
         }
 
         /* position */
-        this.x = position[0];
-        this.y = position[1];
+        this.ox = this.x = position[0];
+        this.oy = this.y = position[1];
+        this.reverse = false;
 
         /* check position  - into the canvas */
         if(this.x > pJS.canvas.w - this.radius*2) this.x = this.x - this.radius;
@@ -601,7 +602,12 @@ var pJS = function(tag_id, params){
 
                 /* move the particle */
                 if (pJS.particles.move.enable) {
-                    var ms = pJS.particles.move.speed / 2;
+                    if (Math.abs(p.ox - p.x) > 20|| Math.abs(p.oy - p.y) > 20) {
+                        var ms = -pJS.particles.move.speed / 2;
+                    } else {
+                        var ms = pJS.particles.move.speed / 2;
+                    }
+
                     p.x += p.vx * ms;
                     p.y += p.vy * ms;
                 }
