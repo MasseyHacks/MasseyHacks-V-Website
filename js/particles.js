@@ -86,7 +86,7 @@ var pJS = function(tag_id, params){
                 direction: 'none',
                 random: false,
                 straight: false,
-                out_mode: 'out',
+                out_mode: 'bounce',
                 bounce: false,
                 attract: {
                     enable: false,
@@ -602,11 +602,7 @@ var pJS = function(tag_id, params){
 
                 /* move the particle */
                 if (pJS.particles.move.enable) {
-                    if (Math.abs(p.ox - p.x) > 20|| Math.abs(p.oy - p.y) > 20) {
-                        var ms = -pJS.particles.move.speed / 2;
-                    } else {
-                        var ms = pJS.particles.move.speed / 2;
-                    }
+                    var ms = pJS.particles.move.speed / 2;
 
                     p.x += p.vx * ms;
                     p.y += p.vy * ms;
@@ -768,7 +764,7 @@ var pJS = function(tag_id, params){
             dist = Math.sqrt(dx*dx + dy*dy);
 
         /* draw a line between p1 and p2 if the distance between them is under the config distance */
-        if(dist <= pJS.particles.line_linked.distance){
+        if(dist <= 300){
 
             var opacity_line = pJS.particles.line_linked.opacity;
 
