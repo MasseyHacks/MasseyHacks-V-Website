@@ -547,18 +547,37 @@ var pJS = function(tag_id, params){
         // generate a point mesh
         var points = pJS.fn.particle.points(width, height, bleed_x, bleed_y, opts.cell_size, variance);
 
+        var lookupdict = {}
+
         var geom_indices = (new Delaunator(points)).triangles;
 
         var lookup_point = function(i) { return points[i];};
         for (var i=0; i < geom_indices.length; i += 3) {
             var vertices = [geom_indices[i], geom_indices[i+1], geom_indices[i+2]].map(lookup_point);
-            var pa = new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value, vertices[0]);
-            var pb = new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value, vertices[1]);
-            var pc = new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value, vertices[2])
+            if (vertices[0] in lookupdict) {
+                var pa = lookupdict[vertices[0]];
+            } else {
+                var pa = new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value, vertices[0]);
+                lookupdict[vertices[0]] = pa;
+                pJS.particles.array.push(pa);
+            }
 
-            pJS.particles.array.push(pa);
-            pJS.particles.array.push(pb);
-            pJS.particles.array.push(pc);
+            if (vertices[1] in lookupdict) {
+                var pb = lookupdict[vertices[1]];
+            } else {
+                var pb = new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value, vertices[1]);
+                lookupdict[vertices[0]] = pb;
+                pJS.particles.array.push(pb);
+            }
+
+            if (vertices[2] in lookupdict) {
+                var pc = lookupdict[vertices[2]];
+            } else {
+                var pc = new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value, vertices[2]);
+                lookupdict[vertices[2]] = pc;
+                pJS.particles.array.push(pc);
+            }
+
 
             triangles.push([pa, pb, pc]);
         }
