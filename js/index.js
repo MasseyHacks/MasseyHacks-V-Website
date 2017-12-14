@@ -29,10 +29,11 @@ $(document).ready(function(){
 
     function updateScroll() {
         if($(window).scrollTop() >= $("#about").offset().top){
-            //$("#mlhlogo").href("https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg");
+            $("#mlhlogo").attr("src", "https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg");
             $("#mainnav").addClass("navbar-fixed-top locked");
             $("#mainnav").removeClass("unlocked");
         } else{
+            $("#mlhlogo").attr("src", "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg");
             $("#mainnav").removeClass("navbar-fixed-top locked");
             $("#mainnav").addClass("unlocked");
         }

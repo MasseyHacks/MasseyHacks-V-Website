@@ -53,12 +53,16 @@ p {
     left: 0px;
 }
 
+
 #mlh-trust-badge-cover {
-    /*top: 0%;
+    top: 0%;
     display:block;
     position:fixed;
     right:2%;
-    width:8%;*/
+    max-width:100px;
+    min-width:60px;
+    width:8%;
+    z-index:10000;
 }
 
 #mainnav a {
