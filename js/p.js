@@ -87,7 +87,7 @@ var pJS = function(tag_id, params){
                 direction: 'none',
                 random: false,
                 straight: false,
-                out_mode: 'out',
+                out_mode: 'bounce',
                 bounce: false,
                 attract: {
                     enable: false,
@@ -261,8 +261,9 @@ var pJS = function(tag_id, params){
         }
 
         /* position */
-        this.x = position[0];
-        this.y = position[1];
+        this.ox = this.x = position[0];
+        this.oy = this.y = position[1];
+        this.reverse = false;
 
         /* check position  - into the canvas */
         if(this.x > pJS.canvas.w - this.radius*2) this.x = this.x - this.radius;
@@ -603,6 +604,7 @@ var pJS = function(tag_id, params){
                 /* move the particle */
                 if (pJS.particles.move.enable) {
                     var ms = pJS.particles.move.speed / 2;
+
                     p.x += p.vx * ms;
                     p.y += p.vy * ms;
                 }
@@ -763,7 +765,7 @@ var pJS = function(tag_id, params){
             dist = Math.sqrt(dx*dx + dy*dy);
 
         /* draw a line between p1 and p2 if the distance between them is under the config distance */
-        if(dist <= pJS.particles.line_linked.distance){
+        if(dist <= 300){
 
             var opacity_line = pJS.particles.line_linked.opacity;
 
