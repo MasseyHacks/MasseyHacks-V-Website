@@ -9,10 +9,6 @@ $(document).ready(function(){
             $(".overlay").css({visibility: "hidden"});
         }
     });
-    $(".overlay").on("click",function(){
-        $(".overlay").css({width:"0"});
-        $("#navham").removeClass("is-active");
-    });
 });
 
 $(window).resize(function(){
