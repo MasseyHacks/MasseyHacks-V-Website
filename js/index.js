@@ -31,16 +31,6 @@ $(document).ready(function(){
 
         $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
 
-        if($(window).scrollTop() >= $("#about").offset().top){
-            $("#mlhlogo").attr("src", "https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg");
-            //$("#mainnav").addClass("navbar-fixed-top locked");
-            //$("#mainnav").removeClass("unlocked");
-        } else{
-            $("#mlhlogo").attr("src", "https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg");
-            //$("#mainnav").removeClass("navbar-fixed-top locked");
-            //$("#mainnav").addClass("unlocked");
-        }
-
         var opacity;
         var dist = $("#about").offset().top - $(window).scrollTop();
 
@@ -66,6 +56,7 @@ $(document).ready(function(){
 
     $(".navsocial").css("height", $("#mainnav").height() / 2);
 
+    $(document).resize(updateScroll);
     $(document).scroll(updateScroll);
     updateScroll();
 });
