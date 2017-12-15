@@ -1,6 +1,7 @@
 var sections = ["cover", "about", "faq", "schedule", "sponsors", "team"];
 
 $(document).ready(function(){
+
     $('a.scrollLink').click(function(){
         var href = $(this).attr('href');
         var anchor = $(href).offset();
@@ -49,14 +50,14 @@ $(document).ready(function(){
             if ((true) && ($(window).scrollTop() >= $("#" + sections[i]).offset().top)) {
                 $("#cover").removeClass();
                 $("#cover").addClass(sections[i] + "-image");
-                $("#cover").css("background-position-y", -1 * ($(window).scrollTop() - $("#" + sections[i]).offset().top) / 2);
+                $("#cover").css("background-position-y", $("#" + sections[i]).offset().top - 1 * ($(window).scrollTop() - $("#" + sections[i]).offset().top) / 2);
             }
         }
     }
 
     $(".navsocial").css("height", $("#mainnav").height() / 2);
 
-    $(document).resize(updateScroll);
+    $(document).on('resize', updateScroll);
     $(document).scroll(updateScroll);
     updateScroll();
 });
