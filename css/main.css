@@ -139,6 +139,7 @@ p {
 }
 
 #header {
+    display: block;
     color: white;
     margin-top: 0px;
     padding-left: 0%;
