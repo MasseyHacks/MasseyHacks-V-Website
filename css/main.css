@@ -196,6 +196,7 @@ p {
 .slide {
     margin-top: 50vh;
     /* Maintain height for bg change */
+    height: 100vh;
     min-height:100vh;
     width:100%;
     display:table;
