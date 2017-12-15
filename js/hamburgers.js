@@ -21,7 +21,7 @@ $(window).resize(function(){
 
 function toggleHamburger(){
     //toggles hamburger based on window width
-    if($(window).width() <= 850){
+    if($(window).width() <= 900){
         $("#navham").removeClass("hidden");
         $("#navleft").hide();
         $("#navright").hide();
