@@ -44,6 +44,7 @@ $(document).ready(function(){
 
         $("#mainnav").css("background", "rgba(49, 60, 75, " + opacity + ")");
 
+
         // Time for the noice background changer
         for (var i = 0; i < sections.length; i++)
         {

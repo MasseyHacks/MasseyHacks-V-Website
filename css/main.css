@@ -31,13 +31,11 @@ h1 {
 h3{
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    text-align:left;
 }
 
 h4{
     font-size: 2.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    text-align: left;
 }
 p {
     font-size: 1.2em;
@@ -163,11 +161,21 @@ p {
     background: url('../images/rahma.jpg');
 }
 .profile {
-    width: 15em;
-    line-height: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 230px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: middle;
+
     text-align: center;
 }
 .profile .name {
+    padding-top: 15px;
+    line-height: 0.2em;
+    display: block;
     font-size: 1.3em;
     font-family: RalewaySemiBold, sans-serif;
 }
@@ -190,7 +198,6 @@ p {
     background-attachment: fixed;
     min-height: 100vh;
 }
-
 #header {
     display: block;
     color: white;
@@ -201,49 +208,83 @@ p {
     padding-bottom: 0%;
     min-height: 100vh;
 }
-
 #about {
     margin-top: 0px;
     background: white;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
-
 #faq {
     background: white;
     background-size: cover;
     background-position: center;
     text-align: center;
 }
-
 #schedule {
     background: white;
     background-size: cover;
     background-position: center;
     text-align: center;
 }
-
 #sponsors {
     background: white;
     background-size: cover;
     background-position: center;
     text-align: center;
 }
-
 #team {
     background: white;
     background-size: cover;
     background-position: center;
     margin-bottom: 25%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
-
 #footer {
     height: 40px;
     color: white;
     background: darkblue;
     background-size: cover;
     background-position: center;
+}
+
+#co-host img {
+    max-height: 500px;
+    max-width: 700px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#gold img {
+    max-height: 450px;
+    max-width: 550px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#silver img {
+    max-height: 225px;
+    max-width: 375px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#bronze img {
+    max-height: 125px;
+    max-width: 275px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .slide {
@@ -317,7 +358,6 @@ p {
     .cover-content p {
         font-size: 1.5em;
     }
-
 }
 
 /* Tints */
