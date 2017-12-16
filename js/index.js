@@ -1,15 +1,15 @@
 var sections = ["cover", "about", "faq", "schedule", "sponsors", "team"];
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $('a.scrollLink').click(function(){
+    $('a.scrollLink').click(function () {
         var href = $(this).attr('href');
         var anchor = $(href).offset();
-        $('body').animate({ scrollTop: anchor.top-50 });
+        $('body').animate({scrollTop: anchor.top - 50});
         return false;
     });
 
-    $('#mc-embedded-subscribe').click(function() {
+    $('#mc-embedded-subscribe').click(function () {
         var email = $('#mce-EMAIL').val()
         $.ajax({
             url: './php/emailSub.php',
@@ -28,6 +28,11 @@ $(document).ready(function(){
         });
     });
 
+    $("#cover").css("background-size", "auto" + " " + $(window).height() + "px");
+    $(window).resize(function() {
+        $("#cover").css("background-size", "auto" + " " + $(window).height() + "px");
+    });
+
     function updateScroll() {
 
         $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
@@ -38,7 +43,7 @@ $(document).ready(function(){
         if (dist > 0) {
             opacity = 0.8 * (1 - dist / $("#about").offset().top);
         }
-        else  {
+        else {
             opacity = 0.8;
         }
 
@@ -46,8 +51,7 @@ $(document).ready(function(){
 
 
         // Time for the noice background changer
-        for (var i = 0; i < sections.length; i++)
-        {
+        for (var i = 0; i < sections.length; i++) {
             if ((true) && ($(window).scrollTop() >= $("#" + sections[i]).offset().top)) {
                 $("#cover").removeClass();
                 $("#cover").addClass(sections[i] + "-image");
