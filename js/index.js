@@ -28,9 +28,9 @@ $(document).ready(function () {
         });
     });
 
-    $("#cover").css("background-size", "auto" + " " + $(window).height() + "px");
+    $("#cover").css("background-size", "auto" + " " + $("#header").height() + "px");
     $(window).resize(function() {
-        $("#cover").css("background-size", "auto" + " " + $(window).height() + "px");
+        $("#cover").css("background-size", "auto" + " " + $("#header").height() + "px");
     });
 
     function updateScroll() {
