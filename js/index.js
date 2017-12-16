@@ -28,8 +28,11 @@ $(document).ready(function () {
         });
     });
 
+
     var bgresize = function () {
         var window = $("#header");
+
+        console.log(window.width() + " " + window.height())
 
         if (window.height() > window.width()) {
             $("#cover").css("background-size", "auto" + " " + window.height() + "px");
@@ -39,7 +42,6 @@ $(document).ready(function () {
     }
     bgresize();
     $(window).resize(bgresize());
-
     $(window).on("orientationchange", bgresize());
 
     function updateScroll() {
@@ -71,7 +73,7 @@ $(document).ready(function () {
 
     $(".navsocial").css("height", $("#mainnav").height() / 2);
 
-    $(document).on('resize', updateScroll);
+    $(window).resize(updateScroll);
     $(document).scroll(updateScroll);
     updateScroll();
 });
