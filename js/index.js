@@ -28,10 +28,19 @@ $(document).ready(function () {
         });
     });
 
-    $("#cover").css("background-size", "auto" + " " + $("#header").height() + "px");
-    $(window).resize(function() {
-        $("#cover").css("background-size", "auto" + " " + $("#header").height() + "px");
-    });
+    var bgresize = function () {
+        var window = $("#header");
+
+        if (window.height() > window.width()) {
+            $("#cover").css("background-size", "auto" + " " + window.height() + "px");
+        } else {
+            $("#cover").css("background-size", window.width() + "px" + " " + "auto");
+        }
+    }
+    bgresize();
+    $(window).resize(bgresize());
+
+    $(window).on("orientationchange", bgresize());
 
     function updateScroll() {
 
