@@ -243,11 +243,17 @@ p {
     text-align: center;
 }
 #footer {
-    height: 40px;
-    color: white;
-    background: darkblue;
+
+    background: rgb(151, 160, 230);
+    background: rgba(49, 60, 75, 0);
     background-size: cover;
     background-position: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-family: RalewayThin;
+    text-align: center;
 }
 
 #co-host img {

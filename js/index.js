@@ -65,15 +65,17 @@ $(document).ready(function () {
 
         $("#mainnav").css("background", "rgba(49, 60, 75, " + opacity + ")");
 
+        $("#cover").css("background-position-y", $("#cover").offset().top - 1 * ($(window).scrollTop() - $("#cover").offset().top) / 2);
 
         // Time for the noice background changer
+        /*
         for (var i = 0; i < sections.length; i++) {
             if ((true) && ($(window).scrollTop() >= $("#" + sections[i]).offset().top)) {
                 $("#cover").removeClass();
                 $("#cover").addClass(sections[i] + "-image");
                 $("#cover").css("background-position-y", $("#" + sections[i]).offset().top - 1 * ($(window).scrollTop() - $("#" + sections[i]).offset().top) / 2);
             }
-        }
+        } */
     }
 
     $(".navsocial").css("height", $("#mainnav").height() / 2);
