@@ -9,6 +9,11 @@ $(document).ready(function () {
         return false;
     });
 
+    $('a.overlayLink').click(function () {
+        $(".overlay").css({visibility: "hidden"});
+        $("#navham").toggleClass("is-active");
+    });
+
     $('#mc-embedded-subscribe').click(function () {
         var email = $('#mce-EMAIL').val()
         $.ajax({
@@ -28,21 +33,21 @@ $(document).ready(function () {
         });
     });
 
-
+    /*
     var bgresize = function () {
-        var window = $("#header");
+        var windowz = $("#header");
 
-        console.log(window.width() + " " + window.height())
+        //console.log(windowz.width() + " " + windowz.height());
 
-        if (window.height() > window.width()) {
-            $("#cover").css("background-size", "auto" + " " + window.height() + "px");
+        if (windowz.height() > windowz.width()) {
+            $("#cover").css("background-size", "auto" + " " + windowz.height() + "px");
         } else {
-            $("#cover").css("background-size", window.width() + "px" + " " + "auto");
+            $("#cover").css("background-size", windowz.width() + "px" + " " + "auto");
         }
     }
     bgresize();
     $(window).resize(bgresize());
-    $(window).on("orientationchange", bgresize());
+    $(window).on("orientationchange", bgresize());*/
 
     function updateScroll() {
 
