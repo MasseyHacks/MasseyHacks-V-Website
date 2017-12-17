@@ -9,11 +9,6 @@ $(document).ready(function () {
         return false;
     });
 
-    $('a.overlayLink').click(function () {
-        $(".overlay").css({visibility: "hidden"});
-        $("#navham").toggleClass("is-active");
-    });
-
     $('#mc-embedded-subscribe').click(function () {
         var email = $('#mce-EMAIL').val()
         $.ajax({

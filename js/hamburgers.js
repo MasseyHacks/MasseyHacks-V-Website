@@ -2,18 +2,28 @@
 $(document).ready(function(){
     toggleHamburger();
     $(".hamburger").on("click",function(){
-        $("#navham").toggleClass("is-active");
-        if($("#navham").hasClass("is-active")){
-            $(".overlay").css({visibility: "visible"});
-        } else{
-            $(".overlay").css({visibility: "hidden"});
-        }
+        toggleOverlay();
+    });
+
+    $('a.overlayLink').click(function () {
+        toggleOverlay();
     });
 });
 
 $(window).resize(function(){
     toggleHamburger();
 });
+
+function toggleOverlay() {
+    $("#navham").toggleClass("is-active");
+    if($("#navham").hasClass("is-active")){
+        $(".overlay").css({visibility: "visible"});
+        $("html").css({"overflow-y": "hidden"});
+    } else{
+        $(".overlay").css({visibility: "hidden"});
+        $("html").css({"overflow-y": "visible"});
+    }
+}
 
 function toggleHamburger(){
     //toggles hamburger based on window width
