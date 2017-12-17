@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     ]);
 
     if ($MailChimp->success()) {
-    	echo 'success'
+    	echo 'success';
     } else {
     	echo $MailChimp->getLastError();
     }
