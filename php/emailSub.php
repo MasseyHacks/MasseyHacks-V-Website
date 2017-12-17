@@ -13,6 +13,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         'email_address' => $email,
         'status'        => 'subscribed',
     ]);
-    print_r($result);
+
+    if ($MailChimp->success()) {
+    	echo 'success';
+    } else {
+    	echo $MailChimp->getLastError();
+    }
 }
 ?>
