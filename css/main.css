@@ -199,7 +199,7 @@ p {
 
 #cover {
     /*background-position: center;*/
-    background-position-x: center;
+    background-position-x: center top;
     background-attachment: fixed;
     min-height: 100vh;
 }
