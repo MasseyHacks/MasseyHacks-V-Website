@@ -198,9 +198,8 @@ p {
 
 
 #cover {
-    background-size: cover;
     /*background-position: center;*/
-    background-position-x: center;
+    background-position: center top;
     background-attachment: fixed;
     min-height: 100vh;
 }

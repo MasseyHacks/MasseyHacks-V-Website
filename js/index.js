@@ -38,7 +38,7 @@ $(document).ready(function () {
         });
     });
 
-    /*
+
     var bgresize = function () {
         var windowz = $("#header");
 
@@ -52,7 +52,7 @@ $(document).ready(function () {
     }
     bgresize();
     $(window).resize(bgresize());
-    $(window).on("orientationchange", bgresize());*/
+    $(window).on("orientationchange", bgresize());
 
     function updateScroll() {
 
