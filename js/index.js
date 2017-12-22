@@ -22,6 +22,7 @@ $(document).ready(function () {
                     swal({
                         type: 'success',
                         title: 'Subscribed!',
+                        html: 'Get ready for the latest updates about MasseyHacks IV!'
                     });
                 } else {
                     swal(
