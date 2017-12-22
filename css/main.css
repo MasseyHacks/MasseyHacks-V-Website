@@ -372,7 +372,6 @@ p {
 
 /* Smaller Screens */
 @media screen and (max-width:800px) {
-
     #co-host img {
         width: 90%;
         margin-left: 10px;
