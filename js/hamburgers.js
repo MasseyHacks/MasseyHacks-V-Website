@@ -27,7 +27,7 @@ function toggleOverlay() {
 
 function toggleHamburger(){
     //toggles hamburger based on window width
-    if($(window).width() <= 900){
+    if($(window).width() <= 700){
         $("#navham").removeClass("hidden");
         $("#navleft").hide();
         $("#navright").hide();
