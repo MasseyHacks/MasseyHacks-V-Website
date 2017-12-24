@@ -63,13 +63,13 @@ $(document).ready(function () {
         var dist = $("#about").offset().top - $(window).scrollTop();
 
         if (dist > 0) {
-            opacity = 0.8 * (1 - dist / $("#about").offset().top);
+            opacity = 1 * (1 - dist / $("#about").offset().top);
         }
         else {
-            opacity = 0.8;
+            opacity = 1;
         }
 
-        $("#mainnav").css("background", "rgba(49, 60, 75, " + opacity + ")");
+        $("#mainnav").css("background", "rgba(10, 25, 57, " + opacity + ")");
 
         $("#cover").css("background-position-y", $("#cover").offset().top - 1 * ($(window).scrollTop() - $("#cover").offset().top) / 2);
 
