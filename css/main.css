@@ -100,6 +100,10 @@ p {
     text-decoration: none;
 }
 
+.navobject {
+    margin-left: -6px;
+    margin-right: -6px;
+}
 .overlay {
     z-index: 9000;
     background-color: blue;
@@ -229,6 +233,8 @@ p {
     background-size: cover;
     background-position: center;
     text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 #sponsors {
     background: white;
