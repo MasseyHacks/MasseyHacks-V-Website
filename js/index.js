@@ -39,11 +39,9 @@ $(document).ready(function () {
         });
     });
 
-    /*
+
     var bgresize = function () {
         var windowz = $("#header");
-
-        //console.log(windowz.width() + " " + windowz.height());
 
         if (windowz.height() > windowz.width()) {
             $("#cover").css("background-size", "auto" + " " + windowz.height() + "px");
@@ -52,9 +50,9 @@ $(document).ready(function () {
         }
     }
     bgresize();
-    $(window).resize(bgresize());
-    $(window).on("orientationchange", bgresize());
-    */
+    $(window).resize(bgresize);
+    $(window).on("orientationchange", bgresize);
+
     function updateScroll() {
 
         $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
@@ -70,6 +68,7 @@ $(document).ready(function () {
         }
 
         $("#mainnav").css("background", "rgba(10, 25, 57, " + opacity + ")");
+
 
         $("#cover").css("background-position-y", $("#cover").offset().top - 1 * ($(window).scrollTop() - $("#cover").offset().top) / 2);
 
