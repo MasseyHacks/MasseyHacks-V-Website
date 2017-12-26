@@ -50,6 +50,15 @@ p {
     transform: scale(1.05);
 }
 
+.media-zoom {
+    transition: transform .2s;
+    transform: scale(1);
+}
+.media-zoom:hover {
+    transform: scale(1.2);
+}
+
+
 #mlh-trust-badge-cover {
     top: 0%;
     display:block;
@@ -148,7 +157,7 @@ p {
     padding: 0;
 }
 .cover-image {
-    background: url('../images/background.png');
+    background: url('../images/smolwhite2.png');
 }
 .about-image {
     background: url('../images/rahma.jpg');
@@ -214,6 +223,7 @@ p {
     padding-top: 0%;
     padding-bottom: 0%;
     min-height: 100vh;
+    background: rgba(49, 60, 75, 0.65);
 }
 #about {
     margin-top: 0px;
@@ -252,16 +262,19 @@ p {
     text-align: center;
 }
 #footer {
-    background: rgb(151, 160, 230);
-    background: rgba(49, 60, 75, 0);
+    height: 10%;
+
+    background: #0A1939;
     background-size: cover;
     background-position: center;
 
     padding-top: 5px;
     padding-bottom: 5px;
 
+    color: white;
     font-family: RalewayThin;
     text-align: center;
+
 }
 
 #co-host img {
@@ -339,6 +352,11 @@ p {
 
         text-align: center;
     }
+
+    #footer p {
+        font-size: 10px;
+        font-size: 1vw;
+    }
 }
 
 /* Smaller Screens */
@@ -371,6 +389,11 @@ p {
 
     .cover-content p {
         font-size: 1.5em;
+    }
+
+    #footer {
+        font-size: 10px;
+        font-size: 2.5vw;
     }
 }
 

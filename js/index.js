@@ -70,7 +70,7 @@ $(document).ready(function () {
         $("#mainnav").css("background", "rgba(10, 25, 57, " + opacity + ")");
 
 
-        $("#cover").css("background-position-y", $("#cover").offset().top - 1 * ($(window).scrollTop() - $("#cover").offset().top) / 2);
+        $("#cover").css("background-position-y", $("#cover").offset().top - 1 * ($(window).scrollTop() - $("#cover").offset().top) / 2 );
 
         // Time for the noice background changer
         /*
