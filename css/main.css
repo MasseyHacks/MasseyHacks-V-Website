@@ -156,6 +156,19 @@ p {
     margin: 10px;
     padding: 0;
 }
+
+.schedule-container {
+    width: 3600px;
+    height: 98vh;
+    background-color: white;
+    overflow: hidden;
+}
+.schedule-marker {
+    border-right: thin solid gray;
+    width: 100px;
+    height: 100%;
+}
+
 .cover-image {
     background: url('../images/smolwhite2.png');
 }
