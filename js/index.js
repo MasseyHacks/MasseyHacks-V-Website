@@ -9,34 +9,64 @@ $(document).ready(function () {
         return false;
     });
 
-    $('#mc-embedded-subscribe').click(function () {
-        var email = $('#mce-EMAIL').val()
-        $.ajax({
-            url: './php/emailSub.php',
-            type: 'POST',
-            data: {
-                email: email
-            },
-            success: function (msg) {
-                if (msg == "success") {
-                    swal({
-                        type: 'success',
-                        title: 'Subscribed!',
-                        html: 'Get ready for the latest updates about MasseyHacks IV!'
-                    });
-                } else {
+    function sub (email) {
+        if (email != '') {
+            $.ajax({
+                url: './php/emailSub.php',
+                type: 'POST',
+                data: {
+                    email: email
+                },
+                success: function (msg) {
+                    if (msg == "success") {
+                        swal({
+                            type: 'success',
+                            title: 'Subscribed!',
+                            html: 'Get ready for the latest updates about MasseyHacks IV!'
+                        });
+                    } else if (msg == 'invalid') {
+                        swal(
+                            'Oops...',
+                            'Invalid email address.',
+                            'error'
+                        );
+                    } else if (msg == 'asubbed'){
+                        swal(
+                            'Oops...',
+                            'You are already subscribed.',
+                            'error'
+                        );
+                    } else {
+                        swal(
+                            'Oops...',
+                            'Something went wrong! Please try again later.',
+                            'error'
+                        );
+                    }
+                },
+                error: function () {
                     swal(
                         'Oops...',
-                        'Something went wrong! Have you already subscribed?',
+                        'Something went wrong! Please try again later.',
                         'error'
                     );
                 }
-            },
-            error: function () {
-                alert("Php script error");
-            }
 
-        });
+            });
+        }
+    }
+
+    $('#mce-EMAIL').keydown(function (e) {
+        if (e.which == 13) {
+            e.preventDefault();
+            var email = $('#mce-EMAIL').val()
+            sub(email);
+        }
+    });
+
+    $('#mc-embedded-subscribe').click(function () {
+        var email = $('#mce-EMAIL').val()
+        sub(email);
     });
 
 
