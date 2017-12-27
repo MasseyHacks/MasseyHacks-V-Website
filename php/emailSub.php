@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $list_id = 'f7aab2d91d';
 
-        $subscriber_hash = $MailChimp->subscriberHash($subscriberMail);
+        $subscriber_hash = $MailChimp->subscriberHash($email);
         $result = $MailChimp->get("lists/$list_id/members/$subscriber_hash");
         if($result['status'] == '404') {
 

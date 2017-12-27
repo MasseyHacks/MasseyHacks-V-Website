@@ -9,8 +9,7 @@ $(document).ready(function () {
         return false;
     });
 
-    $('#mc-embedded-subscribe').click(function () {
-        var email = $('#mce-EMAIL').val()
+    function sub (email) {
         if (email != '') {
             $.ajax({
                 url: './php/emailSub.php',
@@ -55,6 +54,19 @@ $(document).ready(function () {
 
             });
         }
+    }
+
+    $('#mce-EMAIL').keydown(function (e) {
+        if (e.which == 13) {
+            e.preventDefault();
+            var email = $('#mce-EMAIL').val()
+            sub(email);
+        }
+    });
+
+    $('#mc-embedded-subscribe').click(function () {
+        var email = $('#mce-EMAIL').val()
+        sub(email);
     });
 
 
