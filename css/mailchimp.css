@@ -99,7 +99,7 @@
     padding: .5em 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     #mc_embed_signup input.email {
         width: 100%;
         padding-left: 5%;
@@ -119,3 +119,4 @@
         margin: 0;
     }
 }
+
