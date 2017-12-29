@@ -351,7 +351,8 @@ p {
         width: 66em;
 
         position:absolute;
-        left:0; right:0;
+        left:0;
+        right:0;
         top:50%;
         margin:auto;
 
@@ -380,7 +381,6 @@ p {
 
         position: absolute;
         left: 0;
-        right: 0;
         right: 0;
         top: 50%;
         margin: auto;
