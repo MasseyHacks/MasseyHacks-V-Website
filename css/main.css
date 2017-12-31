@@ -222,7 +222,6 @@ p {
 
 
 #cover {
-    /*background-position: center;*/
     background-position: center top;
     background-attachment: fixed;
     min-height: 100vh;
@@ -235,7 +234,7 @@ p {
     padding-right: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
-    min-height: 100vh;
+    max-height: 100vh;
     background: rgba(49, 60, 75, 0.65);
 }
 #about {
@@ -344,48 +343,16 @@ p {
     font-family: RalewayThin;
 }
 
+/*
 @media screen and (max-height: 480px){
-    /* Sections */
 
     .cover-content img {
         height: 30%;
     }
-
-    .cover-content {
-        height: 100%;
-
-        position:absolute;
-        left:0; right:0;
-        top:50%;
-        margin:auto;
-
-        transform: translateY(-50%);
-
-        max-width:100%;
-        max-height:100%;
-
-        padding-left: 2px;
-        padding-right: 2px;
-
-        text-align: center;
-    }
-
-    .cover-content h1 {
-        font-size: 2.5em;
-    }
-
-    .cover-content p {
-        font-size: 1em;
-    }
-
-    #footer {
-        font-size: 10px;
-        font-size: 2.5vw;
-    }
-}
+}*/
 
 /* Larger Screens */
-@media screen and (min-width: 720px) and (min-height: 480px) {
+@media screen and (min-width: 720px) {
     /* Sections */
     .cover-content img {
         width: 50%;
@@ -418,7 +385,7 @@ p {
 }
 
 /* Smaller Screens */
-@media screen and (max-width:720px) and (min-height: 480px) {
+@media screen and (max-width:720px){
 
     .cover-content img {
         width: 50%;
