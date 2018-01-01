@@ -5,9 +5,9 @@ use \DrewM\MailChimp\MailChimp;
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $MailChimp = new MailChimp('9a3694a4119716258581ccb8f0f0a6ad-us17');
+        $MailChimp = new MailChimp('1558fda43ee0c637951831962a296212-us17');
 
-        $list_id = 'f7aab2d91d';
+        $list_id = 'df5627faa3';
 
         $subscriber_hash = $MailChimp->subscriberHash($email);
         $result = $MailChimp->get("lists/$list_id/members/$subscriber_hash");
