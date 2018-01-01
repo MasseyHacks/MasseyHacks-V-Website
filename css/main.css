@@ -13,6 +13,14 @@
     font-family: RalewayThin;
     src: url("../fonts/Raleway-Thin.ttf");
 }
+@font-face{
+    font-family: RalewayRegular;
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+@font-face{
+    font-family: RalewayLight;
+    src: url("../fonts/Raleway-Light.ttf");
+}
 *{
     font-family: RalewaySemiBold, sans-serif;
 }

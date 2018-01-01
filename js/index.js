@@ -78,6 +78,14 @@ $(document).ready(function () {
         } else {
             $("#cover").css("background-size", windowz.width() + "px" + " " + "auto");
         }
+
+        if ($(window).width() <= 767) {
+            $("#smallcaption").removeClass("hidden");
+            $("#bigcaption").addClass("hidden");
+        } else {
+            $("#smallcaption").addClass("hidden");
+            $("#bigcaption").removeClass("hidden");
+        }
     }
     bgresize();
     $(window).resize(bgresize);
