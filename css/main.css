@@ -13,6 +13,14 @@
     font-family: RalewayThin;
     src: url("../fonts/Raleway-Thin.ttf");
 }
+@font-face{
+    font-family: RalewayRegular;
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+@font-face{
+    font-family: RalewayLight;
+    src: url("../fonts/Raleway-Light.ttf");
+}
 *{
     font-family: RalewaySemiBold, sans-serif;
 }
@@ -340,16 +348,8 @@ p {
 
 .cover-content p {
     font-size: 2em;
-    font-family: RalewayThin;
+    font-family: RalewayLight;
 }
-
-/*
-@media screen and (max-height: 480px){
-
-    .cover-content img {
-        height: 30%;
-    }
-}*/
 
 /* Larger Screens */
 @media screen and (min-width: 720px) {
@@ -388,11 +388,11 @@ p {
 @media screen and (max-width:720px){
 
     .cover-content img {
-        width: 50%;
+        width: 70%;
     }
 
     .cover-content {
-        width: 90em;
+        width: 95em;
 
         position: absolute;
         left: 0;
@@ -412,7 +412,7 @@ p {
     }
 
     .cover-content h1 {
-        font-size: 2.25em;
+        font-size: 2.3em;
     }
 
     .cover-content p {
