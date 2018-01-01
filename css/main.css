@@ -347,10 +347,9 @@ p {
 }
 
 .cover-content p {
-    font-size: 2em;
+    font-size: 1.6em;
     font-family: RalewayLight;
 }
-
 /* Larger Screens */
 @media screen and (min-width: 720px) {
     /* Sections */
