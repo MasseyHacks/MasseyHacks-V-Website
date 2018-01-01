@@ -117,6 +117,10 @@ p {
     text-decoration: none;
 }
 
+.navsocial {
+    color: white;
+    font-size: 20px;
+}
 .navobject {
     margin-left: -6px;
     margin-right: -6px;
