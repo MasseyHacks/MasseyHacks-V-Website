@@ -78,44 +78,16 @@ $(document).ready(function () {
         } else {
             $("#cover").css("background-size", windowz.width() + "px" + " " + "auto");
         }
+
+        if ($(window).width() <= 767) {
+            $("#smallcaption").removeClass("hidden");
+            $("#bigcaption").addClass("hidden");
+        } else {
+            $("#smallcaption").addClass("hidden");
+            $("#bigcaption").removeClass("hidden");
+        }
     }
     bgresize();
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
-
-    function updateScroll() {
-
-        $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
-
-        var opacity;
-        var dist = $("#about").offset().top - $(window).scrollTop();
-
-        if (dist > 0) {
-            opacity = 1 * (1 - dist / $("#about").offset().top);
-        }
-        else {
-            opacity = 1;
-        }
-
-        $("#mainnav").css("background", "rgba(10, 25, 57, " + opacity + ")");
-
-
-        $("#cover").css("background-position-y", $("#cover").offset().top - 1 * ($(window).scrollTop() - $("#cover").offset().top) / 2 );
-
-        // Time for the noice background changer
-        /*
-        for (var i = 0; i < sections.length; i++) {
-            if ((true) && ($(window).scrollTop() >= $("#" + sections[i]).offset().top)) {
-                $("#cover").removeClass();
-                $("#cover").addClass(sections[i] + "-image");
-                $("#cover").css("background-position-y", $("#" + sections[i]).offset().top - 1 * ($(window).scrollTop() - $("#" + sections[i]).offset().top) / 2);
-            }
-        } */
-    }
-
-    $(".navsocial").css("height", $("#mainnav").height() / 3);
-
-    $(window).resize(updateScroll);
-    $(document).scroll(updateScroll);
-    updateScroll();
 });
