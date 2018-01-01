@@ -10,12 +10,12 @@ $(document).ready(function () {
     });
 
     function sub (email) {
-        if (email != '') {
+        if (email.val() != '') {
             $.ajax({
                 url: './php/emailSub.php',
                 type: 'POST',
                 data: {
-                    email: email
+                    email: email.val()
                 },
                 success: function (msg) {
                     if (msg == "success") {
@@ -24,6 +24,8 @@ $(document).ready(function () {
                             title: 'Subscribed!',
                             html: 'Get ready for the latest updates about MasseyHacks IV!'
                         });
+                        email.val("");
+
                     } else if (msg == 'invalid') {
                         swal(
                             'Oops...',
@@ -59,13 +61,13 @@ $(document).ready(function () {
     $('#mce-EMAIL').keydown(function (e) {
         if (e.which == 13) {
             e.preventDefault();
-            var email = $('#mce-EMAIL').val()
+            var email = $('#mce-EMAIL');
             sub(email);
         }
     });
 
     $('#mc-embedded-subscribe').click(function () {
-        var email = $('#mce-EMAIL').val()
+        var email = $('#mce-EMAIL');
         sub(email);
     });
 
