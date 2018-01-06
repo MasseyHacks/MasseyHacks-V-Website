@@ -9,6 +9,21 @@ $(document).ready(function () {
         return false;
     });
 
+    $('#subbutton').click(function () {
+        swal({
+            html: 'Subscribe to our mailing list to get the latest updates on MasseyHacks IV!',
+            input: 'email',
+            showCancelButton: true,
+            confirmButtonText: 'Subscribe!',
+            showLoaderOnConfirm: true,
+            preConfirm: (email) => {
+                return new Promise((resolve) => {
+                        sub(email)
+                })
+            }
+        })
+    })
+
     function sub (email) {
         if (email != '') {
             $.ajax({
@@ -82,12 +97,27 @@ $(document).ready(function () {
         if ($(window).width() <= 767) {
             $("#smallcaption").removeClass("hidden");
             $("#bigcaption").addClass("hidden");
+            //$("#mc_embed_signup").hide();
+            //$("#subbutton").removeClass("hidden");
         } else {
             $("#smallcaption").addClass("hidden");
+            $("#subbutton").addClass("hidden");
             $("#bigcaption").removeClass("hidden");
+            $("#mc_embed_signup").show();
         }
     }
     bgresize();
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
+
+    function updateScroll() {
+        $("#cover").css("background-position-y", $("#cover").offset().top - 1 * ($(window).scrollTop() - $("#cover").offset().top) / 2 );
+
+    }
+
+    $(".navsocial").css("height", $("#mainnav").height() / 3);
+
+    $(window).resize(updateScroll);
+    $(document).scroll(updateScroll);
+    updateScroll();
 });
