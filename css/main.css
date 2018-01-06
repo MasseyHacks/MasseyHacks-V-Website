@@ -350,6 +350,10 @@ p {
     padding-bottom: 5%;
 }
 
+#spacer {
+    height: 50vh;
+    min-height: 250px;
+}
 .cover-content p {
     font-size: 1.6em;
     font-family: RalewayLight;
@@ -367,13 +371,11 @@ p {
         position:absolute;
         left:0;
         right:0;
-        top:50%;
         margin:auto;
 
-        transform: translateY(-50%);
-
         max-width:100%;
-        max-height:100%;
+
+        transform: translateY(-60%);
 
         padding-left: 2px;
         padding-right: 2px;
@@ -397,13 +399,15 @@ p {
     .cover-content {
         width: 95em;
 
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 50%;
-        margin: auto;
+        position:absolute;
+        left:0;
+        right:0;
+        margin:auto;
 
-        transform: translateY(-50%);
+        max-width:100%;
+
+
+        transform: translateY(-60%);
 
         max-width: 100%;
         max-height: 100%;
