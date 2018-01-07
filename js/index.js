@@ -37,7 +37,7 @@ $(document).ready(function () {
                         swal({
                             type: 'success',
                             title: 'Subscribed!',
-                            html: 'Get ready for the latest updates about MasseyHacks IV!'
+                            html: 'Get ready for the latest updates about MasseyHacks IV! (' + email + ')'
                         });
                         email.val("");
 
@@ -50,7 +50,7 @@ $(document).ready(function () {
                     } else if (msg == 'asubbed'){
                         swal(
                             'Oops...',
-                            'You are already subscribed.',
+                            'You are already subscribed. (' + email + ')',
                             'error'
                         );
                     } else {
@@ -112,6 +112,7 @@ $(document).ready(function () {
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
 
+    /*
     function updateScroll() {
         $("#cover").css("background-position-y", $("#cover").offset().top - 1 * ($(window).scrollTop() - $("#cover").offset().top) / 2 );
 
@@ -122,4 +123,5 @@ $(document).ready(function () {
     $(window).resize(updateScroll);
     $(document).scroll(updateScroll);
     updateScroll();
+    */
 });

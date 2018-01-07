@@ -354,6 +354,15 @@ p {
     height: 50vh;
     min-height: 250px;
 }
+#outer-social {
+    text-align: center;
+    height: 50%;
+    min-height: 250px;
+}
+#inner-social {
+    top: 80%;
+    position: relative;
+}
 .cover-content p {
     font-size: 1.6em;
     font-family: RalewayLight;
@@ -374,6 +383,7 @@ p {
         margin:auto;
 
         max-width:100%;
+        min-height: 420px;
 
         transform: translateY(-60%);
 
@@ -405,7 +415,7 @@ p {
         margin:auto;
 
         max-width:100%;
-
+        min-height: 420px;
 
         transform: translateY(-60%);
 
