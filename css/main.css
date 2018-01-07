@@ -246,7 +246,7 @@ p {
     padding-right: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
-    min-height: 500px;
+    min-height: 550px;
     background: rgba(49, 60, 75, 0.6);
 }
 #about {
@@ -352,12 +352,12 @@ p {
 
 #spacer {
     height: 50vh;
-    min-height: 250px;
+    min-height: 275px;
 }
 #outer-social {
     text-align: center;
     height: 50%;
-    min-height: 250px;
+    min-height: 275px;
 }
 #inner-social {
     top: 80%;
@@ -420,7 +420,6 @@ p {
         transform: translateY(-50%);
 
         max-width: 100%;
-        max-height: 100%;
 
         padding-left: 10px;
         padding-right: 10px;
