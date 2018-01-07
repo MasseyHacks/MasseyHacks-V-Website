@@ -9,21 +9,6 @@ $(document).ready(function () {
         return false;
     });
 
-    $('#subbutton').click(function () {
-        swal({
-            html: 'Subscribe to our mailing list to get the latest updates on MasseyHacks IV!',
-            input: 'email',
-            showCancelButton: true,
-            confirmButtonText: 'Subscribe!',
-            showLoaderOnConfirm: true,
-            preConfirm: (email) => {
-                return new Promise((resolve) => {
-                        sub(email)
-                })
-            }
-        })
-    })
-
     function sub (email) {
         if (email.val() != '') {
             $.ajax({
@@ -37,7 +22,7 @@ $(document).ready(function () {
                         swal({
                             type: 'success',
                             title: 'Subscribed!',
-                            html: 'Get ready for the latest updates about MasseyHacks IV! (' + email + ')'
+                            html: 'Get ready for the latest updates about MasseyHacks IV! <br>(' + email.val() + ')'
                         });
                         email.val("");
 
@@ -50,7 +35,7 @@ $(document).ready(function () {
                     } else if (msg == 'asubbed'){
                         swal(
                             'Oops...',
-                            'You are already subscribed. (' + email + ')',
+                            'You are already subscribed. <br>(' + email.val() + ')',
                             'error'
                         );
                     } else {
@@ -89,15 +74,7 @@ $(document).ready(function () {
 
     var bgresize = function () {
 
-        var h = $("#cover-image").height() + $("#cover-text").height() + $("#mc_embed_signup").height() + 20;
-
-        console.log(h);
-
-        $(".cover-content").css("height", h + "px;")
-
         var windowz = $("#header");
-
-        console.log($(".cover-content").height() + " " + windowz.height())
 
         if (windowz.height() > windowz.width()) {
             $("#cover").css("background-size", "auto" + " " + windowz.height() + "px");
