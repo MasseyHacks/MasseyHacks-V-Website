@@ -88,7 +88,16 @@ $(document).ready(function () {
 
 
     var bgresize = function () {
+
+        var h = $("#cover-image").height() + $("#cover-text").height() + $("#mc_embed_signup").height() + 20;
+
+        console.log(h);
+
+        $(".cover-content").css("height", h + "px;")
+
         var windowz = $("#header");
+
+        console.log($(".cover-content").height() + " " + windowz.height())
 
         if (windowz.height() > windowz.width()) {
             $("#cover").css("background-size", "auto" + " " + windowz.height() + "px");
@@ -99,13 +108,9 @@ $(document).ready(function () {
         if ($(window).width() <= 767) {
             $("#smallcaption").removeClass("hidden");
             $("#bigcaption").addClass("hidden");
-            //$("#mc_embed_signup").hide();
-            //$("#subbutton").removeClass("hidden");
         } else {
             $("#smallcaption").addClass("hidden");
-            $("#subbutton").addClass("hidden");
             $("#bigcaption").removeClass("hidden");
-            $("#mc_embed_signup").show();
         }
     }
     bgresize();
