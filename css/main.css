@@ -118,17 +118,7 @@ p {
 #cover {
     background-position: center top;
     background-attachment: fixed;
-    min-height: 100vh;
-}
-#header {
-    display: block;
-    color: white;
-    margin-top: 0px;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    background: rgba(49, 60, 75, 0.6);
+    min-height: 100%;
 }
 .slide {
     margin-top: 50vh;
@@ -141,24 +131,27 @@ p {
     padding-top: 5%;
     padding-bottom: 5%;
 }
-
 #header {
-    min-height: 460px;
-    height: 100vh;
-}
-#spacer {
-    min-height: 210px;
-}
-#outer-social {
-    min-height: 230px;
+    display: block;
+    color: white;
+    margin-top: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    background: rgba(49, 60, 75, 0.6);
+    min-height: 500px;
+    height: 100%;
 }
 
 #spacer {
-    height: 50vh;
+    min-height: 250px;
+    height: 50%;
 }
 #outer-social {
+    min-height: 250px;
     text-align: center;
-    height: 50vh;
+    height: 50%;
 }
 #inner-social {
     top: 80%;
