@@ -72,7 +72,8 @@ $(document).ready(function () {
 
     var bgresize = function () {
 
-        var windowz = $("#header");
+        var windowz = $(window);
+        $("#header").height(windowz.height() + "px");
 
         if (windowz.height() > windowz.width()) {
             $("#cover").css("background-size", "auto" + " " + windowz.height() + "px");
@@ -87,6 +88,7 @@ $(document).ready(function () {
             $("#smallcaption").addClass("hidden");
             $("#bigcaption").removeClass("hidden");
         }
+
     }
     bgresize();
     $(window).resize(bgresize);
