@@ -1,5 +1,3 @@
-var sections = ["cover", "about", "faq", "schedule", "sponsors", "team"];
-
 $(document).ready(function () {
 
     $('a.scrollLink').click(function () {
@@ -93,17 +91,4 @@ $(document).ready(function () {
     bgresize();
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
-
-    /*
-    function updateScroll() {
-        $("#cover").css("background-position-y", $("#cover").offset().top - 1 * ($(window).scrollTop() - $("#cover").offset().top) / 2 );
-
-    }
-
-    $(".navsocial").css("height", $("#mainnav").height() / 3);
-
-    $(window).resize(updateScroll);
-    $(document).scroll(updateScroll);
-    updateScroll();
-    */
 });
