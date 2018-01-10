@@ -1,5 +1,3 @@
-var sections = ["cover", "about", "faq", "schedule", "sponsors", "team"];
-
 $(document).ready(function () {
 
     $('a.scrollLink').click(function () {
@@ -10,20 +8,22 @@ $(document).ready(function () {
     });
 
     function sub (email) {
-        if (email != '') {
+        if (email.val() != '') {
             $.ajax({
                 url: './php/emailSub.php',
                 type: 'POST',
                 data: {
-                    email: email
+                    email: email.val()
                 },
                 success: function (msg) {
                     if (msg == "success") {
                         swal({
                             type: 'success',
                             title: 'Subscribed!',
-                            html: 'Get ready for the latest updates about MasseyHacks IV!'
+                            html: 'Get ready for the latest updates about MasseyHacks IV! <br>(' + email.val() + ')'
                         });
+                        email.val("");
+
                     } else if (msg == 'invalid') {
                         swal(
                             'Oops...',
@@ -33,7 +33,7 @@ $(document).ready(function () {
                     } else if (msg == 'asubbed'){
                         swal(
                             'Oops...',
-                            'You are already subscribed.',
+                            'You are already subscribed. <br>(' + email.val() + ')',
                             'error'
                         );
                     } else {
@@ -59,19 +59,21 @@ $(document).ready(function () {
     $('#mce-EMAIL').keydown(function (e) {
         if (e.which == 13) {
             e.preventDefault();
-            var email = $('#mce-EMAIL').val()
+            var email = $('#mce-EMAIL');
             sub(email);
         }
     });
 
     $('#mc-embedded-subscribe').click(function () {
-        var email = $('#mce-EMAIL').val()
+        var email = $('#mce-EMAIL');
         sub(email);
     });
 
 
     var bgresize = function () {
-        var windowz = $("#header");
+
+        var windowz = $(window);
+        $("#header").height(windowz.height() + "px");
 
         if (windowz.height() > windowz.width()) {
             $("#cover").css("background-size", "auto" + " " + windowz.height() + "px");
@@ -87,14 +89,12 @@ $(document).ready(function () {
             $("#bigcaption").removeClass("hidden");
         }
     }
+
     bgresize();
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
 
     function updateScroll() {
-
-        $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
-
         var opacity;
         var dist = $("#about").offset().top - $(window).scrollTop();
 
@@ -106,22 +106,9 @@ $(document).ready(function () {
         }
 
         $("#mainnav").css("background", "rgba(10, 25, 57, " + opacity + ")");
+        $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
 
-
-        $("#cover").css("background-position-y", $("#cover").offset().top - 1 * ($(window).scrollTop() - $("#cover").offset().top) / 2 );
-
-        // Time for the noice background changer
-        /*
-        for (var i = 0; i < sections.length; i++) {
-            if ((true) && ($(window).scrollTop() >= $("#" + sections[i]).offset().top)) {
-                $("#cover").removeClass();
-                $("#cover").addClass(sections[i] + "-image");
-                $("#cover").css("background-position-y", $("#" + sections[i]).offset().top - 1 * ($(window).scrollTop() - $("#" + sections[i]).offset().top) / 2);
-            }
-        } */
     }
-
-    $(".navsocial").css("height", $("#mainnav").height() / 3);
 
     $(window).resize(updateScroll);
     $(document).scroll(updateScroll);
