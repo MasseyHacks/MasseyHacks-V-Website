@@ -175,13 +175,15 @@ p {
     background: url('../images/websitebkg.svg');
 }
 #cover {
+    background-size: 100vmax;
     background-position: center top;
     background-attachment: fixed;
     min-height: 100%;
 }
 .slide {
     margin-top: 50vh;
-
+    height: 100vh;
+    min-height: 100%;
     width:100%;
     display:table;
     padding-left: 5%;
@@ -190,6 +192,7 @@ p {
     padding-bottom: 5%;
 }
 #header {
+    height: 100vh;
     display: block;
     color: white;
     margin-top: 0px;
