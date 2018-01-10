@@ -38,12 +38,10 @@ h1 {
 }
 h3{
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 h4{
-    font-size: 2.5em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.5em;
 }
 p {
     font-size: 1.2em;
@@ -180,8 +178,7 @@ p {
 }
 .slide {
     margin-top: 50vh;
-    height: 100vh;
-    min-height:100vh;
+    height: 100%;
     width:100%;
     display:table;
     padding-left: 5%;
@@ -197,8 +194,7 @@ p {
     padding-right: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
-    max-height: 100vh;
-    background: rgba(49, 60, 75, 0.65);
+    background: rgba(49, 60, 75, 0.6);
 }
 #about {
     margin-top: 0px;
