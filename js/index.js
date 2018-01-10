@@ -73,7 +73,8 @@ $(document).ready(function () {
     var bgresize = function () {
 
         var windowz = $(window);
-        $(".slide").height(windowz.height() + "px");
+        $(".slide").height((windowz.height() - 100) + "px");
+        $("#header").height(windowz.height() + "px");
 
         if (windowz.height() > windowz.width()) {
             $("#cover").css("background-size", "auto" + " " + windowz.height() + "px");
