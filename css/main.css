@@ -77,6 +77,31 @@ p {
     width:8%;
     z-index:10000;
 }
+
+#mainnav a {
+    color:white;
+    text-decoration: none;
+}
+
+#mainnav a:hover {
+    color:lightgray;
+    text-decoration: none;
+}
+
+#mainnav a:active {
+    color:lightslategray;
+    text-decoration: none;
+}
+
+#mainnav {
+    z-index: 9500;
+    font-family: RalewayThin;
+    background-color: #0A1939;
+    border-color: transparent;
+    background: rgb(151, 160, 230);
+    background: rgba(49, 60, 75, 0);
+}
+
 .overlay a {
     color:white;
     text-decoration: none;
@@ -90,6 +115,39 @@ p {
 .overlay a:active {
     color:lightslategray;
     text-decoration: none;
+}
+
+
+.overlay {
+    z-index: 9000;
+    background-color: #0A1939;
+    background: rgba(10, 25, 57, 0.8);
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+}
+.overlay-list {
+    z-index: 10000;
+    text-align: center;
+    font-size: 2em;
+
+    width: 90em;
+
+    position:absolute;
+    left:0; right:0;
+    top:50%;
+    margin:auto;
+
+    transform: translateY(-50%);
+
+    max-width:100%;
+    max-height:100%;
+
+    padding-left: 2px;
+    padding-right: 2px;
+
+    list-style-type: none;
 }
 
 .navsocial {
@@ -170,6 +228,50 @@ p {
     text-align: center;
 }
 
+#footer {
+    height: 10%;
+
+    background: #0A1939;
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    color: white;
+    font-family: RalewayThin;
+    text-align: center;
+}
+
+
+#gold img {
+    max-height: 450px;
+    max-width: 550px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#silver img {
+    max-height: 225px;
+    max-width: 375px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#bronze img {
+    max-height: 125px;
+    max-width: 275px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 #spacer {
     min-height: 250px;
     height: 50%;
@@ -192,7 +294,7 @@ p {
 @media screen and (min-width: 720px) {
     /* Sections */
     .cover-content img {
-        width: 50%;
+        width: 45%;
     }
 
     .cover-content {
