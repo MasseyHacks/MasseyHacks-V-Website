@@ -1,6 +1,4 @@
 /* General styling*/
-@import url('//fonts.googleapis.com/css?family=Raleway+Extra-Bold:400,900&subset=latin,latin-ext');
-@import url('//fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext');
 @font-face {
     font-family: RalewayExtraBold;
     src: url("../fonts/Raleway-ExtraBold.ttf");
@@ -48,6 +46,11 @@ p {
     line-height: 1.4em;
 }
 
+.body-button {
+    background-color: white;
+    color: #0A1939;
+    outline-color: #0A1939;
+}
 .zoom {
     transition: transform .2s;
     transform: scale(1);

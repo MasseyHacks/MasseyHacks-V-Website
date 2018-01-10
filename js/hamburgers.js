@@ -29,10 +29,12 @@ function toggleHamburger(){
     //toggles hamburger based on window width
     if($(window).width() <= 767){
         $("#navham").removeClass("hidden");
+        $("#outer-social").removeClass("hidden");
         $("#navleft").hide();
         $("#navright").hide();
     } else{
         $("#navham").addClass("hidden");
+        $("#outer-social").addClass("hidden");
         $("#navleft").show();
         $("#navright").show();
     }
