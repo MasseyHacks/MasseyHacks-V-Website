@@ -117,10 +117,7 @@ p {
     text-decoration: none;
 }
 
-.navobject {
-    margin-left: -6px;
-    margin-right: -6px;
-}
+
 .overlay {
     z-index: 9000;
     background-color: #0A1939;
@@ -152,6 +149,15 @@ p {
 
     list-style-type: none;
 }
+
+.navsocial {
+    color: white;
+    font-size: 20px;
+}
+.navobject {
+    margin-left: -6px;
+    margin-right: -6px;
+}
 .overlay-social {
     display: inline;
     list-style-type: none;
@@ -164,75 +170,24 @@ p {
     margin: 10px;
     padding: 0;
 }
-
-.schedule-container {
-    width: 3600px;
-    height: 98vh;
-    background-color: white;
-    overflow: hidden;
-}
-.schedule-marker {
-    border-right: thin solid gray;
-    width: 100px;
-    height: 100%;
-}
-
 .cover-image {
-    background: url('../images/smolwhite2.png');
+    background: url('../images/websitebkg.svg');
 }
-.about-image {
-    background: url('../images/rahma.jpg');
-}
-.faq-image {
-    background: url('../images/albert.jpg');
-}
-.question-image {
-    background: url('../images/rahma.jpg');
-}
-.schedule-image {
-    background: url('../images/pineapple.jpg');
-}
-.sponsors-image {
-    background: url('../images/aaron.jpg');
-}
-.team-image {
-    background: url('../images/rahma.jpg');
-}
-.profile {
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    width: 230px;
-    height: 300px;
-    display: inline-block;
-    vertical-align: middle;
-
-    text-align: center;
-}
-.profile .name {
-    padding-top: 15px;
-    line-height: 0.2em;
-    display: block;
-    font-size: 1.3em;
-    font-family: RalewaySemiBold, sans-serif;
-}
-.profile .title {
-    margin-top: 0px;
-    font-size: 1em;
-    font-family: RalewaySemiBold, sans-serif;
-}
-.profile img {
-    border-radius: 50%;
-    width: 165px;
-    height: 165px;
-}
-
-
 #cover {
     background-position: center top;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 100%;
+}
+.slide {
+    margin-top: 50vh;
+    height: 100vh;
+    min-height:100vh;
+    width:100%;
+    display:table;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 #header {
     display: block;
@@ -272,15 +227,7 @@ p {
     background-position: center;
     text-align: center;
 }
-#team {
-    background: white;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 25%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
+
 #footer {
     height: 10%;
 
@@ -294,18 +241,9 @@ p {
     color: white;
     font-family: RalewayThin;
     text-align: center;
-
 }
 
-#co-host img {
-    max-height: 500px;
-    max-width: 700px;
-    margin-left: 10px;
-    margin-right: 10px;
-    vertical-align: middle;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+
 #gold img {
     max-height: 450px;
     max-width: 550px;
@@ -334,20 +272,21 @@ p {
     padding-bottom: 5px;
 }
 
-.slide {
-    margin-top: 50vh;
-    height: 100vh;
-    min-height:100vh;
-    width:100%;
-    display:table;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+#spacer {
+    min-height: 250px;
+    height: 50%;
 }
-
+#outer-social {
+    min-height: 250px;
+    text-align: center;
+    height: 50%;
+}
+#inner-social {
+    top: 80%;
+    position: relative;
+}
 .cover-content p {
-    font-size: 2em;
+    font-size: 1.6em;
     font-family: RalewayLight;
 }
 
@@ -355,7 +294,7 @@ p {
 @media screen and (min-width: 720px) {
     /* Sections */
     .cover-content img {
-        width: 50%;
+        width: 45%;
     }
 
     .cover-content {
@@ -364,13 +303,12 @@ p {
         position:absolute;
         left:0;
         right:0;
-        top:50%;
         margin:auto;
 
-        transform: translateY(-50%);
-
         max-width:100%;
-        max-height:100%;
+        /*min-height: 440px;*/
+
+        transform: translateY(-50%);
 
         padding-left: 2px;
         padding-right: 2px;
@@ -388,27 +326,30 @@ p {
 @media screen and (max-width:720px){
 
     .cover-content img {
+        max-width: 240px;
         width: 70%;
     }
 
     .cover-content {
         width: 95em;
 
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 50%;
-        margin: auto;
+        position:absolute;
+        left:0;
+        right:0;
+        margin:auto;
+
+        max-width:100%;
+        /*min-height: 440px;*/
 
         transform: translateY(-50%);
 
         max-width: 100%;
-        max-height: 100%;
 
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
 
         text-align: center;
+
     }
 
     .cover-content h1 {
@@ -416,7 +357,7 @@ p {
     }
 
     .cover-content p {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     #footer {
