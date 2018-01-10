@@ -139,9 +139,35 @@ p {
     padding-right: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
-    background: rgba(49, 60, 75, 0.6);
-    min-height: 500px;
-    height: 100%;
+    max-height: 100vh;
+    background: rgba(49, 60, 75, 0.65);
+}
+#about {
+    margin-top: 0px;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#faq {
+    background: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#schedule {
+    background: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+#sponsors {
+    background: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 }
 
 #spacer {
@@ -161,6 +187,7 @@ p {
     font-size: 1.6em;
     font-family: RalewayLight;
 }
+
 /* Larger Screens */
 @media screen and (min-width: 720px) {
     /* Sections */
