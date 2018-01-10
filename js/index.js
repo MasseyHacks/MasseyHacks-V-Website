@@ -88,9 +88,26 @@ $(document).ready(function () {
             $("#smallcaption").addClass("hidden");
             $("#bigcaption").removeClass("hidden");
         }
-
     }
     bgresize();
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
+
+    function updateScroll() {
+
+        $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
+
+        var opacity;
+        var dist = $("#about").offset().top - $(window).scrollTop();
+      
+        if ($(window).width() <= 767) {
+            $("#smallcaption").removeClass("hidden");
+            $("#bigcaption").addClass("hidden");
+        } else {
+            $("#smallcaption").addClass("hidden");
+            $("#bigcaption").removeClass("hidden");
+        }
+
+    }
+
 });
