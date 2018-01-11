@@ -45,7 +45,10 @@ p {
     font-size: 1.2em;
     line-height: 1.4em;
 }
-
+.parallax-window {
+    min-height: 50vh;
+    background: transparent;
+}
 .body-button {
     background-color: white;
     color: #0A1939;
@@ -182,7 +185,7 @@ p {
 }
 .slide {
     color: #0A1939;
-    margin-top: 50vh;
+    /*margin-top: 50vh;*/
     height: 100vh;
     min-height: 100%;
     width:100%;
