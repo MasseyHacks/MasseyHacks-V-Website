@@ -66,11 +66,24 @@ p {
     min-height: 50vh;
     background: transparent;
 }
-.body-button {
+
+.btn {
     background-color: white;
     color: #0A1939;
-    outline-color: #0A1939;
+    border-color: #0A1939;
+    transition: all 0.3s ease 0s;
 }
+.btn:hover {
+    background-color: #0A1939;
+    color: white;
+    border-color: #0A1939;
+}
+.btn:active {
+    background-color: rebeccapurple;
+    color: white;
+    border-color: #0A1939;
+}
+
 .zoom {
     transition: transform .2s;
     transform: scale(1);

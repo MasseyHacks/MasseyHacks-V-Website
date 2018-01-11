@@ -79,9 +79,13 @@ $(document).ready(function () {
         if ($(window).width() <= 767) {
             $("#smallcaption").removeClass("hidden");
             $("#bigcaption").addClass("hidden");
+            $("#accordion").removeClass("hidden");
+            $("#full-faq").addClass("hidden");
         } else {
             $("#smallcaption").addClass("hidden");
             $("#bigcaption").removeClass("hidden");
+            $("#accordion").addClass("hidden");
+            $("#full-faq").removeClass("hidden");
         }
     }
 
