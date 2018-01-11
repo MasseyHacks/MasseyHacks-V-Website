@@ -20,7 +20,7 @@
     src: url("../fonts/Raleway-Light.ttf");
 }
 *{
-    font-family: RalewaySemiBold, sans-serif;
+    font-family: RalewayRegular, sans-serif;
 }
 
 a {
