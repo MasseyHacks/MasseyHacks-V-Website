@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - $("#mainnav").height()
-        }, 300, 'swing', function () {
+        }, 500, 'swing', function () {
             //window.location.hash = target;
         });
     });
