@@ -76,15 +76,6 @@ $(document).ready(function () {
         $(".slide").css("height", (windowz.height() - $("#mainnav").height()) + "px");
         $("#header").css("height", Math.max(windowz.height(), 500) + "px");
 
-        //swal("Window: x" + windowz.width() + " y" + windowz.height() + "<br>Cover: x" + $("#cover").width() + " y" + $("#cover").height() + "<br>Header: x" + $("#header").width() + " y" + $("#header").height());
-
-        /*
-        if (windowz.height() > windowz.width()) {
-            $("#cover").css("background-size", "auto" + " " + windowz.height() + "px");
-        } else {
-            $("#cover").css("background-size", windowz.width() + "px" + " " + "auto");
-        }*/
-
         if ($(window).width() <= 767) {
             $("#smallcaption").removeClass("hidden");
             $("#bigcaption").addClass("hidden");

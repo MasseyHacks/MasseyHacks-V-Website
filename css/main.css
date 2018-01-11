@@ -198,6 +198,7 @@ p {
     min-height: 100%;
 }
 .slide {
+    color: #0A1939;
     margin-top: 50vh;
     height: 100vh;
     min-height: 100%;
@@ -211,7 +212,7 @@ p {
 #header {
     height: 100vh;
     display: block;
-    color: white;
+    color: white !important;
     margin-top: 0px;
     padding-left: 0%;
     padding-right: 0%;
