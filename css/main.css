@@ -52,7 +52,7 @@ h1 {
     margin: 30px;
 }
 h3{
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 h4{
@@ -291,6 +291,11 @@ p {
     text-align: center;
 }
 
+.sponsor-obj {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #gold {
     padding-top: 20px;
 }
@@ -367,8 +372,7 @@ p {
     }
 
     #footer p {
-        font-size: 10px;
-        font-size: 1vw;
+        font-size: 0.9vw;
     }
 }
 
@@ -411,7 +415,6 @@ p {
     }
 
     #footer {
-        font-size: 10px;
         font-size: 2.5vw;
     }
 }
@@ -450,7 +453,6 @@ p {
         padding-top: 5px;
         padding-bottom: 5px;
     }
-
 }
 
 /* Tints */
