@@ -345,6 +345,18 @@ p {
     font-family: RalewayLight;
 }
 
+@media screen and (min-width: 900px){
+    #footer p {
+        font-size: 1.5vh;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 900px)  {
+    #footer p {
+        font-size: 1.8vw;
+    }
+}
+
 /* Larger Screens */
 @media screen and (min-width: 720px) {
     /* Sections */
@@ -370,10 +382,6 @@ p {
 
         text-align: center;
     }
-
-    #footer p {
-        font-size: 0.9vw;
-    }
 }
 
 /* Smaller Screens */
@@ -393,7 +401,6 @@ p {
         margin:auto;
 
         max-width:100%;
-        /*min-height: 440px;*/
 
         transform: translateY(-50%);
 

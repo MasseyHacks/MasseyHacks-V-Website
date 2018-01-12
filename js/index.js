@@ -1,4 +1,26 @@
+document.addEventListener("DOMContentLoaded", function(){
+    $('.js-navbar-link').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - $("#mainnav").height()
+        }, 500, 'swing', function () {
+            //window.location.hash = target;
+        });
+    });
+});
+
 $(document).ready(function () {
+
+    $('a.scrollLink').click(function () {
+        var href = $(this).attr('href');
+        var anchor = $(href).offset();
+        $('body').animate({scrollTop: anchor.top - 50});
+        return false;
+    });
 
     var bgresize = function () {
 
