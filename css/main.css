@@ -20,7 +20,7 @@
     src: url("../fonts/Raleway-Light.ttf");
 }
 *{
-    font-family: RalewaySemiBold, sans-serif;
+    font-family: RalewayRegular, sans-serif;
 }
 
 .panel-group {
@@ -62,12 +62,31 @@ p {
     font-size: 1.2em;
     line-height: 1.4em;
 }
+.parallax-window {
+    min-height: 50vh;
+    background: transparent;
+}
 
-.body-button {
+.btn {
+    width: 150px;
     background-color: white;
     color: #0A1939;
-    outline-color: #0A1939;
+    border-color: #0A1939;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
+.btn:hover {
+    background-color: #0A1939;
+    color: white;
+    border-color: #0A1939;
+}
+.btn:active {
+    background-color: #0A1939;
+    color: white;
+    border-color: #0A1939;
+}
+
 .zoom {
     transition: transform .2s;
     transform: scale(1);
@@ -199,7 +218,7 @@ p {
 }
 .slide {
     color: #0A1939;
-    margin-top: 50vh;
+    /*margin-top: 50vh;*/
     height: 100vh;
     min-height: 100%;
     width:100%;
@@ -218,6 +237,15 @@ p {
     padding-right: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
+}
+.inner-parallax {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    height: 100%;
+    min-height: 50vh;
+    display: block;
     background: rgba(49, 60, 75, 0.6);
 }
 #about {
@@ -263,10 +291,12 @@ p {
     text-align: center;
 }
 
-
+#gold {
+    padding-top: 20px;
+}
 #gold img {
-    max-height: 450px;
-    max-width: 550px;
+    max-height: 400px;
+    max-width: 450px;
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: middle;

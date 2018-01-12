@@ -76,12 +76,18 @@ $(document).ready(function () {
         $(".slide").css("height", (windowz.height() - $("#mainnav").height()) + "px");
         $("#header").css("height", Math.max(windowz.height(), 500) + "px");
 
+        $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
+
         if ($(window).width() <= 767) {
             $("#smallcaption").removeClass("hidden");
             $("#bigcaption").addClass("hidden");
+            $("#accordion").removeClass("hidden");
+            $("#full-faq").addClass("hidden");
         } else {
             $("#smallcaption").addClass("hidden");
             $("#bigcaption").removeClass("hidden");
+            $("#accordion").addClass("hidden");
+            $("#full-faq").removeClass("hidden");
         }
     }
 
@@ -89,23 +95,30 @@ $(document).ready(function () {
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
 
+    var opacity;
+
     function updateScroll() {
-        var opacity;
+
+        var newOpacity;
         var dist = $("#about").offset().top - $(window).scrollTop();
 
         if (dist > 0) {
-            opacity = 1 * (1 - dist / $("#about").offset().top);
+            newOpacity = 1 * (1 - dist / $("#about").offset().top);
         }
         else {
-            opacity = 1;
+            newOpacity = 1;
         }
 
-        $("#mainnav").css("background", "rgba(10, 25, 57, " + opacity + ")");
-        $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
+        if (newOpacity != opacity) {
+            opacity = newOpacity;
+            $("#mainnav").css("background", "rgba(10, 25, 57, " + newOpacity + ")");
+        }
 
     }
 
-    $(window).resize(updateScroll);
-    $(document).scroll(updateScroll);
+    var throttled = _.throttle(updateScroll, 50);
+
+    $(window).resize(throttled);
+    $(window).scroll(throttled);
     updateScroll();
 });

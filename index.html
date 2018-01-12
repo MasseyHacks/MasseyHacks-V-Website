@@ -18,14 +18,8 @@ Department Head: You Zhou
 
     <title>MasseyHacks IV</title>
 
-    <script async src="js/sweetalert2.all.js"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
-    <script async src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script async src = "js/hamburgers.js" type = "text/javascript"></script>
-    <script async src = "js/index.js" type = "text/javascript"></script>
-    <script async src = "js/navbar.js" type = "text/javascript"></script>
+    <script src="js/sweetalert2.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="css/checkmark.css" type="text/css" rel="stylesheet"/>
@@ -51,116 +45,116 @@ Department Head: You Zhou
     <img id="mlhlogo" src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%">
 </a>
 
-<div id="cover" class="wrapper cover-image">
+<div id="cover" class="wrapper">
 
     <!-- Cover -->
-    <section id="header" class="slide changeable">
+    <section id="header" class="slide changeable parallax-window" data-parallax="scroll" style="height: 100%" data-image-src="images/websitebkg.svg">
+        <div class="inner-parallax">
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="mainnav" style="height: 50px">
+                <div class="container-fluid">
 
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="mainnav" style="height: 50px">
-            <div class="container-fluid">
-
-                <div class="navbar-header" id="navheader">
-                    <div class="hamburger hamburger--slider pull-left hidden" id="navham">
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner" id = "hamburger"></div>
+                    <div class="navbar-header" id="navheader">
+                        <div class="hamburger hamburger--slider pull-left hidden" id="navham">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner" id = "hamburger"></div>
+                            </div>
                         </div>
+
+                        <a href="#cover" class="navbar-brand js-navbar-link scrollLink navobject">
+                            MasseyHacks IV
+                        </a>
                     </div>
 
-                    <a href="#cover" class="navbar-brand js-navbar-link scrollLink navobject">
-                        MasseyHacks IV
-                    </a>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav" id="navleft">
+                            <li><a href="#about" class="js-navbar-link scrollLink navobject">About</a></li>
+                            <li><a href="#faq" class="js-navbar-link scrollLink navobject">Questions</a></li>
+                            <li><a href="#sponsors" class="js-navbar-link scrollLink navobject">Sponsors</a></li>
+                            <li><a href="https://mh3.masseyhacks.ca/" class="navobject">MasseyHacks III</a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right right-nav" id="navright">
+                            <li class="media-zoom"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                            <li class="media-zoom"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                            <li class="media-zoom"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                            <li class="media-zoom"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
 
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav" id="navleft">
-                        <li><a href="#about" class="js-navbar-link scrollLink navobject">About</a></li>
-                        <li><a href="#faq" class="js-navbar-link scrollLink navobject">Questions</a></li>
-                        <li><a href="#sponsors" class="js-navbar-link scrollLink navobject">Sponsors</a></li>
-                        <li><a href="https://mh3.masseyhacks.ca/" class="navobject">MH3</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right right-nav" id="navright">
-                        <li class="media-zoom"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                        <li class="media-zoom"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                        <li class="media-zoom"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                        <li class="media-zoom"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="overlay" style="visibility: hidden">
-            <ul class="overlay-list">
-                <li><a href="#header" class="js-navbar-link scrollLink overlayLink">Home</a></li>
-                <li><a href="#about" class="js-navbar-link scrollLink overlayLink">About</a></li>
-                <li><a href="#faq" class="js-navbar-link scrollLink overlayLink">Questions</a></li>
-                <li><a href="#sponsors" class="js-navbar-link scrollLink overlayLink">Sponsors</a></li>
-                <li><a href="https://mh3.masseyhacks.ca/" class="js-navbar-link scrollLink overlayLink">MasseyHacks III</a></li>
-            </ul>
-        </div>
-
-        <div id="spacer"></div>
-        <div class="cover-content">
-
-            <img id="cover-image" src="images/logo/logo.svg">
-
-            <div id="cover-text">
-                <h1 style="margin: 15px">MasseyHacks IV<br></h1>
-                <p id="bigcaption"><i class="fa fa-map-marker" aria-hidden="true"></i> Vincent Massey Secondary School | <i class="fa fa-calendar" aria-hidden="true"></i> April 28<sup style="font-family: RalewayThin">th</sup> - 29<sup style="font-family: RalewayThin">th</sup>, 2018</p>
-                <p id="smallcaption" class="hidden">Vincent Massey Secondary School<br>April 28<sup style="font-family: RalewayLight">th</sup> - 29<sup style="font-family: RalewayLight">th</sup>, 2018</p>
-
-                <label for="mce-EMAIL">Subscribe to our mailing list for updates!</label>
-            </div>
-
-            <div id="mc_embed_signup">
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="hacker@hackermail.io" required>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: white; color: #0A1939"></div>
-            </div>
-        </div>
-
-        <div id="outer-social" class="hidden">
-            <div id="inner-social">
-                <ul style="padding: 0; list-style-type: none">
-                    <li class="overlay-social-object"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                    <li class="overlay-social-object"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                    <li class="overlay-social-object"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                    <li class="overlay-social-object"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
+            <div class="overlay" style="visibility: hidden">
+                <ul class="overlay-list">
+                    <li><a href="#header" class="js-navbar-link scrollLink overlayLink">Home</a></li>
+                    <li><a href="#about" class="js-navbar-link scrollLink overlayLink">About</a></li>
+                    <li><a href="#faq" class="js-navbar-link scrollLink overlayLink">Questions</a></li>
+                    <li><a href="#sponsors" class="js-navbar-link scrollLink overlayLink">Sponsors</a></li>
+                    <li><a href="https://mh3.masseyhacks.ca/" target="_blank" class="overlayLink">MasseyHacks III</a></li>
                 </ul>
             </div>
-        </div>
 
+            <div id="spacer"></div>
+            <div class="cover-content">
+
+                <img id="cover-image" src="images/logo/logo.svg">
+
+                <div id="cover-text">
+                    <h1 style="margin: 15px; font-family: RalewaySemiBold">MasseyHacks IV<br></h1>
+                    <p id="bigcaption"><i class="fa fa-map-marker" aria-hidden="true"></i> Vincent Massey Secondary School | <i class="fa fa-calendar" aria-hidden="true"></i> April 28<sup style="font-family: RalewayThin">th</sup> - 29<sup style="font-family: RalewayThin">th</sup>, 2018</p>
+                    <p id="smallcaption" class="hidden">Vincent Massey Secondary School<br>April 28<sup style="font-family: RalewayLight">th</sup> - 29<sup style="font-family: RalewayLight">th</sup>, 2018</p>
+
+                    <label for="mce-EMAIL">Subscribe to our mailing list for updates!</label>
+                </div>
+
+                <div id="mc_embed_signup">
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="hacker@hackermail.io" required>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: white; color: #0A1939"></div>
+                </div>
+            </div>
+
+            <div id="outer-social" class="hidden">
+                <div id="inner-social">
+                    <ul style="padding: 0; list-style-type: none">
+                        <li class="overlay-social-object"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                        <li class="overlay-social-object"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                        <li class="overlay-social-object"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                        <li class="overlay-social-object"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- About -->
     <section id="about" class="slide container-fluid hangeable">
         <h3>About</h3>
 
-        <!--
         <div class="panel panel-default">
             <div class="panel-body" style="text-align: left; padding-bottom: 0%">
-                <h3 style="line-height: 0.5em">hackathon</h3>
+                <p style="font-size: 3em">hackathon</p>
                 <p style="font-family: RalewayLight">
                     /ˈhakəθɒn/ <b>(NOUN)</b><br>
-                    Epic event where nerds
+                    Epic event where nerds and non nerds hangout for the weekend and program while chugging vast quantities of <s>Soylent</s> swag.
                     <br><br>
-                    Example: <b>MasseyHacks IV</b> is the best hackathon
+                    Example: <b>MasseyHacks IV</b> is the best hackathon around!
                 </p>
 
             </div>
-        </div>-->
+        </div>
 
         <p>Vincent Massey is hosting MasseyHacks IV just for high school students, from April 28th - 29th, 2018. Get ready for 24 hours of hacking!<br><br></p>
-        <!--
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.8706088649383!2d-83.03029588489309!3d42.25993564941201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c50a312539fbd%3A0x6f8247b9fd6a69fd!2sVincent+Massey+Secondary+School!5e0!3m2!1sen!2sca!4v1504918595346" style="max-width: 600px" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
-        -->
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.8706088649383!2d-83.03029588489309!3d42.25993564941201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c50a312539fbd%3A0x6f8247b9fd6a69fd!2sVincent+Massey+Secondary+School!5e0!3m2!1sen!2sca!4v1504918595346" style="max-width: 600px" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>-->
+        </section>
 
-    </section>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="images/websitebkg.svg">
+        <div class="inner-parallax"></div>
+    </div>
 
     <!-- FAQ -->
     <section id="faq" class="slide container-fluid changeable">
         <h3>FAQ</h3>
 
-        <div class="panel-group" id="accordion">
+        <div id="accordion" class="panel-group hidden">
             <div class="panel panel-default">
                 <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq1">
                     <h4 class="panel-title">
@@ -255,7 +249,7 @@ Department Head: You Zhou
             </div>
         </div>
 
-        <div class="row">
+        <div id="full-faq" class="row">
             <div class="col-sm-6">
                 <h2>What is a hackathon?</h2>
                 <p>It is an event where students, both experienced and beginners in programming, gather together and build cool projects with technologies. </p>
@@ -292,13 +286,29 @@ Department Head: You Zhou
 
     </section>
 
+    <div class="parallax-window" data-parallax="scroll" data-image-src="images/websitebkg.svg">
+        <div class="inner-parallax"></div>
+    </div>
+
     <!-- Sponsors -->
     <section id="sponsors" class="slide container-fluid changeable">
         <h3>Sponsors</h3>
         <h4>Interested in becoming a sponsor? Check out our prospectus and contact us at <a href="mailto:sponsorship@masseyhacks.ca" target="_blank">sponsorship@masseyhacks.ca</a>!</h4>
 
-        <a type="button" class="btn btn-large btn-info body-button" href="https://drive.google.com/file/d/1AxW1B1wT-Q3h5CjMd-vEzANQf04B2VL8/view?usp=sharing" target="_blank">Prospectus</a>
-        <a type="button" class="btn btn-large btn-info body-button" href="https://mh3.masseyhacks.ca/" target="_blank">MasseyHacks III</a>
+        <br>
+
+        <div class="center-block text-center btn-group">
+            <a href="files/prospectus.pdf" target="_blank"><button type="button" class="btn btn-large">Prospectus</button></a>
+            <a href="https://mh3.masseyhacks.ca/" target="_blank"><button type="button" class="btn btn-large">MasseyHacks III</button></a>
+        </div>
+
+        <!-- Partners -->
+        <div id="gold">
+            <h3>Partners</h3>
+            <a href="https://mlh.io/" target="_blank"><img src="images/mlh-logo-color.svg" class="zoom"></a>
+        </div>
+
+
     </section>
 
     <section id="footer">
@@ -315,4 +325,15 @@ Department Head: You Zhou
 
 </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script src = "js/underscore-min.js" type = "text/javascript"></script>
+<script src = "js/hamburgers.js" type = "text/javascript"></script>
+<script src = "js/index.js" type = "text/javascript"></script>
+<script src = "js/navbar.js" type = "text/javascript"></script>
+<script src = "js/parallax.min.js" type = "text/javascript"></script>
+
 </html>
