@@ -1,75 +1,5 @@
 $(document).ready(function () {
 
-    $('a.scrollLink').click(function () {
-        var href = $(this).attr('href');
-        var anchor = $(href).offset();
-        $('body').animate({scrollTop: anchor.top - 50});
-        return false;
-    });
-
-    function sub (email) {
-        if (email.val() != '') {
-            $.ajax({
-                url: './php/emailSub.php',
-                type: 'POST',
-                data: {
-                    email: email.val()
-                },
-                success: function (msg) {
-                    if (msg == "success") {
-                        swal({
-                            type: 'success',
-                            title: 'Subscribed!',
-                            html: 'Get ready for the latest updates about MasseyHacks IV! <br>(' + email.val() + ')'
-                        });
-                        email.val("");
-
-                    } else if (msg == 'invalid') {
-                        swal(
-                            'Oops...',
-                            'Invalid email address.',
-                            'error'
-                        );
-                    } else if (msg == 'asubbed'){
-                        swal(
-                            'Oops...',
-                            'You are already subscribed. <br>(' + email.val() + ')',
-                            'error'
-                        );
-                    } else {
-                        swal(
-                            'Oops...',
-                            'Something went wrong! Please try again later.',
-                            'error'
-                        );
-                    }
-                },
-                error: function () {
-                    swal(
-                        'Oops...',
-                        'Something went wrong! Please try again later.',
-                        'error'
-                    );
-                }
-
-            });
-        }
-    }
-
-    $('#mce-EMAIL').keydown(function (e) {
-        if (e.which == 13) {
-            e.preventDefault();
-            var email = $('#mce-EMAIL');
-            sub(email);
-        }
-    });
-
-    $('#mc-embedded-subscribe').click(function () {
-        var email = $('#mce-EMAIL');
-        sub(email);
-    });
-
-
     var bgresize = function () {
 
         var windowz = $(window);
@@ -95,30 +25,4 @@ $(document).ready(function () {
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
 
-    var opacity;
-
-    function updateScroll() {
-
-        var newOpacity;
-        var dist = $("#about").offset().top - $(window).scrollTop();
-
-        if (dist > 0) {
-            newOpacity = 1 * (1 - dist / $("#about").offset().top);
-        }
-        else {
-            newOpacity = 1;
-        }
-
-        if (newOpacity != opacity) {
-            opacity = newOpacity;
-            $("#mainnav").css("background", "rgba(10, 25, 57, " + newOpacity + ")");
-        }
-
-    }
-
-    var throttled = _.throttle(updateScroll, 50);
-
-    $(window).resize(throttled);
-    $(window).scroll(throttled);
-    updateScroll();
 });
