@@ -451,3 +451,7 @@ class MailChimp
         return 418;
     }
 }
+?>
+
+Hello there. I see that you have found our php stuff.<br/>
+<img src="https://27n041n4jlv3ccxxk27r1mq1-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/img_591f258acf1d7.png">
