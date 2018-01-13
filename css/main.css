@@ -27,20 +27,30 @@ img {
     user-drag: none;
 }
 
+.panel-title a.collapsed:before {
+    content: "\e080";
+}
+
 .panel-group {
     text-align: left;
 }
 
-.panel-heading .accordion-toggle:after {
-    /* symbol for "opening" panels */
+.panel-title a:before {
+    /* symbol for "collapsed" panels */
+    /**/    /* adjust as needed, taken from bootstrap.css */
+    margin-left: -10px;
+    margin-right: 10px;
+
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
     content: "\e114";    /* adjust as needed, taken from bootstrap.css */
     float: right;        /* adjust as needed */
     color: grey;         /* adjust as needed */
 }
-.panel-heading.collapsed .accordion-toggle:after {
-    /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+
+
+.panel-title a:after {
+    display: inline-block;
+    width: 100%;
 }
 
 
