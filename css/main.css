@@ -352,7 +352,7 @@ p {
 
 @media screen and (min-width: 900px){
     #footer p {
-        font-size: 1.5vh;
+        font-size: 0.9vw;
     }
 }
 
@@ -434,7 +434,7 @@ p {
 /* Smaller Screens */
 @media screen and (max-width:800px) {
     #co-host img {
-        width: 90%;
+        width: 75%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
@@ -442,7 +442,7 @@ p {
         padding-bottom: 5px;
     }
     #gold img {
-        width: 70%;
+        width: 60%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
