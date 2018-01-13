@@ -1,6 +1,11 @@
 $(document).ready(function () {
     function sub (email) {
         if (email.val() != '') {
+            swal({
+                type: 'Info',
+                html: 'Processing subscription...'
+            });
+
             $.ajax({
                 url: './php/emailSub.php',
                 type: 'POST',
