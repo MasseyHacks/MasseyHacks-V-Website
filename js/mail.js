@@ -3,9 +3,9 @@ $(document).ready(function () {
         if (email.val() != '') {
             swal({
                 type: 'info',
-                title: 'Processing subscription',
-                html: '...'
+                title: 'Processing subscription'
             });
+            swal.showLoading()
 
             $.ajax({
                 url: './php/emailSub.php',
