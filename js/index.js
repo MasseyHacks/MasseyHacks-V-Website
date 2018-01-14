@@ -55,6 +55,26 @@ $(document).ready(function () {
         $("#header").css("height", Math.max(windowz.height(), 500) + "px");
 
         $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
+
+        if ($(window).width() <= 767) {
+            $("#smallcaption").removeClass("hidden");
+            $("#bigcaption").addClass("hidden");
+            $("#accordion").removeClass("hidden");
+            $("#full-faq").addClass("hidden");
+            $("#navham").removeClass("hidden");
+            $("#outer-social").removeClass("hidden");
+            $("#navleft").hide();
+            $("#navright").hide();
+        } else {
+            $("#smallcaption").addClass("hidden");
+            $("#bigcaption").removeClass("hidden");
+            $("#accordion").addClass("hidden");
+            $("#full-faq").removeClass("hidden");
+            $("#navham").addClass("hidden");
+            $("#outer-social").addClass("hidden");
+            $("#navleft").show();
+            $("#navright").show();
+        }
     }
 
     bgresize();
