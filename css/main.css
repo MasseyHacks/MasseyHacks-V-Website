@@ -102,6 +102,12 @@ p {
     cursor: pointer;
 }
 
+#definition {
+    max-width: 1000px;
+    margin: 20px auto;
+    position: relative;
+}
+
 #mlh-trust-badge-cover {
     top: 0%;
     display:block;
@@ -288,6 +294,11 @@ p {
     color: white;
     font-family: RalewayThin;
     text-align: center;
+}
+
+#footer-content {
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .sponsor-obj {
