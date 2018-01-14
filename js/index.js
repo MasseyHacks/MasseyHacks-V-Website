@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function(){
         var target = this.hash;
         var $target = $(target);
 
+        console.log("Scrollin");
+
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - $("#mainnav").height()
         }, 500, 'swing', function () {
@@ -25,6 +27,8 @@ $(document).ready(function () {
     });
 
     $('a.scrollLink').click(function () {
+        console.log("Scroll link triggered");
+
         var href = $(this).attr('href');
         var anchor = $(href).offset();
         $('body').animate({scrollTop: anchor.top - 50});
