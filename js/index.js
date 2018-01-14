@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function(){
+$(document).ready(function () {
+
     $('.js-navbar-link').on('click',function (e) {
         e.preventDefault();
 
@@ -13,11 +14,9 @@ document.addEventListener("DOMContentLoaded", function(){
             //window.location.hash = target;
         });
     });
-});
-
-$(document).ready(function () {
 
     toggleHamburger();
+
     $(".hamburger").on("click",function(){
         toggleOverlay();
     });
