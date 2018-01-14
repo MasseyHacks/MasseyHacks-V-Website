@@ -1,9 +1,12 @@
-document.addEventListener("DOMContentLoaded", function(){
+$(document).ready(function () {
+
     $('.js-navbar-link').on('click',function (e) {
         e.preventDefault();
 
         var target = this.hash;
         var $target = $(target);
+
+        console.log("Scrollin");
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - $("#mainnav").height()
@@ -11,11 +14,9 @@ document.addEventListener("DOMContentLoaded", function(){
             //window.location.hash = target;
         });
     });
-});
-
-$(document).ready(function () {
 
     toggleHamburger();
+
     $(".hamburger").on("click",function(){
         toggleOverlay();
     });
@@ -25,6 +26,8 @@ $(document).ready(function () {
     });
 
     $('a.scrollLink').click(function () {
+        console.log("Scroll link triggered");
+
         var href = $(this).attr('href');
         var anchor = $(href).offset();
         $('body').animate({scrollTop: anchor.top - 50});
