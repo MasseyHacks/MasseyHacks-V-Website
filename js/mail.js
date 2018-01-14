@@ -2,8 +2,9 @@ $(document).ready(function () {
     function sub (email) {
         if (email.val() != '') {
             swal({
-                type: 'Info',
-                html: 'Processing subscription...'
+                type: 'info',
+                title: 'Processing subscription',
+                html: '...'
             });
 
             $.ajax({
