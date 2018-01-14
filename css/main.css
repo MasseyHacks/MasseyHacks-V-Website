@@ -460,40 +460,38 @@ p {
         padding-bottom: 5px;
     }
 }
-
-@media screen and (min-width:767px) {
-    #smallcaption {
-        display: none;
-        visibility: hidden;
-    }
-    #bigcaption {
-        display: block;
-        visibility: visible;
-    }
-    #accordion {
-        display: none;
-        visibility: hidden;
-    }
-    #full-faq {
-        display: block;
-        visibility: visible;
-    }
-    #navham {
-        display: none;
-        visibility: hidden;
-    }
-    #outer-social {
-        display: none;
-        visibility: hidden;
-    }
-    #navleft {
-        display: block;
-        visibility: visible
-    }
-    #navright {
-        display: block;
-        visibility: visible
-    }
+/*
+#smallcaption {
+    display: none;
+    visibility: hidden;
+}
+#bigcaption {
+    display: block;
+    visibility: visible;
+}
+#accordion {
+    display: none;
+    visibility: hidden;
+}
+#full-faq {
+    display: block;
+    visibility: visible;
+}
+#navham {
+    display: none;
+    visibility: hidden;
+}
+#outer-social {
+    display: none;
+    visibility: hidden;
+}
+#navleft {
+    display: block;
+    visibility: visible
+}
+#navright {
+    display: block;
+    visibility: visible
 }
 
 @media screen and (max-width:767px) {
@@ -529,7 +527,7 @@ p {
         display: none;
         visibility: hidden;
     }
-}
+}*/
 
 
 /* Tints */
