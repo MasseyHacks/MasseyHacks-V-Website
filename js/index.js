@@ -6,16 +6,12 @@ $(document).ready(function () {
         var target = this.hash;
         var $target = $(target);
 
-        console.log("Scrollin");
-
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - $("#mainnav").height()
         }, 500, 'swing', function () {
-            //window.location.hash = target;
+
         });
     });
-
-    toggleHamburger();
 
     $(".hamburger").on("click",function(){
         toggleOverlay();
@@ -23,15 +19,6 @@ $(document).ready(function () {
 
     $('a.overlayLink').click(function () {
         toggleOverlay();
-    });
-
-    $('a.scrollLink').click(function () {
-        console.log("Scroll link triggered");
-
-        var href = $(this).attr('href');
-        var anchor = $(href).offset();
-        $('body').animate({scrollTop: anchor.top - 50});
-        return false;
     });
 
     var opacity;
@@ -68,29 +55,12 @@ $(document).ready(function () {
         $("#header").css("height", Math.max(windowz.height(), 500) + "px");
 
         $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
-
-        if ($(window).width() <= 767) {
-            $("#smallcaption").removeClass("hidden");
-            $("#bigcaption").addClass("hidden");
-            $("#accordion").removeClass("hidden");
-            $("#full-faq").addClass("hidden");
-        } else {
-            $("#smallcaption").addClass("hidden");
-            $("#bigcaption").removeClass("hidden");
-            $("#accordion").addClass("hidden");
-            $("#full-faq").removeClass("hidden");
-        }
     }
 
     bgresize();
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
 
-});
-
-
-$(window).resize(function(){
-    toggleHamburger();
 });
 
 function toggleOverlay() {
@@ -101,20 +71,5 @@ function toggleOverlay() {
     } else{
         $(".overlay").css({visibility: "hidden"});
         $("html").css({"overflow-y": "visible"});
-    }
-}
-
-function toggleHamburger(){
-    //toggles hamburger based on window width
-    if($(window).width() <= 767){
-        $("#navham").removeClass("hidden");
-        $("#outer-social").removeClass("hidden");
-        $("#navleft").hide();
-        $("#navright").hide();
-    } else{
-        $("#navham").addClass("hidden");
-        $("#outer-social").addClass("hidden");
-        $("#navleft").show();
-        $("#navright").show();
     }
 }
