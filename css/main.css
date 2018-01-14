@@ -461,39 +461,37 @@ p {
     }
 }
 
-@media screen and (max-width:767px) {
-    #smallcaption {
-        display: block;
-        visibility: visible;
-    }
-    #bigcaption {
-        display: none;
-        visibility: hidden;
-    }
-    #accordion {
-        display: block;
-        visibility: visible;
-    }
-    #full-faq {
-        display: none;
-        visibility: hidden;
-    }
-    #navham {
-        display: block;
-        visibility: visible;
-    }
-    #outer-social {
-        display: block;
-        visibility: visible;
-    }
-    #navleft {
-        display: none;
-        visibility: hidden;
-    }
-    #navright {
-        display: none;
-        visibility: hidden;
-    }
+#smallcaption {
+    display: block;
+    visibility: visible;
+}
+#bigcaption {
+    display: none;
+    visibility: hidden;
+}
+#accordion {
+    display: block;
+    visibility: visible;
+}
+#full-faq {
+    display: none;
+    visibility: hidden;
+}
+#navham {
+    display: block;
+    visibility: visible;
+}
+#outer-social {
+    display: block;
+    visibility: visible;
+}
+#navleft {
+    display: none;
+    visibility: hidden;
+}
+#navright {
+    display: none;
+    visibility: hidden;
 }
 
 @media screen and (min-width:767px) {
