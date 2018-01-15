@@ -1,22 +1,5 @@
 $(document).ready(function () {
 
-    var pics = [1,2,3,4,5,6,7,8];
-    var numPar = 2;
-
-    function shuffle(a) {
-        for (let i = a.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [a[i], a[j]] = [a[j], a[i]];
-        }
-        return a;
-    }
-
-    var newPics = shuffle(pics);
-
-    for (var i = 1; i < numPar + 1; i++) {
-        $("#par" + i).parallax({imageSrc:  "images/slide/"+ newPics[i - 1] +".jpg"});
-    }
-
     $('.js-navbar-link').on('click',function (e) {
         e.preventDefault();
 
