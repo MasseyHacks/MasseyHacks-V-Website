@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function(){
+$(document).ready(function () {
+
     $('.js-navbar-link').on('click',function (e) {
         e.preventDefault();
 
@@ -8,27 +9,16 @@ document.addEventListener("DOMContentLoaded", function(){
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - $("#mainnav").height()
         }, 500, 'swing', function () {
-            //window.location.hash = target;
+
         });
     });
-});
 
-$(document).ready(function () {
-
-    toggleHamburger();
     $(".hamburger").on("click",function(){
         toggleOverlay();
     });
 
     $('a.overlayLink').click(function () {
         toggleOverlay();
-    });
-
-    $('a.scrollLink').click(function () {
-        var href = $(this).attr('href');
-        var anchor = $(href).offset();
-        $('body').animate({scrollTop: anchor.top - 50});
-        return false;
     });
 
     var opacity;
@@ -71,11 +61,19 @@ $(document).ready(function () {
             $("#bigcaption").addClass("hidden");
             $("#accordion").removeClass("hidden");
             $("#full-faq").addClass("hidden");
+            $("#navham").removeClass("hidden");
+            $("#outer-social").removeClass("hidden");
+            $("#navleft").hide();
+            $("#navright").hide();
         } else {
             $("#smallcaption").addClass("hidden");
             $("#bigcaption").removeClass("hidden");
             $("#accordion").addClass("hidden");
             $("#full-faq").removeClass("hidden");
+            $("#navham").addClass("hidden");
+            $("#outer-social").addClass("hidden");
+            $("#navleft").show();
+            $("#navright").show();
         }
     }
 
@@ -83,11 +81,6 @@ $(document).ready(function () {
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
 
-});
-
-
-$(window).resize(function(){
-    toggleHamburger();
 });
 
 function toggleOverlay() {
@@ -98,20 +91,5 @@ function toggleOverlay() {
     } else{
         $(".overlay").css({visibility: "hidden"});
         $("html").css({"overflow-y": "visible"});
-    }
-}
-
-function toggleHamburger(){
-    //toggles hamburger based on window width
-    if($(window).width() <= 767){
-        $("#navham").removeClass("hidden");
-        $("#outer-social").removeClass("hidden");
-        $("#navleft").hide();
-        $("#navright").hide();
-    } else{
-        $("#navham").addClass("hidden");
-        $("#outer-social").addClass("hidden");
-        $("#navleft").show();
-        $("#navright").show();
     }
 }

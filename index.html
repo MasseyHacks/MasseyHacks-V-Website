@@ -11,10 +11,10 @@ Department Head: You Zhou
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta property="og:title" content="MasseyHacks IV" />
     <meta property="og:description" content="Windsor-Essex's fourth high-school hackathon-for students, by students. 24 hours of pure hacking awesomeness from April 28 to April 29." />
-    <meta property="og:image" content="image/mhcover.png" />
+    <meta property="og:image" content="images/mhcover.png" />
     <meta property="twitter:title" content="MasseyHacks IV" />
     <meta property="twitter:description" content="Windsor-Essex's fourth high-school hackathon-for students, by students. 24 hours of pure hacking awesomeness from April 28 to April 29." />
-    <meta property="twitter:image" content="image/mhcover.png" />
+    <meta property="twitter:image" content="images/mhcover.png" />
 
     <title>MasseyHacks IV</title>
 
@@ -35,14 +35,14 @@ Department Head: You Zhou
 
     <script src ="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src = "js/underscore-min.js" type = "text/javascript"></script>
-    <script src = "js/index.js" type = "text/javascript"></script>
     <script src = "js/parallax.min.js" type = "text/javascript"></script>
+    <script defer src = "js/index.js" type = "text/javascript"></script>
+    <script async src = "js/mail.js" type = "text/javascript"></script>
 
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
     <script async src="js/sweetalert2.all.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script async src = "js/mail.js" type = "text/javascript"></script>
 
 </head>
 
@@ -52,10 +52,12 @@ Department Head: You Zhou
     <img id="mlhlogo" src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%">
 </a>
 
+<div class="cover-image" style="width: 0; height: 0"></div>
+
 <div id="cover" class="wrapper">
 
     <!-- Cover -->
-    <section id="header" class="slide changeable parallax-window" data-position-y="0px" data-parallax="scroll" style="height: 100vh" data-image-src="images/websitebkg.svg">
+    <section id="header" class="slide changeable parallax-window" data-bleed="100" data-position-y="0px" data-parallax="scroll" style="height: 100vh" data-image-src="images/websitebkg.svg">
         <div class="inner-parallax">
             <nav class="navbar navbar-inverse navbar-fixed-top" id="mainnav" style="height: 50px">
                 <div class="container-fluid">
@@ -80,10 +82,10 @@ Department Head: You Zhou
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right right-nav" id="navright" style="margin-right: 105px">
-                            <li class="media-zoom"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                            <li class="media-zoom"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                            <li class="media-zoom"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                            <li class="media-zoom"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial navobject" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                            <li class="media-zoom"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
+                            <li class="media-zoom"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
+                            <li class="media-zoom"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
+                            <li class="media-zoom"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -134,7 +136,7 @@ Department Head: You Zhou
     <section id="about" class="slide container-fluid hangeable">
         <h3>About</h3>
 
-        <div class="panel panel-default">
+        <div id="definition" class="panel panel-default">
             <div class="panel-body" style="text-align: left; padding-bottom: 0%;">
                 <p style="font-size: 3em">hackathon</p>
                 <p style="font-family: RalewayLight">
@@ -151,7 +153,7 @@ Department Head: You Zhou
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.8706088649383!2d-83.03029588489309!3d42.25993564941201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c50a312539fbd%3A0x6f8247b9fd6a69fd!2sVincent+Massey+Secondary+School!5e0!3m2!1sen!2sca!4v1504918595346" style="max-width: 600px" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
         </section>
 
-    <div class="parallax-window" data-parallax="scroll" data-position-y="0px" data-image-src="images/websitebkg.svg">
+    <div id="par1" class="parallax-window" data-parallax="scroll" data-bleed="100" data-position-y="0x" data-image-src="images/slide/7.jpg">
         <div class="inner-parallax"></div>
     </div>
 
@@ -279,7 +281,7 @@ Department Head: You Zhou
         </div>
     </section>
 
-    <div class="parallax-window" data-parallax="scroll" data-position-y="0px"  data-image-src="images/websitebkg.svg">
+    <div id="par2" class="parallax-window" data-parallax="scroll" data-bleed="100" data-position-y="0px" data-image-src="images/slide/5.jpg">
         <div class="inner-parallax"></div>
     </div>
 
@@ -306,7 +308,7 @@ Department Head: You Zhou
     </section>
 
     <section id="footer">
-        <div style="margin-bottom: 1%; margin-top: 1%;">
+        <div id="footer-content">
             <p>Made by the MasseyHacks Team with <i class="fa fa-heart" style="color: white" aria-hidden="true"></i><br>&copy; 2018</p>
         </div>
     </section>
@@ -314,6 +316,23 @@ Department Head: You Zhou
 </body>
 
 <script>
+    var pics = [1,2,3,4,5,6,7,8];
+    var numPar = 2;
+
+    function shuffle(a) {
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+    }
+
+    var newPics = shuffle(pics);
+
+    for (var i = 1; i < numPar + 1; i++) {
+        $("#par" + i).parallax({imageSrc:  "images/slide/"+ newPics[i - 1] +".jpg"});
+    }
+
     $(document).ready(function () {
         $("#map").append("<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.8706088649383!2d-83.03029588489309!3d42.25993564941201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c50a312539fbd%3A0x6f8247b9fd6a69fd!2sVincent+Massey+Secondary+School!5e0!3m2!1sen!2sca!4v1504918595346\" style=\"max-width: 600px\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen></iframe>");
     });
