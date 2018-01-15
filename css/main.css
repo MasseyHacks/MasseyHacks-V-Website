@@ -98,6 +98,9 @@ p {
     transform: scale(1.2);
 }
 
+[data-toggle~="collapse"] {
+    cursor: pointer;
+}
 
 #mlh-trust-badge-cover {
     top: 0%;
