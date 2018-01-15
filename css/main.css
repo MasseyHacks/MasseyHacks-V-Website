@@ -27,6 +27,10 @@ img {
     user-drag: none;
 }
 
+.parallax-window {
+    min-height: 50vh;
+    background: transparent;
+}
 .panel-group {
     text-align: left;
 }
@@ -56,10 +60,6 @@ h4{
 p {
     font-size: 1.2em;
     line-height: 1.4em;
-}
-.parallax-window {
-    min-height: 50vh;
-    background: transparent;
 }
 
 .btn {
@@ -290,6 +290,11 @@ p {
     text-align: center;
 }
 
+#footer-content {
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
 .sponsor-obj {
     padding-left: 10px;
     padding-right: 10px;
@@ -460,6 +465,75 @@ p {
         padding-bottom: 5px;
     }
 }
+/*
+#smallcaption {
+    display: none;
+    visibility: hidden;
+}
+#bigcaption {
+    display: block;
+    visibility: visible;
+}
+#accordion {
+    display: none;
+    visibility: hidden;
+}
+#full-faq {
+    display: block;
+    visibility: visible;
+}
+#navham {
+    display: none;
+    visibility: hidden;
+}
+#outer-social {
+    display: none;
+    visibility: hidden;
+}
+#navleft {
+    display: block;
+    visibility: visible
+}
+#navright {
+    display: block;
+    visibility: visible
+}
+
+@media screen and (max-width:767px) {
+    #smallcaption {
+        display: block;
+        visibility: visible;
+    }
+    #bigcaption {
+        display: none;
+        visibility: hidden;
+    }
+    #accordion {
+        display: block;
+        visibility: visible;
+    }
+    #full-faq {
+        display: none;
+        visibility: hidden;
+    }
+    #navham {
+        display: block;
+        visibility: visible;
+    }
+    #outer-social {
+        display: block;
+        visibility: visible;
+    }
+    #navleft {
+        display: none;
+        visibility: hidden;
+    }
+    #navright {
+        display: none;
+        visibility: hidden;
+    }
+}*/
+
 
 /* Tints */
 .translucent-1{
