@@ -102,12 +102,6 @@ p {
     cursor: pointer;
 }
 
-#definition {
-    max-width: 1000px;
-    margin: 20px auto;
-    position: relative;
-}
-
 #mlh-trust-badge-cover {
     top: 0%;
     display:block;
