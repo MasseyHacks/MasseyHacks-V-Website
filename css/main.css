@@ -229,8 +229,8 @@ p {
     display:table;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 #header {
     height: 100vh;
@@ -306,28 +306,43 @@ p {
     padding-right: 10px;
 }
 
-#gold {
-    padding-top: 20px;
+.co-host img {
+    max-height: 700px;
+    max-width: 900px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-#gold img {
+.gold img {
+    max-height: 500px;
+    max-width: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.silver img {
     max-height: 400px;
-    max-width: 450px;
+    max-width: 500px;
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: middle;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-#silver img {
-    max-height: 225px;
-    max-width: 375px;
+.partner img {
+    max-height: 300px;
+    max-width: 400px;
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: middle;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-#bronze img {
+.bronze img {
     max-height: 125px;
     max-width: 275px;
     margin-left: 10px;
@@ -438,15 +453,31 @@ p {
 
 /* Smaller Screens */
 @media screen and (max-width:800px) {
-    #co-host img {
-        width: 75%;
+    .co-host img {
+        width: 95%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    #gold img {
+    .gold img {
+        width: 80%;
+        margin-left: 10px;
+        margin-right: 10px;
+        vertical-align: middle;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .silver img {
+        width: 70%;
+        margin-left: 10px;
+        margin-right: 10px;
+        vertical-align: middle;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .partner img {
         width: 60%;
         margin-left: 10px;
         margin-right: 10px;
@@ -454,16 +485,8 @@ p {
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    #silver img {
-        width: 40%;
-        margin-left: 10px;
-        margin-right: 10px;
-        vertical-align: middle;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    #bronze img {
-        width: 30%;
+    .bronze img {
+        width: 50%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
