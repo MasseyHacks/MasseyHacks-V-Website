@@ -72,7 +72,7 @@ p {
     border-color: #030916;
     background-color: #d8d8d8;
 }
-.x-wide {
+.apply-button {
     font-size: 1.5em;
     width: 230px !important;
     height: 50px;
@@ -80,6 +80,12 @@ p {
     color: white !important;
     border-color: white !important;
 }
+.apply-button:hover {
+    background-color: white !important;
+    color: #0A1939 !important;
+    border-color: white !important;
+}
+
 .btn {
     width: 150px;
     background-color: white;
