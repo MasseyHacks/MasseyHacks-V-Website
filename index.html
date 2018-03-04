@@ -79,6 +79,7 @@ Department Head: You Zhou
                             <li><a href="#about" class="js-navbar-link scrollLink navobject">About</a></li>
                             <li><a href="#faq" class="js-navbar-link scrollLink navobject">Questions</a></li>
                             <li><a href="#sponsors" class="js-navbar-link scrollLink navobject">Sponsors</a></li>
+                            <!--<li><a href="https://register.masseyhacks.ca/">Login</a></li>-->
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right right-nav" id="navright" style="margin-right: 105px">
@@ -97,6 +98,7 @@ Department Head: You Zhou
                     <li><a href="#about" class="js-navbar-link scrollLink overlayLink">About</a></li>
                     <li><a href="#faq" class="js-navbar-link scrollLink overlayLink">Questions</a></li>
                     <li><a href="#sponsors" class="js-navbar-link scrollLink overlayLink">Sponsors</a></li>
+                    <!--<li><a href="https://register.masseyhacks.ca/">Login</a></li>-->
                 </ul>
             </div>
 
@@ -109,13 +111,11 @@ Department Head: You Zhou
                     <h1 style="margin: 15px; font-family: RalewaySemiBold">MasseyHacks IV<br></h1>
                     <p id="bigcaption"><i class="fa fa-map-marker" aria-hidden="true"></i> Vincent Massey Secondary School | <i class="fa fa-calendar" aria-hidden="true"></i> April 28<sup style="font-family: RalewayThin">th</sup> - 29<sup style="font-family: RalewayThin">th</sup>, 2018</p>
                     <p id="smallcaption" class="hidden">Vincent Massey Secondary School<br>April 28<sup style="font-family: RalewayLight">th</sup> - 29<sup style="font-family: RalewayLight">th</sup>, 2018</p>
-
-                    <label for="mce-EMAIL">Subscribe to our mailing list for updates!</label>
                 </div>
 
-                <div id="mc_embed_signup">
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="hacker@hackermail.io" required>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: white; color: #0A1939"></div>
+                <div class="center-block text-center btn-group" style="padding-bottom: 40px">
+                    <a href="javascript: moreApplications()" target="_blank"><button type="button" class="btn btn-large x-wide"><h4>Apply Now!</h4></button></a>
+                    <!-- <a href="" target="_blank"><button type="button" class="btn btn-large x-wide">Mentor/Workshop Applications</button></a> -->
                 </div>
             </div>
 
@@ -339,6 +339,16 @@ Department Head: You Zhou
 <script>
     var pics = [1,2,3,4,5,6,7,8];
     var numPar = 2;
+
+    function moreApplications() {
+        swal({title: 'I am applying...',
+              showCancelButton: false,
+              showCloseButton: true,
+              showConfirmButton: false,
+              html:'<button type="button" class="btn btn-large application" disabled>to be a hacker</button><br>' +
+                   '<a href="mentor/index.html" target="_blank"><button type="button" class="btn btn-large application">to be a mentor</button></a><br>' +
+                   '<a href="workshop/index.html" target="_blank"><button type="button" class="btn btn-large application">to host a workshop</button></a>'});
+    }
 
     function shuffle(a) {
         for (let i = a.length - 1; i > 0; i--) {
