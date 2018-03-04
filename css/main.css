@@ -64,6 +64,10 @@ p {
 
 .x-wide {
     width: 230px !important;
+    height: 50px;
+    background-color: transparent !important;
+    color: white !important;
+    border-color: white !important;
 }
 .btn {
     width: 150px;
