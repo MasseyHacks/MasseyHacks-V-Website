@@ -62,6 +62,16 @@ p {
     line-height: 1.4em;
 }
 
+.application {
+    height: 50px;
+    width: 230px !important;
+    font-size: 1.2em;
+}
+.application:disabled {
+    color: #030916;
+    border-color: #030916;
+    background-color: #d8d8d8;
+}
 .x-wide {
     width: 230px !important;
     height: 50px;

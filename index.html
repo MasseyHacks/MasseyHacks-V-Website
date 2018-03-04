@@ -79,7 +79,7 @@ Department Head: You Zhou
                             <li><a href="#about" class="js-navbar-link scrollLink navobject">About</a></li>
                             <li><a href="#faq" class="js-navbar-link scrollLink navobject">Questions</a></li>
                             <li><a href="#sponsors" class="js-navbar-link scrollLink navobject">Sponsors</a></li>
-                            <li><a href="https://register.masseyhacks.ca/">Login</a></li>
+                            <!--<li><a href="https://register.masseyhacks.ca/">Login</a></li>-->
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right right-nav" id="navright" style="margin-right: 105px">
@@ -98,7 +98,7 @@ Department Head: You Zhou
                     <li><a href="#about" class="js-navbar-link scrollLink overlayLink">About</a></li>
                     <li><a href="#faq" class="js-navbar-link scrollLink overlayLink">Questions</a></li>
                     <li><a href="#sponsors" class="js-navbar-link scrollLink overlayLink">Sponsors</a></li>
-                    <li><a href="https://register.masseyhacks.ca/">Login</a></li>
+                    <!--<li><a href="https://register.masseyhacks.ca/">Login</a></li>-->
                 </ul>
             </div>
 
@@ -339,7 +339,13 @@ Department Head: You Zhou
     var numPar = 2;
 
     function moreApplications() {
-        swal({title: 'I am applying...', html:'<a href="https://register.masseyhacks.ca/" target="_blank"><button type="button" class="btn btn-large">to be a Hacker</button></a><br><a href="https://masseyhacks.typeform.com/to/c6LgiY" target="_blank"><button type="button" class="btn btn-large">to be a mentor</button></a><br><a href="https://masseyhacks.typeform.com/to/Mj4q4c" target="_blank"><button type="button" class="btn btn-large">to host a workshop</button></a>'});
+        swal({title: 'I am applying...',
+              showCancelButton: false,
+              showCloseButton: true,
+              showConfirmButton: false,
+              html:'<button type="button" class="btn btn-large application" disabled>to be a hacker</button><br>' +
+                   '<a href="mentor/index.html" target="_blank"><button type="button" class="btn btn-large application">to be a mentor</button></a><br>' +
+                   '<a href="workshop/index.html" target="_blank"><button type="button" class="btn btn-large application">to host a workshop</button></a>'});
     }
 
     function shuffle(a) {
