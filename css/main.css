@@ -251,8 +251,8 @@ p {
     min-height: 100%;
     width:100%;
     display:table;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -330,32 +330,40 @@ p {
     padding-right: 10px;
 }
 
+.sponsor {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .co-host img {
-    max-height: 700px;
-    max-width: 900px;
+    max-height: 600px;
+    width: 1000px;
+    max-width: 95%;
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: middle;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .gold img {
-    max-height: 500px;
-    max-width: 600px;
+    max-height: 400px;
+    width: 720px;
+    max-width: 95%;
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: middle;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .silver img {
     max-height: 400px;
-    max-width: 500px;
+    width: 500px;
+    max-width: 80%;
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: middle;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .partner img {
     max-height: 300px;
@@ -363,8 +371,8 @@ p {
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: middle;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .bronze img {
     max-height: 125px;
@@ -372,8 +380,8 @@ p {
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: middle;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #spacer {
@@ -482,8 +490,8 @@ p {
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .gold img {
         width: 80%;
