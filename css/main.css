@@ -347,7 +347,7 @@ p {
 }
 .gold img {
     max-height: 400px;
-    width: 720px;
+    width: 900px;
     max-width: 95%;
     margin-left: 10px;
     margin-right: 10px;
@@ -505,7 +505,7 @@ p {
         padding-bottom: 20px;
     }
     .gold img {
-        width: 80%;
+        width: 93%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
