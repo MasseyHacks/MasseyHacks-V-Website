@@ -413,6 +413,17 @@ p {
     padding-bottom: 20px;
 }
 
+#github {
+    max-height: 400px;
+    width: 470px;
+    max-width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 @media screen and (min-width: 900px){
     #footer p {
         font-size: 0.9vw;
