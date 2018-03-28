@@ -402,6 +402,17 @@ p {
     font-family: RalewayLight;
 }
 
+#digitalocean {
+    max-height: 400px;
+    width: 600px;
+    max-width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 #stclair {
     max-height: 400px;
     width: 600px;
