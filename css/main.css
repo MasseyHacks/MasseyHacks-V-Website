@@ -519,7 +519,7 @@ p {
 /* Smaller Screens */
 @media screen and (max-width:800px) {
     .co-host img {
-        width: 95%;
+        max-width: 95%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
@@ -527,7 +527,7 @@ p {
         padding-bottom: 20px;
     }
     .gold img {
-        width: 93%;
+        max-width: 93%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
@@ -535,7 +535,7 @@ p {
         padding-bottom: 5px;
     }
     .silver img {
-        width: 70%;
+        max-width: 70%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
@@ -543,7 +543,7 @@ p {
         padding-bottom: 5px;
     }
     .partner img {
-        width: 60%;
+        max-width: 60%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
@@ -551,7 +551,7 @@ p {
         padding-bottom: 5px;
     }
     .bronze img {
-        width: 50%;
+        max-width: 50%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
