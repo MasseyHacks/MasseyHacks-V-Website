@@ -302,8 +302,8 @@ p {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 #footer {
@@ -402,6 +402,27 @@ p {
 .cover-content p {
     font-size: 1.6em;
     font-family: RalewayLight;
+}
+
+#edsby {
+    max-height: 115px;
+    max-width: 275px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#ieee {
+    max-height: 115px;
+    max-width: 330px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #digitalocean {
