@@ -19,6 +19,7 @@
     font-family: RalewayLight;
     src: url("../fonts/Raleway-Light.ttf");
 }
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 *{
     font-family: RalewayRegular, sans-serif;
 }
@@ -74,7 +75,7 @@ p {
 }
 .apply-button {
     font-size: 1.5em;
-    width: 230px !important;
+    width: 250px !important;
     height: 50px;
     background-color: transparent !important;
     color: white !important;
@@ -384,6 +385,13 @@ p {
     vertical-align: middle;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#coundown {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2em;
+    text-align:center;
+    margin: 30px;
 }
 
 #spacer {

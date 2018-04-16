@@ -116,8 +116,9 @@ Department Head: You Zhou
                 </div>
 
                 <div class="center-block text-center btn-group" style="padding-bottom: 40px;">
-                    <a><button id="applybtn" type="button" class="btn btn-large apply-button">Apply Now!</button></a>
-                    <!-- <a href="" target="_blank"><button type="button" class="btn btn-large x-wide">Mentor/Workshop Applications</button></a> -->
+
+                    <a><button id="applybtn" type="button" class="btn btn-large apply-button disabled">Thank you for applying!</button></a>
+                    <!--<h1 id="coundown"></h1>-->
                 </div>
             </div>
 
@@ -379,9 +380,11 @@ Department Head: You Zhou
 </body>
 
 <script>
+
     var pics = [1,2,3,4,5,6,7,8];
     var numPar = 3;
 
+    /*
     $("#applybtn").click(function () {
         swal({title: 'I am applying...',
               showCancelButton: false,
@@ -390,7 +393,7 @@ Department Head: You Zhou
               html:'<a href="https://register.masseyhacks.ca/" target="_blank"><button type="button" class="btn btn-large application">to be a Hacker</button><br></a>' +
                    '<button type="button" class="btn btn-large application disabled">to be a Mentor</button><br>' +
                    '<button type="button" class="btn btn-large application disabled">to host a Workshop</button>'});
-    })
+    }) */
 
     function shuffle(a) {
         for (let i = a.length - 1; i > 0; i--) {
@@ -411,8 +414,43 @@ Department Head: You Zhou
         $("#map").append("<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.8706088649383!2d-83.03029588489309!3d42.25993564941201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c50a312539fbd%3A0x6f8247b9fd6a69fd!2sVincent+Massey+Secondary+School!5e0!3m2!1sen!2sca!4v1504918595346\" style=\"max-width: 600px\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen></iframe>");
     });
 
+    // Sketchy coundown thing
+
+    // Set the date we're counting down to
+    /*
+    var countDownDate = new Date("Apr 28, 2018 11:00:00").getTime();
+
+    function t() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("coundown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("coundown").innerHTML = "Woo! Get Hacking!";
+        }
+    }
+
+    t();
+
+
+    // Update the count down every 1 second
+    var x = setInterval(t, 1000);*/
+
 </script>
-    
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112529950-1"></script>
 <script>
