@@ -239,11 +239,45 @@ p {
 .cover-image {
     background: url('../images/websitebkg.svg');
 }
+.time {
+    transform: translate(50%, -25px);
+    width: 200px;
+    text-align: center;
+}
+.schedule-outer {
+    padding-top: 10px;
+    width: 100%;
+    min-height: 500px;
+    height: 85%;
+    overflow-x: scroll;
+    overflow-y: hide;
+    -webkit-overflow-scrolling:touch;
+}
+.schedule-inner {
+    padding-top: 10px;
+    width: 100%;
+    min-height: 500px;
+    height: 90%;
+    white-space: nowrap;
+    -webkit-overflow-scrolling:touch;
+}
+.schedule-obj {
+    width: 200px;
+    min-height: 500px;
+    height: 100%;
+    border-right-color: #ededed;
+    border-right-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    text-align: center;
+
+}
 #cover {
     background-size: 100vmax;
     background-position: center top;
     background-attachment: fixed;
     min-height: 100%;
+    overflow-x: hidden;
 }
 .slide {
     color: #0A1939;
@@ -303,8 +337,6 @@ p {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
 #footer {
@@ -421,6 +453,18 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
+#sublime {
+    max-height: 115px;
+    max-width: 330px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 
 
 #ieee {
@@ -593,7 +637,7 @@ p {
         padding-bottom: 5px;
     }
     .bronze img {
-        max-width: 50%;
+        max-width: 50% !important;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
