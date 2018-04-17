@@ -308,31 +308,10 @@ Department Head: You Zhou
     <section id="schedule" class="slide container-fluid changeable">
         <h3>Schedule</h3>
 
-        <div style="overflow-x: hidden; width: 100vw; height: 100%">
+        <div style="overflow-x: hidden; width: 100vw; min-height: 600px; height: 100%">
             <div class="schedule-outer">
 
-                <div style="left: 200px; top: 100px; width: 204px;" class="schedule-label">
-                    <div class="inner-label">
-                        <p class="label-caption">Check-In</p>
-                        <p class="label-description">11:00AM - 12:00PM | Front Desk</p>
-                    </div>
-                </div>
-
-                <div style="left: 452px; top: 100px; width: 154px;" class="schedule-label">
-                    <div class="inner-label">
-                        <p class="label-caption">Opening Ceremonies</p>
-                        <p class="label-description">12:15PM - 1:00PM | South Gym</p>
-                    </div>
-                </div>
-
-                <div style="left: 452px; top: 180px; width: 154px;" class="schedule-label">
-                    <div class="inner-label">
-                        <p class="label-caption">Opening Ceremonies</p>
-                        <p class="label-description">12:15PM - 1:00PM | South Gym</p>
-                    </div>
-                </div>
-
-
+                <div id="label-container"></div>
 
                 <div class="schedule-inner">
                     <div class="schedule-obj">
@@ -506,6 +485,76 @@ Department Head: You Zhou
 </body>
 
 <script>
+
+    // Schedule magic
+
+    var data = [{
+                    "caption" : "Check-In",
+                    "start" : "11:00AM",
+                    "end" : "12:00PM",
+                    "location" : "Front Desk",
+                    "xs" : 0,
+                    "xe" : 1,
+                    "y" : 0
+                },
+                {
+                    "caption" : "Opening Ceremonies",
+                    "start" : "12:15PM",
+                    "end" : "1:00PM",
+                    "location" : "North Gym",
+                    "xs" : 1.25,
+                    "xe" : 2,
+                    "y" : 0
+                },
+                {
+                    "caption" : "Hacking!",
+                    "start" : "1:00PM (Sat)",
+                    "end" : "11:00AM (Sun)",
+                    "location" : "Everywhere",
+                    "xs" : 2,
+                    "xe" : 24,
+                    "y" : 1
+                },
+                {
+                    "caption" : "Team fomation",
+                    "start" : "1:00PM",
+                    "end" : "1:30PM",
+                    "location" : "North Gym",
+                    "xs" : 2,
+                    "xe" : 2.5,
+                    "y" : 2
+                },
+                {
+                    "caption" : "GitHub & Git Workshop",
+                    "start" : "1:30PM",
+                    "end" : "2:00PM",
+                    "location" : "North Gym",
+                    "xs" : 2.5,
+                    "xe" : 3,
+                    "y" : 0
+                }];
+
+    var exp = '';
+
+    for (var i = 0; i < data.length; i++) {
+        var d = data[i];
+
+        var xOffset = 200 + 204 * d['xs'];
+        var width = (d['xe'] - d['xs']) * 204;
+        var yOffset = 100 + 80 * d['y'];
+
+        exp += '<div style="left: ' + xOffset + 'px; top: ' + yOffset + 'px; width: ' + width + 'px" class="schedule-label">' +
+               '<div class="inner-label">' +
+               '<p class="label-caption">' + d['caption'] + '</p>' +
+               '<p class="label-description">' + d['start'] + ' - ' + d['end'] + ' | ' + d['location'] + '</p>' +
+               '</div></div>';
+    }
+
+
+
+
+    $('#label-container').html(exp);
+
 
     var pics = [1,2,3,4,5,6,7,8];
     var numPar = 3;
