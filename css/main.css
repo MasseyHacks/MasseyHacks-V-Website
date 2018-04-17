@@ -250,6 +250,8 @@ p {
     position: relative;
     text-align: left;
     color: black;
+    padding: 0;
+    margin: 0;
 }
 .inner-label {
     position: relative;

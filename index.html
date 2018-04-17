@@ -311,9 +311,9 @@ Department Head: You Zhou
         <div style="overflow-x: hidden; width: 100vw; min-height: 600px; height: 100%">
             <div class="schedule-outer">
 
-                <div id="label-container"></div>
+                <div id="label-container" style="z-index: 9400; position: relative"></div>
 
-                <div class="schedule-inner">
+                <div class="schedule-inner" style="transform: translateX(-100px)">
                     <div class="schedule-obj">
                         <div class="time"><b>Sat</b><br>11:00 AM</div>
                     </div>
@@ -513,16 +513,16 @@ Department Head: You Zhou
                     "location" : "Everywhere",
                     "xs" : 2,
                     "xe" : 24,
-                    "y" : 1
+                    "y" : 5
                 },
                 {
-                    "caption" : "Team fomation",
+                    "caption" : "Team formation",
                     "start" : "1:00PM",
                     "end" : "1:30PM",
                     "location" : "North Gym",
                     "xs" : 2,
                     "xe" : 2.5,
-                    "y" : 2
+                    "y" : 1
                 },
                 {
                     "caption" : "GitHub & Git Workshop",
@@ -532,6 +532,114 @@ Department Head: You Zhou
                     "xs" : 2.5,
                     "xe" : 3,
                     "y" : 0
+                },
+                {
+                    "caption" : "Python Workshop",
+                    "start" : "2:10PM",
+                    "end" : "3:40PM",
+                    "location" : "Rm 6969",
+                    "xs" : 3 + 1/6,
+                    "xe" : 4 + 2/3,
+                    "y" : 1
+                },
+                {
+                    "caption" : "C++ Workshop",
+                    "start" : "2:10PM",
+                    "end" : "3:40PM",
+                    "location" : "Jerry's Room",
+                    "xs" : 3 + 1/6,
+                    "xe" : 4 + 2/3,
+                    "y" : 2
+                },
+                {
+                    "caption" : "Web Dev Workshop",
+                    "start" : "3:00PM",
+                    "end" : "4:30PM",
+                    "location" : "Jerry's Secret Room",
+                    "xs" : 4,
+                    "xe" : 5.5,
+                    "y" : 3
+                },
+                {
+                    "caption" : "3D Modeling/Printing Workshop",
+                    "start" : "3:00PM",
+                    "end" : "4:00PM",
+                    "location" : "Jerry's Super Secret Room",
+                    "xs" : 4,
+                    "xe" : 5,
+                    "y" : 4
+                },
+                {
+                    "caption" : "Machine Learning Workshop",
+                    "start" : "4:00PM",
+                    "end" : "5:00PM",
+                    "location" : "Jerry's Ultra Secret Room",
+                    "xs" : 5,
+                    "xe" : 6,
+                    "y" : 1
+                },
+                {
+                    "caption" : "Android Studio Workshop",
+                    "start" : "5:00PM",
+                    "end" : "7:00PM",
+                    "location" : "Karl's Ultra Secret Room",
+                    "xs" : 6,
+                    "xe" : 8,
+                    "y" : 2
+                },
+                {
+                    "caption" : "Dinner",
+                    "start" : "7:00PM",
+                    "end" : "7:30PM",
+                    "location" : "Cafeteria",
+                    "xs" : 8,
+                    "xe" : 8.5,
+                    "y" : 0
+                },
+                {
+                    "caption" : "Hardware Workshop",
+                    "start" : "8:00PM",
+                    "end" : "9:00PM",
+                    "location" : "Andrew's House",
+                    "xs" : 9,
+                    "xe" : 10,
+                    "y" : 1
+                },
+                {
+                    "caption" : "Cup Stacking",
+                    "start" : "9:00PM",
+                    "end" : "10:00PM",
+                    "location" : "Andrew's House",
+                    "xs" : 10,
+                    "xe" : 11,
+                    "y" : 0
+                },
+                {
+                    "caption" : "Karaoke",
+                    "start" : "10:00PM",
+                    "end" : "11:00PM",
+                    "location" : "Andrew's House",
+                    "xs" : 11,
+                    "xe" : 12,
+                    "y" : 1
+                },
+                {
+                    "caption" : "Woman's Meetup",
+                    "start" : "11:00PM",
+                    "end" : "12:00PM",
+                    "location" : "Alex's House",
+                    "xs" : 12,
+                    "xe" : 13,
+                    "y" : 0
+                },
+                {
+                    "caption" : "Water Pong",
+                    "start" : "11:30PM",
+                    "end" : "12:30PM",
+                    "location" : "Karl's House",
+                    "xs" : 12.5,
+                    "xe" : 13.5,
+                    "y" : 1
                 }];
 
     var exp = '';
@@ -539,8 +647,8 @@ Department Head: You Zhou
     for (var i = 0; i < data.length; i++) {
         var d = data[i];
 
-        var xOffset = 200 + 204 * d['xs'];
-        var width = (d['xe'] - d['xs']) * 204;
+        var xOffset = 100 + 204 * d['xs'];
+        var width = (d['xe'] - d['xs']) * 202;
         var yOffset = 100 + 80 * d['y'];
 
         exp += '<div style="left: ' + xOffset + 'px; top: ' + yOffset + 'px; width: ' + width + 'px" class="schedule-label">' +
