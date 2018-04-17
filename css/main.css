@@ -349,6 +349,7 @@ p {
     background-size: cover;
     background-position: center;
     text-align: center;
+    min-height: 600px;
     padding-left: 0%;
     padding-right: 0%;
 }
