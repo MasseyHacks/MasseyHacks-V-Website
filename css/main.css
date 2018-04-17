@@ -244,6 +244,26 @@ p {
     width: 200px;
     text-align: center;
 }
+.schedule-label {
+    height: 2px;
+    background-color: green;
+    position: relative;
+    text-align: left;
+    color: black;
+}
+.inner-label {
+    position: relative;
+    transform: translateY(-100%);
+    padding-left: 1px;
+    white-space: nowrap;
+}
+.label-caption {
+    padding: 0;
+    transform: translateY(12px);
+}
+.label-description {
+    font-size: 13px;
+}
 .schedule-outer {
     padding-top: 10px;
     width: 100%;
