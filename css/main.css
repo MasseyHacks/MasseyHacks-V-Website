@@ -253,11 +253,16 @@ p {
     color: black;
     padding: 0;
     margin: 0;
+
+}
+#label-container {
+    height: 0;
 }
 .inner-label {
     position: relative;
     transform: translateY(-100%);
     padding-left: 1px;
+    margin: 0;
     white-space: nowrap;
 }
 .label-caption {
@@ -268,18 +273,20 @@ p {
     font-size: 13px;
 }
 .schedule-outer {
-    padding-top: 10px;
+    padding-top: 15px;
     width: 100%;
-    min-height: 500px;
+    min-height: 550px;
     height: 85%;
     overflow-x: scroll;
     overflow-y: hide;
     -webkit-overflow-scrolling:touch;
 }
 .schedule-inner {
+    padding: 0;
+
     padding-top: 10px;
     width: 100%;
-    min-height: 500px;
+    min-height: 550px;
     height: 90%;
     white-space: nowrap;
     -webkit-overflow-scrolling:touch;
@@ -287,7 +294,7 @@ p {
 }
 .schedule-obj {
     width: 200px;
-    min-height: 500px;
+    min-height: 550px;
     height: 100%;
     border-right-color: #ededed;
     border-right-style: solid;
