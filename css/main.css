@@ -243,6 +243,7 @@ p {
     transform: translate(50%, -25px);
     width: 200px;
     text-align: center;
+    font-size: 14px;
 }
 .schedule-label {
     height: 2px;
@@ -282,6 +283,7 @@ p {
     height: 90%;
     white-space: nowrap;
     -webkit-overflow-scrolling:touch;
+    font-size: 0;
 }
 .schedule-obj {
     width: 200px;
@@ -292,6 +294,7 @@ p {
     border-width: 1px;
     display: inline-block;
     text-align: center;
+
 
 }
 #cover {
@@ -476,20 +479,6 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-
-#sublime {
-    max-height: 115px;
-    max-width: 330px;
-    margin-left: 10px;
-    margin-right: 10px;
-    vertical-align: middle;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-
 #ieee {
     max-height: 115px;
     max-width: 310px;
