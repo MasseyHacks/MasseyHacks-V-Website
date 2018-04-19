@@ -432,7 +432,8 @@ p {
 }
 .partner img {
     max-height: 300px;
-    max-width: 400px;
+    width: 300px;
+    max-width: 30%;
     margin-left: 10px;
     margin-right: 10px;
     vertical-align: middle;
@@ -649,8 +650,8 @@ p {
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .bronze img {
         max-width: 50% !important;
