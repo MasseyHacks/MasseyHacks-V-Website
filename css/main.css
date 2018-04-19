@@ -272,10 +272,8 @@ p {
     font-size: 13px;
 }
 .schedule-outer {
-    padding-top: 15px;
     width: 100%;
-    min-height: 550px;
-    height: 85%;
+    height: 600px;
     overflow-x: scroll;
     overflow-y: hide;
     -webkit-overflow-scrolling:touch;
@@ -283,9 +281,9 @@ p {
 .schedule-inner {
     padding: 0;
 
-    padding-top: 10px;
+    padding-top: 30px;
     width: 100%;
-    min-height: 550px;
+    min-height: 500px;
     height: 90%;
     white-space: nowrap;
     -webkit-overflow-scrolling:touch;
@@ -293,7 +291,7 @@ p {
 }
 .schedule-obj {
     width: 200px;
-    min-height: 550px;
+    min-height: 500px;
     height: 100%;
     border-right-color: #ededed;
     border-right-style: solid;
