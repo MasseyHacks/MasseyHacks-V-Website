@@ -266,7 +266,7 @@ p {
 }
 .inner-label {
     position: relative;
-    transform: translateY(-85%);
+    transform: translateY(-52px);
     padding-left: 1px;
     margin: 0;
     white-space: nowrap;
