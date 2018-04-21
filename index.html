@@ -309,14 +309,15 @@ Department Head: You Zhou
         <h3>Schedule</h3>
 
 
-        <div style="overflow-x: hidden; width: 100vw; min-height: 600px; height: 90%; display: flex; justify-content: center; align-items: center">
+        <div style="overflow-x: hidden; width: 100vw; min-height: 600px; height: 90%; display: flex; justify-content: center; align-items: center;">
             <div class="schedule-outer">
 
                 <div id="label-container" style="z-index: 9400; position: relative;"></div>
 
                 <div class="schedule-inner" style="transform: translateX(-100px)">
                     <div class="schedule-obj">
-                        <div class="time"><b>Sat</b><br>11:00 AM</div>
+                        <div id="sat" class="time-heading"><b>Sat</b></div>
+                        <div id="sat-anchor" class="time">11:00 AM</div>
                     </div>
                     <div class="schedule-obj">
                         <div class="time">12:00 PM</div>
@@ -355,7 +356,8 @@ Department Head: You Zhou
                         <div class="time">11:00 PM</div>
                     </div>
                     <div class="schedule-obj">
-                        <div class="time"><b>Sun</b><br>12:00 AM</div>
+                        <div id="sun" class="time-heading"><b style="background-color: white; padding: 10px">Sun</b></div>
+                        <div id="sun-anchor" class="time">12:00 AM</div>
                     </div>
                     <div class="schedule-obj">
                         <div class="time">1:00 AM</div>
@@ -512,13 +514,13 @@ Department Head: You Zhou
                     "color": "#4d94ff",
                     "xs" : 2,
                     "xe" : 24,
-                    "y" : 5
+                    "y" : 4
                 },
                 {
                     "caption" : "Team formation",
                     "start" : "1:00PM",
                     "end" : "1:30PM",
-                    "location" : "North Gym",
+                    "location" : "Cafeteria",
                     "color": "#71da71",
                     "xs" : 2,
                     "xe" : 2.5,
@@ -528,7 +530,7 @@ Department Head: You Zhou
                     "caption" : "GitHub & Git Workshop",
                     "start" : "1:30PM",
                     "end" : "2:00PM",
-                    "location" : "North Gym",
+                    "location" : "Rm 150",
                     "color": "#71da71",
                     "xs" : 2.5,
                     "xe" : 3,
@@ -537,63 +539,75 @@ Department Head: You Zhou
                 {
                     "caption" : "Python Workshop",
                     "start" : "2:10PM",
-                    "end" : "3:40PM",
-                    "location" : "Rm 164",
+                    "end" : "4:00PM",
+                    "location" : "Rm 150",
                     "color": "#71da71",
                     "xs" : 3 + 1/6,
-                    "xe" : 4 + 2/3,
+                    "xe" : 5,
                     "y" : 1
                 },
                 {
                     "caption" : "C++ Workshop",
                     "start" : "2:10PM",
-                    "end" : "3:40PM",
+                    "end" : "4:00PM",
                     "location" : "Rm 152",
                     "color": "#71da71",
                     "xs" : 3 + 1/6,
-                    "xe" : 4 + 2/3,
+                    "xe" : 5,
                     "y" : 2
                 },
                 {
                     "caption" : "Web Dev Workshop",
                     "start" : "3:00PM",
                     "end" : "4:30PM",
-                    "location" : "Rm 150",
+                    "location" : "Rm 152",
                     "color": "#71da71",
                     "xs" : 4,
                     "xe" : 5.5,
                     "y" : 3
                 },
+
                 {
-                    "caption" : "3D Modeling/Printing Workshop",
-                    "start" : "3:00PM",
-                    "end" : "4:00PM",
+                    "caption" : "Hardware Workshop",
+                    "start" : "4:10PM",
+                    "end" : "6:10PM",
                     "location" : "Rm 154",
                     "color": "#71da71",
-                    "xs" : 4,
-                    "xe" : 5,
-                    "y" : 4
-                },
-                {
-                    "caption" : "Machine Learning Workshop",
-                    "start" : "4:00PM",
-                    "end" : "5:00PM",
-                    "location" : "Rm 164",
-                    "color": "#71da71",
-                    "xs" : 5,
-                    "xe" : 6,
+                    "xs" : 5 + 1/6,
+                    "xe" : 7 + 1/6,
                     "y" : 1
                 },
                 {
+                    "caption" : "Machine Learning Workshop",
+                    "start" : "4:10PM",
+                    "end" : "5:10PM",
+                    "location" : "Rm 164",
+                    "color": "#71da71",
+                    "xs" : 5 + 1/6,
+                    "xe" : 6 + 1/6,
+                    "y" : 0
+                },
+                {
                     "caption" : "Android Studio Workshop",
-                    "start" : "5:00PM",
+                    "start" : "5:15PM",
                     "end" : "7:00PM",
                     "location" : "Rm 152",
                     "color": "#71da71",
-                    "xs" : 6,
+                    "xs" : 6.25,
                     "xe" : 8,
                     "y" : 2
                 },
+                {
+                    "caption" : "3D Modeling/Printing Workshop",
+                    "start" : "8:00PM",
+                    "end" : "9:00PM",
+                    "location" : "Rm 164",
+                    "color": "#71da71",
+                    "xs" : 9,
+                    "xe" : 10,
+                    "y" : 1
+                },
+
                 {
                     "caption" : "Dinner",
                     "start" : "7:00PM",
@@ -603,16 +617,6 @@ Department Head: You Zhou
                     "xs" : 8,
                     "xe" : 8.5,
                     "y" : 0
-                },
-                {
-                    "caption" : "Hardware Workshop",
-                    "start" : "8:00PM",
-                    "end" : "9:00PM",
-                    "location" : "Rm 164",
-                    "color": "#71da71",
-                    "xs" : 9,
-                    "xe" : 10,
-                    "y" : 1
                 },
                 {
                     "caption" : "Cup Stacking",
@@ -637,21 +641,21 @@ Department Head: You Zhou
                 {
                     "caption" : "Women's Meetup",
                     "start" : "11:00PM",
-                    "end" : "12:00PM",
+                    "end" : "11:45PM",
                     "location" : "Rm 150",
                     "color": "#ff9900",
                     "xs" : 12,
-                    "xe" : 13,
+                    "xe" : 12.75,
                     "y" : 0
                 },
                 {
                     "caption" : "Water Pong",
                     "start" : "11:30PM",
-                    "end" : "12:30AM",
+                    "end" : "12:15AM",
                     "location" : "Cafeteria",
                     "color": "#ff9900",
                     "xs" : 12.5,
-                    "xe" : 13.5,
+                    "xe" : 13.25,
                     "y" : 1
                 },
                 {
@@ -762,18 +766,15 @@ Department Head: You Zhou
 
         var xOffset = 100 + 200 * d['xs'];
         var width = (d['xe'] - d['xs']) * 200;
-        var yOffset = 100 + 80 * d['y'];
+        var yOffset = 150 + 80 * d['y'];
 
-        exp += '<div style="left: ' + xOffset + 'px; top: ' + yOffset + 'px; width: ' + width + 'px !important; background-color: ' + d['color'] + '" class="schedule-label">' +
+        exp += '<div style="left: ' + xOffset + 'px; top: ' + yOffset + 'px; width: ' + width + 'px !important; background-color: ' + d['color'] + ';" class="schedule-label">' +
                '<div class="inner-label">' +
                '<p class="label-caption">' + d['caption'] + '</p>' +
                '<p class="label-description">' + d['start'] + ' - ' + d['end'] + ' | ' + d['location'] + '</p>' +
                '</div></div>';
     }
-
-
-
-
+    
     $('#label-container').html(exp);
 
 
@@ -806,6 +807,33 @@ Department Head: You Zhou
     }
 
     $(document).ready(function () {
+
+        function updateScroll() {
+
+            var satAnchor = $("#sat-anchor").offset().left;
+            var sunAnchor = $("#sun-anchor").offset().left;
+            var edge = 0;
+
+            if (satAnchor < edge) {
+                $("#sat").offset({left: edge});
+            }
+            else {
+                $("#sat").css('left', 'auto');
+            }
+
+            if (sunAnchor < edge) {
+                $("#sun").offset({left: edge});
+            }
+            else {
+                $("#sun").css('left', 'auto');
+            }
+
+        }
+
+        var throttled = _.throttle(updateScroll, 10);
+
+        $(".schedule-outer").scroll(updateScroll);
+        throttled();
 
         $("#map").append("<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.8706088649383!2d-83.03029588489309!3d42.25993564941201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c50a312539fbd%3A0x6f8247b9fd6a69fd!2sVincent+Massey+Secondary+School!5e0!3m2!1sen!2sca!4v1504918595346\" style=\"max-width: 600px\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen></iframe>");
     });
