@@ -560,7 +560,7 @@ Department Head: You Zhou
                     "caption" : "Hackenger Hunt 1 (Easy)",
                     "start" : "2:30PM",
                     "end" : "4:30PM (Expected)",
-                    "location" : "Everywhere",
+                    "location" : "See Slack",
                     "color": "#ff9900",
                     "xs" : 3.5,
                     "xe" : 5.5,
@@ -632,7 +632,7 @@ Department Head: You Zhou
                     "caption" : "Hackenger Hunt 2 (Hard)",
                     "start" : "8:30PM",
                     "end" : "3:00AM (Sun) (Expected)",
-                    "location" : "Everywhere",
+                    "location" : "See Slack",
                     "color": "#ff9900",
                     "xs" : 9.5,
                     "xe" : 16,
@@ -710,12 +710,12 @@ Department Head: You Zhou
                 },
                 {
                     "caption" : "Breakfast",
-                    "start" : "7:30AM",
-                    "end" : "8:30AM",
+                    "start" : "7:00AM",
+                    "end" : "9:00AM",
                     "location" : "Cafeteria",
                     "color": "#ff3333",
-                    "xs" : 20.5,
-                    "xe" : 21.5,
+                    "xs" : 20,
+                    "xe" : 22,
                     "y" : 0
                 },
                 {
@@ -726,7 +726,7 @@ Department Head: You Zhou
                     "color": "#ff9900",
                     "xs" : 22,
                     "xe" : 23,
-                    "y" : 0
+                    "y" : 2
                 },
                 {
                     "caption" : "Project Submissions",
@@ -777,6 +777,16 @@ Department Head: You Zhou
                     "xs" : 29,
                     "xe" : 30,
                     "y" : 1
+                },
+                {
+                    "caption" : "MLH Hardware Return",
+                    "start" : "2:30PM",
+                    "end" : "5:30PM",
+                    "location" : "MLH Hardware Lab",
+                    "color": "#4d94ff",
+                    "xs" : 27.5,
+                    "xe" : 30.5,
+                    "y" : 2
                 }];
 
     var exp = '';
@@ -786,11 +796,11 @@ Department Head: You Zhou
 
         var xOffset = 100 + 200 * d['xs'];
         var width = (d['xe'] - d['xs']) * 200;
-        var yOffset = 150 + 80 * d['y'];
+        var yOffset = 130 + 80 * d['y'];
 
         exp += '<div style="left: ' + xOffset + 'px; top: ' + yOffset + 'px; width: ' + width + 'px !important; background-color: ' + d['color'] + ';" class="schedule-label">' +
                '<div class="inner-label">' +
-               '<p class="label-caption">' + d['caption'] + '</p>' +
+               '<p class="label-caption"><b>' + d['caption'] + '</b></p>' +
                '<p class="label-description">' + d['start'] + ' - ' + d['end'] + ' | ' + d['location'] + '</p>' +
                '</div></div>';
     }
