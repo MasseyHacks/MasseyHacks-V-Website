@@ -245,21 +245,28 @@ p {
     text-align: center;
     font-size: 14px;
 }
+.time-heading {
+    transform: translate(50%, -45px);
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+}
 .schedule-label {
     height: 2px;
-    position: relative;
+    position: absolute;
     text-align: left;
     color: black;
     padding: 0;
     margin: 0;
-
+    display: grid;
 }
 #label-container {
     height: 0;
 }
 .inner-label {
     position: relative;
-    transform: translateY(-100%);
+    transform: translateY(-85%);
     padding-left: 1px;
     margin: 0;
     white-space: nowrap;
@@ -298,6 +305,7 @@ p {
     border-width: 1px;
     display: inline-block;
     text-align: center;
+    padding-top: 20px;
 
 
 }
