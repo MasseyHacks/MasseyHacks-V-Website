@@ -1,5 +1,5 @@
 <?php
-
+echo "Hello";
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +17,7 @@
         <link rel="manifest" href="manifest.json">
         <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
+        <script async src="/js/sweetalert2.all.js"></script>
 
         <style>
             a:hover {
