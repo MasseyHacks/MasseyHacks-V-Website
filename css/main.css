@@ -354,6 +354,15 @@ p {
     padding-top: 2%;
     padding-bottom: 2%;
 }
+#header-live {
+    display: block;
+    color: white !important;
+    margin-top: 50px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
 #header {
     height: 100vh;
     display: block;
@@ -373,6 +382,30 @@ p {
     min-height: 50vh;
     display: block;
     background: rgba(49, 60, 75, 0.6);
+}
+#stream {
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    color: #000;
+}
+#map {
+    margin-top: 0px;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#countdown {
+    width: 100%;
+    height: 300px;
+    background-color: #f2f2f2;
+
+    vertical-align: center;
+
+    color: #0A1939;
+    text-align: center;
+    display:table;
 }
 #about {
     margin-top: 0px;
@@ -586,6 +619,8 @@ p {
 
 /* Larger Screens */
 @media screen and (min-width: 720px) {
+
+
     /* Sections */
     .cover-content img {
         width: 45%;
