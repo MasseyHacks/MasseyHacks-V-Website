@@ -65,70 +65,225 @@ Department Head: You Zhou
 
 <div id="cover" class="wrapper">
 
-    <!-- Cover -->
-    <section id="header" class="slide changeable" style="height: 100vh;">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="mainnav-live" style="height: 50px; background: rgba(10, 25, 57, 1)">
+        <div class="container-fluid">
 
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="mainnav-live" style="height: 50px; background: rgba(10, 25, 57, 1)">
-            <div class="container-fluid">
-
-                <div class="navbar-header" id="navheader">
-                    <div class="hamburger hamburger--slider pull-left hidden" id="navham">
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner" id = "hamburger"></div>
-                        </div>
+            <div class="navbar-header" id="navheader">
+                <div class="hamburger hamburger--slider pull-left hidden" id="navham">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner" id = "hamburger"></div>
                     </div>
-
-                    <a href="#cover" class="navbar-brand js-navbar-link scrollLink navobject">
-                        MasseyHacks IV <b>Live</b>
-                    </a>
                 </div>
 
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav" id="navleft">
-                        <li><a href="#about" class="js-navbar-link scrollLink navobject">Map</a></li>
-                        <li><a href="#faq" class="js-navbar-link scrollLink navobject">Workshops</a></li>
-                        <li><a href="#schedule" class="js-navbar-link scrollLink navobject">Schedule</a></li>
-                        <li><a href="https://register.masseyhacks.ca/">Login</a></li>
-                    </ul>
+                <a href="#cover" class="navbar-brand js-navbar-link scrollLink navobject">
+                    MasseyHacks IV <b>Live</b>
+                </a>
+            </div>
 
-                    <ul class="nav navbar-nav navbar-right right-nav" id="navright" style="margin-right: 105px">
-                        <li class="media-zoom"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
-                        <li class="media-zoom"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
-                        <li class="media-zoom"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
-                        <li class="media-zoom"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
-                    </ul>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" id="navleft">
+                    <li><a href="#stream" class="js-navbar-link scrollLink navobject">Stream</a></li>
+                    <li><a href="#map" class="js-navbar-link scrollLink navobject">Map</a></li>
+                    <li><a href="#schedule" class="js-navbar-link scrollLink navobject">Schedule</a></li>
+                    <li><a href="https://register.masseyhacks.ca/">Login</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right right-nav" id="navright" style="margin-right: 105px">
+                    <li class="media-zoom"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
+                    <li class="media-zoom"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
+                    <li class="media-zoom"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
+                    <li class="media-zoom"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial navobject" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="overlay" style="visibility: hidden">
+        <ul class="overlay-list">
+            <li><a href="/" class="js-navbar-link scrollLink overlayLink">Home</a></li>
+            <li><a href="#stream" class="js-navbar-link scrollLink overlayLink">Stream</a></li>
+            <li><a href="#map" class="js-navbar-link scrollLink overlayLink">Map</a></li>
+            <li><a href="#schedule" class="js-navbar-link scrollLink overlayLink">Schedule</a></li>
+            <li><a href="https://register.masseyhacks.ca/">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Cover -->
+    <section id="header-live" class="slide changeable" style="height: calc(100vh - 50px)">
+
+        <div class="row">
+            <div class="col-sm-9" id="stream-window" style="height: 100%">
+                <div style="background-color: black; width: 100%; height: calc(100vh - 50px)"></div>
+            </div>
+            <div class="col-sm-3" id="twitter-tall">
+                <a class="twitter-timeline" height="calc(100vh - 50px)" href="https://twitter.com/MasseyHacks?ref_src=twsrc%5Etfw">Tweets by MasseyHacks</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="countdown">
+        <h3 id="count"></h3>
+    </section>
+
+    <!-- Map -->
+    <section id="map" class="slide container-fluid hangeable">
+        <h3>Map</h3>
+
+        <p style="padding: 10px">Click <a href="../images/map.png" target="_blank">here</a> to open the image in another tab</p>
+
+        <img src="../images/map.png" width="90%">
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="slide container-fluid hangeable">
+        <h3>Schedule</h3>
+
+        <p style="padding: 10px">Click <a href="../images/map.png" target="_blank">here</a> to open the image in another tab</p>
+
+        <div style="overflow-x: hidden; width: 100vw; min-height: 600px; height: 90%; display: flex; justify-content: center; align-items: center;">
+            <div class="schedule-outer">
+
+                <div id="label-container" style="z-index: 9400; position: relative;"></div>
+
+                <div class="schedule-inner" style="transform: translateX(-100px)">
+                    <div class="schedule-obj">
+                        <div id="sat" class="time-heading"><b>Sat (Apr 28)</b></div>
+                        <div id="sat-anchor" class="time">11:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">12:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">1:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">2:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">3:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">4:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">5:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">6:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">7:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">8:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">9:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">10:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">11:00 PM</div>
+                    </div>
+                    <div class="schedule-obj" style="border-color: #DDDDDD">
+                        <div id="sun" class="time-heading"><b style="background-color: white; padding: 10px">Sun (Apr 29)</b></div>
+                        <div id="sun-anchor" class="time">12:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">1:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">2:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">3:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">4:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">5:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">6:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">7:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">8:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">9:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">10:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">11:00 AM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">12:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">1:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">2:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">3:00 PM</div>
+                    </div>
+                    <div class="schedule-obj">
+                        <div class="time">4:00 PM</div>
+                    </div>
+                    <div class="schedule-obj" style="margin-right: 150px">
+                        <div class="time">5:00 PM</div>
+                    </div>
                 </div>
             </div>
-        </nav>
-
-        <div class="overlay" style="visibility: hidden">
-            <ul class="overlay-list">
-                <li><a href="#header" class="js-navbar-link scrollLink overlayLink">Home</a></li>
-                <li><a href="#about" class="js-navbar-link scrollLink overlayLink">Map</a></li>
-                <li><a href="#faq" class="js-navbar-link scrollLink overlayLink">Workshops</a></li>
-                <li><a href="https://register.masseyhacks.ca/">Login</a></li>
-            </ul>
         </div>
+    </section>
 
-        <div id="spacer"></div>
-        <div class="cover-content" style="color: black">
-            asdsa<br>
-            asdsa<br>
-            asdsa<br>
-            asdsa<br>
-            asdsa<br>
-            asdsa<br>
-            asdsa<br>
-            <div class="fb-video" data-href="https://www.facebook.com/FOX13TampaBay/videos/10154608556173525/" data-width="2000" data-show-text="false"></div>
-
+    <section id="footer">
+        <div id="footer-content">
+            <p>Made by the MasseyHacks Team with <i class="fa fa-heart" style="color: white" aria-hidden="true"></i><br>&copy; 2018</p>
         </div>
-
     </section>
 
 </div>
 </body>
 <script>
     $(document).ready(function () {
+
+
+        // Schedule magic
+        // How about we don't hardcode the schedule
+
+        $.get('https://masseyhacks.github.io/schedule/schedule.json', function(data) {
+
+            var exp = '';
+
+            for (var i = 0; i < data.length; i++) {
+                var d = data[i];
+
+                var xOffset = 100 + 200 * d['xs'];
+                var width = (d['xe'] - d['xs']) * 200;
+                var yOffset = 130 + 80 * d['y'];
+
+                exp += '<div style="left: ' + xOffset + 'px; top: ' + yOffset + 'px; width: ' + width + 'px !important; background-color: ' + d['color'] + ';" class="schedule-label">' +
+                    '<div class="inner-label">' +
+                    '<p class="label-caption"><b>' + d['caption'] + '</b></p>' +
+                    '<p class="label-description">' + d['start'] + ' - ' + d['end'] + ' | ' + d['location'] + '</p>' +
+                    '</div></div>';
+            }
+
+            $('#label-container').html(exp);
+
+        });
+
 
         $('.js-navbar-link').on('click',function (e) {
             e.preventDefault();
@@ -151,6 +306,7 @@ Department Head: You Zhou
             toggleOverlay();
         });
 
+
         var bgresize = function () {
 
             var windowz = $(window);
@@ -168,6 +324,8 @@ Department Head: You Zhou
                 $("#outer-social").removeClass("hidden");
                 $("#navleft").hide();
                 $("#navright").hide();
+                $("#twitter-tall").addClass("hidden");
+
             } else {
                 $("#smallcaption").addClass("hidden");
                 $("#bigcaption").removeClass("hidden");
@@ -177,6 +335,8 @@ Department Head: You Zhou
                 $("#outer-social").addClass("hidden");
                 $("#navleft").show();
                 $("#navright").show();
+                $("#twitter-tall").removeClass("hidden");
+
             }
         }
 
@@ -196,6 +356,38 @@ Department Head: You Zhou
             $("html").css({"overflow-y": "visible"});
         }
     }
+
+    // Sketchy countdown thing off W3Schools
+    // Thanks <3
+
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("count").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("count").innerHTML = "EXPIRED";
+        }
+    }, 1000);
 
 </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
