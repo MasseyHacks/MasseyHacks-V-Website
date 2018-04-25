@@ -145,7 +145,7 @@ Department Head: You Zhou
         <div style="overflow-x: hidden; width: 100vw; min-height: 600px; height: 90%; display: flex; justify-content: center; align-items: center;">
             <div class="schedule-outer">
 
-                <div id="label-container" style="z-index: 9400; position: relative;"></div>
+                <div id="label-container" style="z-index: 8900; position: relative;"></div>
 
                 <div class="schedule-inner" style="transform: translateX(-100px)">
                     <div class="schedule-obj">
@@ -366,8 +366,7 @@ Department Head: You Zhou
     var hackingStarts = new Date("Apr 28, 2018 13:00:00").getTime();
     var hackingEnds = new Date("Apr 29, 2018 13:00:00").getTime();
 
-    // Update the count down every 1 second
-    var x = setInterval(function() {
+    function tick() {
 
         // Get todays date and time
         var now = new Date().getTime();
@@ -396,7 +395,12 @@ Department Head: You Zhou
             clearInterval(x);
             document.getElementById("count").innerHTML = "HACKING ENDED!";
         }
-    }, 1000);
+    }
+
+    tick();
+
+    // Update the count down every 1 second
+    var x = setInterval(tick, 1000);
 
 </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
