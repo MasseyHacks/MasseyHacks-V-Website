@@ -267,13 +267,13 @@ p {
     background: url('../images/websitebkg.svg');
 }
 .time {
-    transform: translate(50%, -25px);
+    transform: translate(50%, -45px);
     width: 200px;
     text-align: center;
     font-size: 14px;
 }
 .time-heading {
-    transform: translate(50%, -45px);
+    transform: translate(50%, -65px);
     width: 200px;
     text-align: center;
     font-size: 14px;
@@ -306,6 +306,7 @@ p {
     font-size: 13px;
 }
 .schedule-outer {
+    padding-top: 20px;
     width: 100%;
     height: 600px;
     overflow-x: scroll;
@@ -457,6 +458,11 @@ p {
     background-size: cover;
     background-position: center;
     text-align: center;
+}
+
+#bad-schedule table, th, td {
+    border: 1px solid black;
+    padding: 5px;
 }
 
 #footer {
