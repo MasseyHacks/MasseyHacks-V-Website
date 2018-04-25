@@ -52,8 +52,6 @@ Department Head: You Zhou
     <img id="mlhlogo" src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="" style="width:100%">
 </a>
 
-
-<header>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -142,6 +140,7 @@ Department Head: You Zhou
     <!-- Schedule -->
     <section id="schedule" class="slide-live container-fluid hangeable">
         <h3>Schedule</h3>
+
 
         <div style="overflow-x: hidden; width: 100vw; min-height: 600px; height: 90%; display: flex; justify-content: center; align-items: center;">
             <div class="schedule-outer">
@@ -274,7 +273,7 @@ Department Head: You Zhou
 
                 var xOffset = 100 + 200 * d['xs'];
                 var width = (d['xe'] - d['xs']) * 200;
-                var yOffset = 130 + 80 * d['y'];
+                var yOffset = 95 + 80 * d['y'];
 
                 exp += '<div style="left: ' + xOffset + 'px; top: ' + yOffset + 'px; width: ' + width + 'px !important; background-color: ' + d['color'] + ';" class="schedule-label">' +
                     '<div class="inner-label">' +
@@ -286,7 +285,6 @@ Department Head: You Zhou
             $('#label-container').html(exp);
 
         });
-
 
         $('.js-navbar-link').on('click',function (e) {
             e.preventDefault();
