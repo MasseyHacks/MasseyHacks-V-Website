@@ -32,8 +32,8 @@
 
             {{data[0]}}
 
-            <tr ng-repeat="entry in dasta">
-                {{entry}}
+            <tr ng-repeat="entry in data">
+                <td>Start: {{entry["start"]}} End: {{entry["end"]}}</td> <td>{{entry["caption"]}}</td> <td>{{entry["location"]}}</td>
 
                 <!--
                 <th>{{entry['start']}} - {{entry['end']}}</th>
