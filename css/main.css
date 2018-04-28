@@ -369,6 +369,7 @@ p {
 }
 #header-live {
     display: block;
+    background-color: #f4f4f4;
     color: white !important;
     margin-top: 50px;
     padding-left: 0%;
@@ -397,6 +398,7 @@ p {
     background: rgba(49, 60, 75, 0.6);
 }
 #stream {
+
     height: 100%;
     width: 100%;
     padding-top: 50px;

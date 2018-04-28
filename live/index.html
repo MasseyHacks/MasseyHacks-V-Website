@@ -108,19 +108,10 @@ Department Head: You Zhou
     </div>
 
     <!-- Cover -->
-    <section id="header-live" class="slide-live changeable" style="height: calc(100vh - 50px); min-height: 0">
+    <section id="header-live" class="slide-live changeable" style="min-height: 0">
 
-        <div class="row">
-            <div class="col-sm-9" id="stream-window" style="height: 100%">
-                <div style="background-color: black; width: 100%; height: calc(100vh - 50px); display: table">
-                    <div style="display: table-cell; vertical-align: middle">
-                        <div style="position:relative;height:0;padding-bottom:40.63%"><iframe src="https://www.youtube.com/embed/L_u7zTOOkA8?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="100%" height="auto" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" id="twitter-tall">
-                <a class="twitter-timeline" height="calc(100vh - 50px)" href="https://twitter.com/MasseyHacks?ref_src=twsrc%5Etfw">Tweets by MasseyHacks</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
+        <div style="display: table-cell; vertical-align: middle; width: 100vw; height: 56.25vw">
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmasseyhacks%2Fvideos%2F2132793856737104%2F&width=400" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         </div>
 
     </section>
@@ -596,7 +587,7 @@ Department Head: You Zhou
                 $("#outer-social").removeClass("hidden");
                 $("#navleft").hide();
                 $("#navright").hide();
-                $("#twitter-tall").addClass("hidden");
+
 
             } else {
                 $("#smallcaption").addClass("hidden");
@@ -607,7 +598,6 @@ Department Head: You Zhou
                 $("#outer-social").addClass("hidden");
                 $("#navleft").show();
                 $("#navright").show();
-                $("#twitter-tall").removeClass("hidden");
 
             }
         }
