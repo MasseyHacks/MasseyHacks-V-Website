@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MasseyHacks IV - Schedule</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src ="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse
+        }
+
+        th, td {
+           padding: 10px;
+        }
+    </style>
+</head>
+<body ng-app="schedule" ng-controller="scheduleCtrl">
+
+    <center>
+
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Location</th>
+                <th>Category</th>
+            </tr>
+
+            {{data[0]}}
+
+            <tr ng-repeat="entry in dasta">
+                {{entry}}
+
+                <!--
+                <th>{{entry['start']}} - {{entry['end']}}</th>
+                <th>{{entry['name']}}</th>
+                <th>{{entry['location']}}</th>
+                <th>{{category[{{entry['color']}}]}}</th> -->
+            </tr>
+
+        </table>
+
+    </center>
+
+</body>
+<script>
+    var app = angular.module('schedule', []);
+    app.controller('scheduleCtrl', function($scope, $http) {
+
+        $scope.dasta = [1,2,3,4,5]
+
+        $http.get('https://masseyhacks.github.io/schedule/schedule.json').then(function(res,status,xhr) {
+            $scope.data = res.data;
+        });
+
+    });
+
+</script>
+</html>
