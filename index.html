@@ -487,27 +487,305 @@ Department Head: You Zhou
     // Schedule magic
     // How about we don't hardcode the schedule
 
-    $.get('https://masseyhacks.github.io/schedule/schedule.json', function(data) {
+    // Schedule magic
+    // How about we don't hardcode the schedule
+    // Jk adblock blocks my request boi
 
-        var exp = '';
+    data = [{
+        "caption": "Check-In",
+        "start": "11:00AM",
+        "end": "12:00PM",
+        "location": "Front Desk",
+        "color": "#4d94ff",
+        "xs": 0,
+        "xe": 1,
+        "y": 0
+    }, {
+        "caption": "Lunch",
+        "start": "11:00AM",
+        "end": "12:00PM",
+        "location": "Cafeteria",
+        "color": "#ff3333",
+        "xs": 0,
+        "xe": 1,
+        "y": 1
+    }, {
+        "caption": "Opening Ceremonies",
+        "start": "12:15PM",
+        "end": "1:00PM",
+        "location": "North Gym",
+        "color": "#4d94ff",
+        "xs": 1.25,
+        "xe": 2,
+        "y": 0
+    }, {
+        "caption": "Hacking!",
+        "start": "1:00PM (Sat)",
+        "end": "1:00PM (Sun)",
+        "location": "Everywhere",
+        "color": "#4d94ff",
+        "xs": 2,
+        "xe": 26,
+        "y": 4
+    }, {
+        "caption": "Team formation",
+        "start": "1:00PM",
+        "end": "1:30PM",
+        "location": "Cafeteria",
+        "color": "#71da71",
+        "xs": 2,
+        "xe": 2.5,
+        "y": 1
+    }, {
+        "caption": "Python Workshop",
+        "start": "1:30PM",
+        "end": "3:30PM",
+        "location": "Rm 164",
+        "color": "#71da71",
+        "xs": 2.5,
+        "xe": 4.5,
+        "y": 3
+    }, {
+        "caption": "C++ Workshop",
+        "start": "1:30PM",
+        "end": "3:30PM",
+        "location": "Rm 154",
+        "color": "#71da71",
+        "xs": 2.5,
+        "xe": 4.5,
+        "y": 2
+    }, {
+        "caption": "Hackenger Hunt 1 (Easy)",
+        "start": "2:30PM",
+        "end": "4:30PM (Expected)",
+        "location": "See Slack",
+        "color": "#ff9900",
+        "xs": 3.5,
+        "xe": 5.5,
+        "y": 5
+    }, {
+        "caption": "Web Dev Workshop",
+        "start": "3:00PM",
+        "end": "4:30PM",
+        "location": "Rm 150",
+        "color": "#71da71",
+        "xs": 4,
+        "xe": 5.5,
+        "y": 0
+    },
 
-        for (var i = 0; i < data.length; i++) {
-            var d = data[i];
+        {
+            "caption": "Hardware Workshop",
+            "start": "4:10PM",
+            "end": "6:10PM",
+            "location": "Rm 154",
+            "color": "#71da71",
+            "xs": 5.166666667,
+            "xe": 7.166666667,
+            "y": 1
+        }, {
+            "caption": "Machine Learning Workshop",
+            "start": "4:10PM",
+            "end": "5:10PM",
+            "location": "Rm 164",
+            "color": "#71da71",
+            "xs": 5.166666667,
+            "xe": 6.166666667,
+            "y": 3
+        }, {
+            "caption": "Android Studio Workshop",
+            "start": "5:15PM",
+            "end": "7:00PM",
+            "location": "Rm 150",
+            "color": "#71da71",
+            "xs": 6.25,
+            "xe": 8,
+            "y": 2
+        }, {
+            "caption": "3D Modeling/Printing Workshop",
+            "start": "8:00PM",
+            "end": "9:00PM",
+            "location": "Rm 164",
+            "color": "#71da71",
+            "xs": 9,
+            "xe": 10,
+            "y": 1
+        },
 
-            var xOffset = 100 + 200 * d['xs'];
-            var width = (d['xe'] - d['xs']) * 200;
-            var yOffset = 95 + 80 * d['y'];
+        {
+            "caption": "Dinner",
+            "start": "7:00PM",
+            "end": "8:00PM",
+            "location": "Cafeteria",
+            "color": "#ff3333",
+            "xs": 8,
+            "xe": 9,
+            "y": 0
+        }, {
+            "caption": "Hackenger Hunt 2 (Hard)",
+            "start": "8:30PM",
+            "end": "3:00AM (Sun) (Expected)",
+            "location": "See Slack",
+            "color": "#ff9900",
+            "xs": 9.5,
+            "xe": 16,
+            "y": 5
+        }, {
+            "caption": "Cup Stacking",
+            "start": "9:00PM",
+            "end": "10:00PM",
+            "location": "Cafeteria",
+            "color": "#ff9900",
+            "xs": 10,
+            "xe": 11,
+            "y": 0
+        }, {
+            "caption": "Karaoke",
+            "start": "10:00PM",
+            "end": "11:00PM",
+            "location": "Cafeteria",
+            "color": "#ff9900",
+            "xs": 11,
+            "xe": 12,
+            "y": 1
+        }, {
+            "caption": "Women's Meetup",
+            "start": "11:00PM",
+            "end": "11:45PM",
+            "location": "Rm 150",
+            "color": "#ff9900",
+            "xs": 12,
+            "xe": 12.75,
+            "y": 0
+        }, {
+            "caption": "Water Pong",
+            "start": "11:30PM",
+            "end": "12:15AM",
+            "location": "Cafeteria",
+            "color": "#ff9900",
+            "xs": 12.5,
+            "xe": 13.25,
+            "y": 1
+        }, {
+            "caption": "Game Show Night",
+            "start": "12:30AM",
+            "end": "1:30AM",
+            "location": "Cafeteria",
+            "color": "#ff9900",
+            "xs": 13.5,
+            "xe": 14.5,
+            "y": 0
+        }, {
+            "caption": "Midnight Snack",
+            "start": "12:00AM",
+            "end": "1:00AM",
+            "location": "Cafeteria",
+            "color": "#ff3333",
+            "xs": 13,
+            "xe": 14,
+            "y": 2
+        }, {
+            "caption": "Mafia",
+            "start": "3:30AM",
+            "end": "4:30AM",
+            "location": "Rm 150",
+            "color": "#ff9900",
+            "xs": 16.5,
+            "xe": 17.5,
+            "y": 0
+        }, {
+            "caption": "Breakfast",
+            "start": "7:00AM",
+            "end": "9:00AM",
+            "location": "Cafeteria",
+            "color": "#ff3333",
+            "xs": 20,
+            "xe": 22,
+            "y": 0
+        }, {
+            "caption": "Therapy Dogs",
+            "start": "9:00AM",
+            "end": "10:00AM",
+            "location": "Rm 150",
+            "color": "#ff9900",
+            "xs": 22,
+            "xe": 23,
+            "y": 2
+        }, {
+            "caption": "Project Submissions",
+            "start": "8:00AM",
+            "end": "11:00AM",
+            "location": "Devpost",
+            "color": "#4d94ff",
+            "xs": 21,
+            "xe": 24,
+            "y": 1
+        }, {
+            "caption": "Lunch",
+            "start": "12:00PM",
+            "end": "12:30PM",
+            "location": "Cafeteria",
+            "color": "#ff3333",
+            "xs": 25,
+            "xe": 25.5,
+            "y": 0
+        }, {
+            "caption": "Demos (General)",
+            "start": "1:15PM",
+            "end": "3:00PM",
+            "location": "Cafeteria",
+            "color": "#4d94ff",
+            "xs": 26.25,
+            "xe": 28,
+            "y": 0
+        }, {
+            "caption": "Demos (Finalists)",
+            "start": "3:30PM",
+            "end": "4:00PM",
+            "location": "North Gym",
+            "color": "#4d94ff",
+            "xs": 28.5,
+            "xe": 29,
+            "y": 0
+        }, {
+            "caption": "Awards and Closing Ceremonies",
+            "start": "4:00PM",
+            "end": "5:00PM",
+            "location": "North Gym",
+            "color": "#4d94ff",
+            "xs": 29,
+            "xe": 30,
+            "y": 1
+        }, {
+            "caption": "MLH Hardware Return",
+            "start": "3:00PM",
+            "end": "5:30PM",
+            "location": "MLH Hardware Lab",
+            "color": "#4d94ff",
+            "xs": 28,
+            "xe": 30.5,
+            "y": 2
+        }];
 
-            exp += '<div style="left: ' + xOffset + 'px; top: ' + yOffset + 'px; width: ' + width + 'px !important; background-color: ' + d['color'] + ';" class="schedule-label">' +
-                '<div class="inner-label">' +
-                '<p class="label-caption"><b>' + d['caption'] + '</b></p>' +
-                '<p class="label-description">' + d['start'] + ' - ' + d['end'] + ' | ' + d['location'] + '</p>' +
-                '</div></div>';
-        }
 
-        $('#label-container').html(exp);
+    var exp = '';
 
-    });
+    for (var i = 0; i < data.length; i++) {
+        var d = data[i];
+
+        var xOffset = 100 + 200 * d['xs'];
+        var width = (d['xe'] - d['xs']) * 200;
+        var yOffset = 95 + 80 * d['y'];
+
+        exp += '<div style="left: ' + xOffset + 'px; top: ' + yOffset + 'px; width: ' + width + 'px !important; background-color: ' + d['color'] + ';" class="schedule-label">' +
+            '<div class="inner-label">' +
+            '<p class="label-caption"><b>' + d['caption'] + '</b></p>' +
+            '<p class="label-description">' + d['start'] + ' - ' + d['end'] + ' | ' + d['location'] + '</p>' +
+            '</div></div>';
+    }
+
+    $('#label-container').html(exp);
+
 
     var pics = [1,2,3,4,5,6,7,8];
     var numPar = 3;
