@@ -638,12 +638,18 @@ Department Head: You Zhou
         // Display the result in the element with id="demo"
         document.getElementById("count").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
 
-        document.getElementById("count-caption").innerHTML = (hackingStarted ? "Hacking ends in" : "Hacking starts in").toUpperCase();
 
         // If the count down is finished, write some text
         if (distance < 0 && hackingStarted) {
             clearInterval(x);
             document.getElementById("count").innerHTML = "HACKING ENDED!";
+
+            document.getElementById("count-caption").innerHTML = "";
+
+        }
+        else {
+            document.getElementById("count-caption").innerHTML = (hackingStarted ? "Hacking ends in" : "Hacking starts in").toUpperCase();
+
         }
     }
 
