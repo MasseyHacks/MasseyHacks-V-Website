@@ -18,7 +18,7 @@ $(document).ready(function () {
                         swal({
                             type: 'success',
                             title: 'Subscribed!',
-                            html: 'Get ready for the latest updates about MasseyHacks IV! <br>(' + email.val() + ')'
+                            html: 'Get ready for the latest updates about MasseyHacks V! <br>(' + email.val() + ')'
                         });
                         email.val("");
 
