@@ -55,15 +55,19 @@ $(document).ready(function () {
     }
 
     $('#mce-EMAIL').keydown(function (e) {
-        if (e.which == 13) {
+        if (e.which == 13 && (document.activeElement.nodeName == 'TEXTAREA' || document.activeElement.nodeName == 'INPUT')) {
             e.preventDefault();
             var email = $('#mce-EMAIL');
+			console.log(email);
             sub(email);
+			$('#mce-EMAIL').val('');
         }
     });
 
     $('#mc-embedded-subscribe').click(function () {
         var email = $('#mce-EMAIL');
+		console.log(email);
         sub(email);
+		$('#mce-EMAIL').val('');
     });
 });
