@@ -910,6 +910,9 @@ p {
 #faq-box {
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     background: #537895;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    /*background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);*/
     /*border-radius: 10px;*/
     color: white;
     padding: 2%;
