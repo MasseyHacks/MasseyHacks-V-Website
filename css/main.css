@@ -884,7 +884,8 @@ p {
     align-items: center;
 }
 #shaped-container-1 {
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+    box-shadow: 0px 10px 27px 0px rgba(0,0,0,0.34);
     color: white;
     padding: 2%;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -909,9 +910,10 @@ p {
 #faq-box {
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     background: #537895;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     color: white;
     padding: 2%;
+    box-shadow: 0px 10px 27px 0px rgba(0,0,0,0.34);
 }
 #faq-box a {
     color: #fdd6bd;
