@@ -346,8 +346,6 @@ p {
 }
 .slide-live {
     color: #0A1939;
-
-
     width:100%;
     display:table;
     padding-left: 2%;
@@ -358,8 +356,8 @@ p {
 .slide {
     color: #0A1939;
     /*margin-top: 50vh;*/
-    height: 100vh;
-    min-height: 100%;
+    /*height: 100vh;
+    min-height: 100%;*/
     width:100%;
     display:table;
     padding-left: 2%;
@@ -837,7 +835,7 @@ p {
     background: rgb(151, 160, 230); /* Fallback for older browsers without RGBA-support */
     background: rgba(151, 160, 230, 0.5);
 }
-.translucent-2{
+.translucent-2{s
     background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
     background: rgba(59, 70, 85, 0.8);
 }
@@ -848,4 +846,28 @@ p {
 .translucent-4{
     background: rgb(59, 70, 85); /* Fallback for older browsers without RGBA-support */
     background: rgba(59, 70, 85, 1.0);
+}
+
+/* James's Custom (ugly) CSS*/
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.panel-section {
+    background: rgb(255,0,0); 
+}
+#shaped-container {
+    border-radius: 2%;
+    color: white;
+    padding: 5%;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
 }
