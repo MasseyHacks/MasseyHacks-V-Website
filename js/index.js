@@ -51,7 +51,7 @@ $(document).ready(function () {
     var bgresize = function () {
 
         var windowz = $(window);
-        $(".slide").css("height", (windowz.height() - $("#mainnav").height()) + "px");
+        //$(".slide").css("height", (windowz.height() - $("#mainnav").height()) + "px");
         $("#header").css("height", Math.max(windowz.height(), 500) + "px");
 
         $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
