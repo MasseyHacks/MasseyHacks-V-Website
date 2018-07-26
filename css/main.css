@@ -1,5 +1,5 @@
 /* General styling*/
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+/*@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 @font-face {
     font-family: RalewayExtraBold;
     src: url("../fonts/Raleway-ExtraBold.ttf");
@@ -19,7 +19,7 @@
 @font-face{
     font-family: RalewayLight;
     src: url("../fonts/Raleway-Light.ttf");
-}
+}*/
 @font-face {
     font-family: Avenir;
     src: url("../fonts/avenir.otf");
@@ -889,7 +889,7 @@ p {
     color: white;
     padding: 2%;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background: #6991c7;
+    /*background: #6991c7;*/
 }
 
 #shaped-container-2 {
