@@ -934,5 +934,6 @@ p {
     #shaped-container-1 {
         background: none;
         color: black;
+        box-shadow: none;
     }
 }
