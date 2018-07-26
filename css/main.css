@@ -929,4 +929,8 @@ p {
         width: 18em;
         height: 18em;
     }
+    #shaped-container-1 {
+        background: none;
+        color: black;
+    }
 }
