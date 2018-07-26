@@ -26,7 +26,7 @@ $(document).ready(function () {
     function updateScroll() {
 
         var newOpacity;
-        var dist = $("#about").offset().top - $(window).scrollTop();
+        /*var dist = $("#about").offset().top - $(window).scrollTop();
 
         if (dist > 0) {
             newOpacity = 1 * (1 - dist / $("#about").offset().top);
@@ -38,11 +38,11 @@ $(document).ready(function () {
         if (newOpacity != opacity) {
             opacity = newOpacity;
             $("#mainnav").css("background", "rgba(10, 25, 57, " + newOpacity + ")");
-        }
+        }*/
 
     }
 
-    var throttled = _.throttle(updateScroll, 50);
+    var throttled = _.throttle(updateScroll, 60);
 
     $(window).resize(throttled);
     $(window).scroll(throttled);
@@ -57,8 +57,8 @@ $(document).ready(function () {
         $(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
 
         if ($(window).width() <= 767) {
-            $("#smallcaption").removeClass("hidden");
-            $("#bigcaption").addClass("hidden");
+/*            $("#smallcaption").removeClass("hidden");
+            $("#bigcaption").addClass("hidden");*/
             $("#accordion").removeClass("hidden");
             $("#full-faq").addClass("hidden");
             $("#navham").removeClass("hidden");
@@ -66,8 +66,8 @@ $(document).ready(function () {
             $("#navleft").hide();
             $("#navright").hide();
         } else {
-            $("#smallcaption").addClass("hidden");
-            $("#bigcaption").removeClass("hidden");
+/*            $("#smallcaption").addClass("hidden");
+            $("#bigcaption").removeClass("hidden");*/
             $("#accordion").addClass("hidden");
             $("#full-faq").removeClass("hidden");
             $("#navham").addClass("hidden");
