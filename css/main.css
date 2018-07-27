@@ -37,6 +37,10 @@ img {
     user-drag: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .parallax-window {
     min-height: 50vh;
     background: transparent;
@@ -945,11 +949,11 @@ p {
 }
 @media (max-width: 768px) {
     h3 {
-        font-size: 3em;
+        font-size: 2.7em;
     }
     #img-grid img {
-        width: 18em;
-        height: 18em;
+        width: 16em;
+        height: 16em;
     }
     #shaped-container-1 {
         background: none;
