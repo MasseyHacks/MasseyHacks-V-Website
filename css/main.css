@@ -932,8 +932,8 @@ p {
 #img-grid img {
     object-fit: cover;
     object-position: center;
-    width: 25em;
-    height: 25em;
+    width: 25vw;
+    height: 25vw;
     padding: 2%;
     border-radius: 20px;
 }
