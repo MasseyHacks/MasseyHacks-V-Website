@@ -67,7 +67,7 @@ Department Head: You Zhou
         <div class="container-fluid">
 
             <div class="navbar-header" id="navheader">
-                <div class="hamburger hamburger--slider pull-left hidden" id="navham">
+                <div class="hamburger hamburger--slider pull-left hidden" id="nav-ham">
                     <div class="hamburger-box">
                         <div class="hamburger-inner" id = "hamburger"></div>
                     </div>
@@ -573,7 +573,7 @@ Department Head: You Zhou
                 $("#bigcaption").addClass("hidden");
                 $("#accordion").removeClass("hidden");
                 $("#full-faq").addClass("hidden");
-                $("#navham").removeClass("hidden");
+                $("#nav-ham").removeClass("hidden");
                 $("#outer-social").removeClass("hidden");
                 $("#navleft").hide();
                 $("#navright").hide();
@@ -584,7 +584,7 @@ Department Head: You Zhou
                 $("#bigcaption").removeClass("hidden");
                 $("#accordion").addClass("hidden");
                 $("#full-faq").removeClass("hidden");
-                $("#navham").addClass("hidden");
+                $("#nav-ham").addClass("hidden");
                 $("#outer-social").addClass("hidden");
                 $("#navleft").show();
                 $("#navright").show();
@@ -599,8 +599,8 @@ Department Head: You Zhou
     });
 
     function toggleOverlay() {
-        $("#navham").toggleClass("is-active");
-        if($("#navham").hasClass("is-active")){
+        $("#nav-ham").toggleClass("is-active");
+        if($("#nav-ham").hasClass("is-active")){
             $(".overlay").css({visibility: "visible"});
             $("html").css({"overflow-y": "hidden"});
         } else{
