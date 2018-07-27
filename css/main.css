@@ -932,9 +932,8 @@ p {
 #img-grid img {
     object-fit: cover;
     object-position: center;
-    width: 25vw;
-    height: 25vw;
-    padding: 2%;
+    width: 23vw;
+    height: 23vw;
     border-radius: 20px;
 }
 #gradient1 {
@@ -954,10 +953,33 @@ p {
     #img-grid img {
         width: 16em;
         height: 16em;
+		padding: 2%;
     }
     #shaped-container-1 {
         background: none;
         color: black;
         box-shadow: none;
     }
+}
+
+.img-wrapper {
+    display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;      /* hide the overflow */
+	border-radius: 20px;
+	vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+	.scaleonhover{
+		-webkit-transition: transform 1s; /* Safari */
+		transition: transform 1s;
+	}
+
+	.scaleonhover:hover{
+		transform:scale(1.5);
+		-ms-transform:scale(1.5); /* IE 9 */
+		-moz-transform:scale(1.5); /* Firefox */
+		-webkit-transform:scale(1.5); /* Safari and Chrome */
+		-o-transform:scale(1.5); /* Opera */
+	}
 }
