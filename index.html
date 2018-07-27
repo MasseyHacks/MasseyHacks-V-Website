@@ -33,7 +33,6 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 
     <script src ="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src = "js/underscore-min.js" type = "text/javascript"></script>
-    <script src = "js/parallax.min.js" type = "text/javascript"></script>
     <script defer src = "js/index.js" type = "text/javascript"></script>
 	<script src = "js/mail.js" type = "text/javascript"></script>
     <!--<script async src = "js/mail.js" type = "text/javascript"></script>-->
@@ -57,15 +56,14 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 <div id="cover" class="wrapper">
 
     <!-- Cover -->
-    <section id="header" class="slide changeable parallax-window" data-bleed="150" data-position-y="0px" data-parallax="scroll" style="height: 100vh">
-        <svg style="width: 100vw; height: 100vh; position: absolute" class="_beam-1 sprite-img" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#beam-1"></use></svg>
+    <section id="header" class="slide changeable" style="height: 100vh">
+        <svg style="width: 100%; height: 100%; position: absolute" class="_beam-1 sprite-img" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#beam-1"></use></svg>
 
-        <div class="inner-parallax">
-            <nav class="navbar navbar-inverse navbar-fixed-top" id="mainnav" style="height: 50px">
-                <div class="container-fluid">
-
+        <div style="min-height: 100%">
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="nav-main" style="height: 50px">
+                <div id="nav-inner" class="container-fluid container">
                     <div class="navbar-header" id="navheader">
-                        <div class="hamburger hamburger--slider pull-right hidden" id="navham" style="color:black;">
+                        <div class="hamburger hamburger--slider pull-right hidden" id="nav-ham" style="color:black;">
                             <div class="hamburger-box" style="color:black;">
                                 <div class="hamburger-inner" id = "hamburger" style="color: black;"></div>
                             </div>
@@ -77,16 +75,22 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                     </div>
 
                     <div class="collapse navbar-collapse">
+
+                        <!--
                         <ul class="nav navbar-nav" id="navleft">
 
-                        </ul>
+                        </ul>-->
 
-                        <ul class="nav navbar-nav navbar-right right-nav" id="navright">
-                            <li><a href="#about" class="js-navbar-link scrollLink navobject">About</a></li>
-                            <li><a href="#faq" class="js-navbar-link scrollLink navobject">Questions</a></li>
+                        <ul class="nav navbar-nav navbar-right" id="navright">
+                            <li><a href="#about" class="js-navbar-link scrollLink navobject">ABOUT</a></li>
+                            <li><a href="#faq" class="js-navbar-link scrollLink navobject">QUESTIONS</a></li>
                             <!--<li><a href="#schedule" class="js-navbar-link scrollLink navobject">Schedule</a></li>-->
-                            <li><a href="#sponsors" class="js-navbar-link scrollLink navobject">Sponsors</a></li>
-                            <!--<li><a href="https://register.masseyhacks.ca/">Login</a></li>-->
+                            <li><a href="#sponsors" class="js-navbar-link scrollLink navobject">SPONSORS</a></li>
+
+                            <!--
+                            <li><a href="https://mh4.masseyhacks.ca" class="js-navbar-link scrollLink navobject">IV</a></li>
+                            <li><a href="#" class="js-navbar-link scrollLink navobject">LOGIN</a></li>-->
+
                         </ul>
                     </div>
                 </div>
@@ -109,16 +113,11 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                 <img id="cover-image" src="images/logo/logo.svg">
 
                 <div id="cover-text">
-                    <h1 style="margin: 15px; font-family: Avenir Next Bold; letter-spacing: 6px;">MASSEYHACKS <span id="gradient1">V</span><br></h1>
+                    <h1 style="margin: 0px; font-family: Avenir Next Bold; letter-spacing: 6px;">MASSEYHACKS <span id="gradient1">V</span><br></h1>
                     <p id="bigcaption"><!--<i class="fa fa-map-marker" aria-hidden="true"></i> -->Vincent Massey Secondary School<!-- | <i class="fa fa-calendar" aria-hidden="true"></i> April 28<sup style="font-family: RalewayThin">th</sup> - 29<sup style="font-family: RalewayThin">th</sup>, 2018-->
                     <br>
                     Coming Soon in Early 2019
                     </p>
-<!--                     <p id="smallcaption" class="hidden">Vincent Massey Secondary School
-                    <br>
-                    Coming Soon in Early 2019
-                    <br>April 28<sup style="font-family: RalewayLight">th</sup> - 29<sup style="font-family: RalewayLight">th</sup>, 2018</p> -->
-
 
                     <label for="mce-EMAIL" style="font-weight: normal; font-family: Avenir; font-size: 1.2em;">Subscribe to our mailing list for updates!</label>
                 </div>
@@ -127,37 +126,12 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="hacker@hackermail.io" required>
                     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="color: black;"></div>
                 </div>
-
-                <!--<div class="center-block text-center btn-group">-->
-
-                    <!--
-                    <p style="line-height: 40px">A big thank you to everyone who attended. <a style="color: white" href="files/transparency.pdf" target="_blank"><u>Click here</u></a> for an event overview.<br>
-                        We look forward to seeing you next year!</p>
-                    -->
-
-                    <!--
-                    <a><button id="applybtn" type="button" class="btn btn-large apply-button disabled">Thank you for applying!</button></a>
-                    <h1 id="coundown"></h1>-->
-                <!--</div>-->
             </div>
-<!-- 
-            <div id="outer-social" class="hidden">
-                <div id="inner-social">
-                    <ul style="padding: 0; list-style-type: none">
-                        <li class="overlay-social-object"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                        <li class="overlay-social-object"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                        <li class="overlay-social-object"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                        <li class="overlay-social-object"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div> -->
         </div>
     </section>
 
     <!-- About -->
     <section id="about" class="slide container-fluid changeable">
-
-
         <div id="mh-returns" class="container">
             <div class="row" style="align-items: center;">
                 <div class="col" id="description">
@@ -168,16 +142,23 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                     </div>
                 </div>
             </div>
-            <div id="img-grid" style="margin-top: 5%; align-items: center;">
+
+            <div id="img-grid" style="margin-top: 50px; align-items: center;">
                 <div class="row" style="min-width: 100%; overflow: hidden;">
                     <div class="col-sm-4">
-                        <img src="images/slide/1.jpg" class="img-fluid">
+						<div class="img-wrapper">
+							<img src="images/slide/1.jpg" class="img-fluid scaleonhover">
+						</div>
                     </div>
                     <div class="col-sm-4">
-                        <img src="images/slide/5.jpg" class="img-fluid">
+						<div class="img-wrapper">
+							<img src="images/slide/5.jpg" class="img-fluid scaleonhover">
+						</div>
                     </div>
                     <div class="col-sm-4">
-                        <img src="images/slide/7.jpg" class="img-fluid">
+						<div class="img-wrapper">
+							<img src="images/slide/7.jpg" class="img-fluid scaleonhover">
+						</div>
                     </div>
                 </div>
             </div>
@@ -287,52 +268,52 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
         <div id="full-faq" class="row">
             <div class="container" id="faq-box">
                 <h3>FAQ</h3>
-                <div class="col-sm-6">
-                    <h2>What is a hackathon?</h2>
-                    <p>It is an event where students, both experienced and beginners in programming, gather together and build cool projects with technologies. </p>
+				<div class="row">
+					<div class="col-sm-6">
+						<h2>What is a hackathon?</h2>
+						<p>It is an event where students, both experienced and beginners in programming, gather together and build cool projects with technologies. </p>
 
-                    <h2>Do I need to know how to program?</h2>
-                    <p>No, not at all! If you've never programmed before, we'll teach you to write your very first line of code!</p>
+						<h2>Do I need to know how to program?</h2>
+						<p>No, not at all! If you've never programmed before, we'll teach you to write your very first line of code!</p>
 
-                    <h2>What should I bring?</h2>
-                    <p>You should bring your laptop (we won't provide computers) & charger, school ID, phone & charger, and power strips (recommended). Food will be provided!</p>
+						<h2>What should I bring?</h2>
+						<p>You should bring your laptop (we won't provide computers) & charger, school ID, phone & charger, and power strips (recommended). Food will be provided!</p>
 
-                    <h2>How will the teams work?</h2>
-                    <p>You are encouraged to find teams before the event, but don't worry if you don't have one, we will help you find a team at the event! You can also choose to hack alone, but it's always more fun with a team! Teams can have maximum 4 people.</p>
+						<h2>How will the teams work?</h2>
+						<p>You are encouraged to find teams before the event, but don't worry if you don't have one, we will help you find a team at the event! You can also choose to hack alone, but it's always more fun with a team! Teams can have maximum 4 people.</p>
 
-                    <h2>How much does it cost?</h2>
-                    <p>Nothing! MasseyHacks is completely free to everyone attending! Oh, yeah, we forgot to mention FREE FOOD AND SWAG!</p>
+						<h2>How much does it cost?</h2>
+						<p>Nothing! MasseyHacks is completely free to everyone attending! Oh, yeah, we forgot to mention FREE FOOD AND SWAG!</p>
 
-                </div>
-                <div class="col-sm-6">
-                    <h2>I know a company that wants to sponsor, what should I tell them?</h2>
-                    <p>Awesome! Let them know that they can contact us at <a href="mailto:sponsorship@masseyhacks.ca">sponsorship@masseyhacks.ca</a>!</p>
+					</div>
+					<div class="col-sm-6">
+						<h2>I know a company that wants to sponsor, what should I tell them?</h2>
+						<p>Awesome! Let them know that they can contact us at <a href="mailto:sponsorship@masseyhacks.ca">sponsorship@masseyhacks.ca</a>!</p>
 
-                    <h2>How do I get to MasseyHacks V?</h2>
-                    <p>If you are a high school student in the Windsor-Essex area, you should find your own transportation. We are sending a bus from the University of Toronto - St. George that will also be stopping at the University of Waterloo. Unfortunately, we will not be providing other travel reimbursements.</p>
+						<h2>How do I get to MasseyHacks V?</h2>
+						<p>If you are a high school student in the Windsor-Essex area, you should find your own transportation. We are sending a bus from the University of Toronto - St. George that will also be stopping at the University of Waterloo. Unfortunately, we will not be providing other travel reimbursements.</p>
 
-                    <h2>How do I know if I got accepted?</h2>
-                    <p>We will be doing 4 rounds of acceptances<!-- every Sunday starting March 25<sup>th</sup>-->. To be eligible for that round, you must submit your application before <!--11:59 the Saturday before-->the announced deadline. If you do not get accepted in the round, you do not need to re-apply, your application moves to the next round. If accepted, we will email you with details.</p>
+						<h2>How do I know if I got accepted?</h2>
+						<p>We will be doing 4 rounds of acceptances<!-- every Sunday starting March 25<sup>th</sup>-->. To be eligible for that round, you must submit your application before <!--11:59 the Saturday before-->the announced deadline. If you do not get accepted in the round, you do not need to re-apply, your application moves to the next round. If accepted, we will email you with details.</p>
 
-                    <h2>Code of Conduct?</h2>
-                    <p>Yes, of course! All hackers must abide to the MLH Code of Conduct found <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here</a>.</p>
+						<h2>Code of Conduct?</h2>
+						<p>Yes, of course! All hackers must abide to the MLH Code of Conduct found <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here</a>.</p>
 
-                    
+						
+					</div>
+				</div>
+				<div id="unlisted-question" class="row">
+                <div class="col-sm-12">
+                    <h2 style="text-align: center !important; margin-bottom: 0">404 question not found? Send us an email at <a href="mailto:hello@masseyhacks.ca" style="color: #FFFFFF">hello@masseyhacks.ca</a></h2>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div id="unlisted-question" class="row" >
-                <div class="col-sm-12">
-                    <h2 style="text-align: center !important;">Send us an email at <a href="mailto:hello@masseyhacks.ca">hello@masseyhacks.ca</a> if your question isn't answered</span>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Sponsors -->
     <section id="sponsors" class="slide container-fluid changeable">
-        <h3>Sponsors</h3>
+        <h3 style="padding: 0; margin: 0">Sponsors</h3>
         <h4>Interested in becoming a sponsor? Check out our prospectus and contact us at <a href="mailto:sponsorship@masseyhacks.ca" target="_blank">sponsorship@masseyhacks.ca</a>!</h4>
 
         <br>
@@ -384,6 +365,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
     </section>
 
     <section id="footer">
+        <div id="footer-spacer"></div>
         <div id="footer-content">
             <ul style="padding: 0; list-style-type: none">
                 <li class="overlay-social-object"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
@@ -392,7 +374,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                 <li class="overlay-social-object"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
             </ul>
 
-            <p>Made by the MasseyHacks Team with <i class="fa fa-heart" style="color: white" aria-hidden="true"></i><br>&copy; 2018</p>
+            <p style="font-size: 1em;">Made by the MasseyHacks Team with <i class="fa fa-heart" style="color: white" aria-hidden="true"></i><br>&copy; 2018</p>
         </div>
     </section>
 </div>
