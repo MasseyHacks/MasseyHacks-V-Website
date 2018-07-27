@@ -328,7 +328,7 @@ p {
 
 #spacer {
     min-height: 300px;
-    height: 50%;
+    height: 50vh;
 }
 #outer-social {
     min-height: 250px;
