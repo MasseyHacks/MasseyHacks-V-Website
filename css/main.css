@@ -962,6 +962,7 @@ p {
     }
 }
 
+/* Image zoom on hover */
 .img-wrapper {
     display: inline-block; /* change the default display type to inline-block */
     overflow: hidden;      /* hide the overflow */
@@ -969,6 +970,7 @@ p {
 	vertical-align: middle;
 }
 
+/* Only zoom on desktops */
 @media (min-width: 768px) {
 	.scaleonhover{
 		-webkit-transition: transform 1s; /* Safari */
@@ -982,4 +984,10 @@ p {
 		-webkit-transform:scale(1.5); /* Safari and Chrome */
 		-o-transform:scale(1.5); /* Opera */
 	}
+
+/* iPhone SE fix */
+@media (max-width: 350px) {
+    #cover-text h1 {
+        font-size: 1.8em;
+    }
 }
