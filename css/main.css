@@ -940,6 +940,9 @@ p {
     -webkit-text-fill-color: transparent;
 
 }
+#hamburger {
+    color: black;
+}
 @media (max-width: 768px) {
     h3 {
         font-size: 3em;
