@@ -51,6 +51,12 @@ $(document).ready(function () {
                 }
 
             });
+        } else {
+            swal(
+                'Oops...',
+                'Email is blank!',
+                'error'
+            );
         }
     }
 

@@ -944,6 +944,11 @@ p {
     -webkit-text-fill-color: transparent;
 
 }
+input {
+    border-image-source: linear-gradient(#fc6076 0%, #ff9a44 100%) !important;
+    border-width: 2pt !important;
+    border-image-slice: 1 !important;
+}
 #hamburger {
     color: black;
 }
