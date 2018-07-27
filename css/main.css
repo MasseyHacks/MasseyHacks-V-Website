@@ -593,15 +593,15 @@ input {
 @media (min-width: 768px) {
 	.scaleonhover{
 		-webkit-transition: transform 1s; /* Safari */
-		transition: transform 1s;
+		transition: transform 0.5s;
 	}
 
 	.scaleonhover:hover{
-		transform:scale(1.5);
-		-ms-transform:scale(1.5); /* IE 9 */
-		-moz-transform:scale(1.5); /* Firefox */
-		-webkit-transform:scale(1.5); /* Safari and Chrome */
-		-o-transform:scale(1.5); /* Opera */
+		transform:scale(1.2);
+		-ms-transform:scale(1.2); /* IE 9 */
+		-moz-transform:scale(1.2); /* Firefox */
+		-webkit-transform:scale(1.2); /* Safari and Chrome */
+		-o-transform:scale(1.2); /* Opera */
 	}
 
 /* iPhone SE fix */
