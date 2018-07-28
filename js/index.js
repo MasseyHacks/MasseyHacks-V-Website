@@ -13,6 +13,8 @@ $(document).ready(function () {
         });
     });
 
+    $('#year').html(new Date().getFullYear());
+
     $(".hamburger").on("click",function(){
         toggleOverlay();
     });

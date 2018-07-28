@@ -199,6 +199,7 @@ p {
 }
 
 #header {
+    min-height: 700px;
     height: 100vh;
     display: block;
     color: black !important;
@@ -250,28 +251,21 @@ p {
     text-align: center;
 }
 #footer {
-    height: 10%;
+    height: 200px;
 
     background: black;
     background-size: cover;
     background-position: center;
-
-    padding-top: 5px;
-    padding-bottom: 5px;
-    bottom: 0;
 
     color: white;
     font-family: Avenir;
     text-align: center;
 }
 #footer-spacer {
-    height: 50%;
+    height: 50% !important;
 }
 #footer-content {
     transform: translateY(-50%);
-
-    margin-bottom: 1%;
-    margin-top: 1%;
 }
 
 .sponsor-obj {
@@ -333,10 +327,15 @@ p {
     padding-bottom: 20px;
 }
 
-#spacer {
+#cover-spacer {
     min-height: 300px;
     height: 50vh;
 }
+#subscribe-spacer {
+    min-height: 350px;
+    height: 50vh;
+}
+
 #outer-social {
     min-height: 250px;
     text-align: center;
