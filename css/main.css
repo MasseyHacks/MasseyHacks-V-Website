@@ -523,7 +523,25 @@ p {
     font-family: Avenir Next Bold;
 }
 #faq p {
-    text-align: justify;
+    text-align: left;
+}
+
+.panel-default > .panel-heading {
+    background-color:rgba(0,0,0,0);
+    border-bottom-width: 1px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-color: white;
+    border-style: solid;
+}
+
+.panel{
+    background-color:rgba(0,0,0,0);
+}
+
+#accordion a{
+    color: white !important;
 }
 
 #faq-box {
@@ -571,11 +589,13 @@ input {
         height: 16em;
 		padding: 2%;
     }
+    /*
     #shaped-container-1 {
         background: none;
         color: black;
         box-shadow: none;
     }
+    */
 }
 
 /* Image zoom on hover */
@@ -588,18 +608,19 @@ input {
 
 /* Only zoom on desktops */
 @media (min-width: 768px) {
-	.scaleonhover{
-		-webkit-transition: transform 1s; /* Safari */
-		transition: transform 0.5s;
-	}
+    .scaleonhover {
+        -webkit-transition: transform 1s; /* Safari */
+        transition: transform 0.5s;
+    }
 
-	.scaleonhover:hover{
-		transform:scale(1.2);
-		-ms-transform:scale(1.2); /* IE 9 */
-		-moz-transform:scale(1.2); /* Firefox */
-		-webkit-transform:scale(1.2); /* Safari and Chrome */
-		-o-transform:scale(1.2); /* Opera */
-	}
+    .scaleonhover:hover {
+        transform: scale(1.2);
+        -ms-transform: scale(1.2); /* IE 9 */
+        -moz-transform: scale(1.2); /* Firefox */
+        -webkit-transform: scale(1.2); /* Safari and Chrome */
+        -o-transform: scale(1.2); /* Opera */
+    }
+}
 
 /* iPhone SE fix */
 @media (max-width: 350px) {
