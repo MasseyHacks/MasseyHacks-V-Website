@@ -34,6 +34,7 @@ $(document).ready(function () {
         if ($(window).width() <= 767) {
 
             $("#accordion").removeClass("hidden");
+            $(".accordionCont").removeClass("hidden");
             $("#full-faq").addClass("hidden");
             $("#nav-ham").removeClass("hidden");
 
@@ -44,6 +45,7 @@ $(document).ready(function () {
         } else {
 
             $("#accordion").addClass("hidden");
+            $(".accordionCont").addClass("hidden");
             $("#full-faq").removeClass("hidden");
             $("#nav-ham").addClass("hidden");
 
