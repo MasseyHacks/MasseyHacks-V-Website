@@ -561,8 +561,8 @@ p {
 #img-grid img {
     object-fit: cover;
     object-position: center;
-    width: 25%;
-    height: 25%;
+    width: 25vw;
+    height: 25vw;
     border-radius: 20px;
 }
 #gradient1 {
