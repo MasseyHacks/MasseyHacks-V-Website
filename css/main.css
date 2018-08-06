@@ -570,8 +570,8 @@ p {
 #img-grid img {
     object-fit: cover;
     object-position: center;
-    width: 23vw;
-    height: 23vw;
+    width: 25vw;
+    height: 25vw;
     border-radius: 20px;
 }
 #gradient1 {
