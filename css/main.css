@@ -1,10 +1,10 @@
 @font-face {
     font-family: Avenir;
-    src: url("../fonts/Berthold Akzidenz Grotesk BE Regular.otf");
+    src: url("../fonts/avenir.otf");
 }
 @font-face {
     font-family: Avenir Next Bold;
-    src: url("../fonts/Berthold Akzidenz Grotesk Bold.otf");
+    src: url("../fonts/avenir-next-bold.ttf");
 }
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 *{
