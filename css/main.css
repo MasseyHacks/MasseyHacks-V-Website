@@ -536,6 +536,15 @@ p {
     border-style: solid;
 }
 
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0px;
+    border-bottom: 1px solid white;
+}
+
+.collapsing {
+    border-bottom: 1px solid white;
+}
+
 .panel{
     background-color:rgba(0,0,0,0);
 }
