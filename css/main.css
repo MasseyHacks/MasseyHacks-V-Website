@@ -181,6 +181,7 @@ p {
 }
 
 #cover {
+
     background-size: 100vmax;
     background-position: center top;
     background-attachment: fixed;
@@ -209,6 +210,7 @@ p {
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #fafafa;
+    background-image: url(../images/bkg.svg);
 }
 #about {
 
