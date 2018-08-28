@@ -485,6 +485,12 @@ p {
     }
 }
 
+.shadow {
+    box-shadow: 0px 10px 27px 0px rgba(0,0,0,0.34);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 /* James's Custom (ugly) CSS*/
 .video-wrapper {
     position: relative;
