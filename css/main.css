@@ -204,14 +204,16 @@ p {
     min-height: 650px;
     height: 100vh;
     display: block;
-    color: black !important;
+    color: white !important;
     margin-top: 0px;
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #fafafa;
-    background-image: url(../images/bkg.svg);
+    background-image: url(../images/darkblue.svg);
+    background-position: center;
+    background-size: cover;
 }
 #about {
 
@@ -352,6 +354,7 @@ p {
 .cover-content p {
     font-size: 1.6em;
     font-family: Avenir;
+    text-align: left;
 }
 
 @media screen and (min-width: 900px){
@@ -370,18 +373,20 @@ p {
 @media screen and (min-width: 720px) {
 
     /* Sections */
+
+    /*
     .cover-content img {
         width: 45%;
         max-width: 400px;
-    }
+    }*/
 
     .cover-content {
-        width: 66em;
+        width: 100vw;
 
         position:absolute;
         left:0;
         right:0;
-        margin:auto;
+        margin:0;
 
         max-width:100%;
         /*min-height: 440px;*/
@@ -391,17 +396,18 @@ p {
         padding-left: 2px;
         padding-right: 2px;
 
-        text-align: center;
+        /*text-align: center;*/
     }
 }
 
 /* Smaller Screens */
 @media screen and (max-width:720px){
 
+    /*
     .cover-content img {
         max-width: 240px;
         width: 70%;
-    }
+    }*/
 
     .cover-content {
         width: 95em;
@@ -420,8 +426,7 @@ p {
         padding-left: 10px;
         padding-right: 10px;
 
-        text-align: center;
-
+        /*text-align: center;*/
     }
 
     .cover-content h1 {
@@ -592,10 +597,20 @@ p {
     -webkit-text-fill-color: transparent;
 
 }
-input {
-    border-image-source: linear-gradient(#fc6076 0%, #ff9a44 100%) !important;
+#mce-EMAIL {
+    /*border-image-source: linear-gradient(#fc6076 0%, #ff9a44 100%) !important;
     border-width: 2pt !important;
-    border-image-slice: 1 !important;
+    border-image-slice: 1 !important;*/
+
+    background-color: white !important;
+    color: black !important;
+    border-radius: 0px !important;
+}
+#mc-embedded-subscribe {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 0px !important;
+    border-color: black !important;
 }
 #hamburger {
     color: black;
@@ -647,4 +662,34 @@ input {
     #cover-text h1 {
         font-size: 1.8em;
     }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track disabled */
+::-webkit-scrollbar-track:disabled {
+    background: white;
+}
+
+/* Thumb disabled */
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: lightgray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: darkgrey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #575d62;
 }
