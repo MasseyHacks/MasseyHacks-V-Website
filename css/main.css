@@ -549,13 +549,13 @@ p {
     border-top-width: 0;
     border-left-width: 0;
     border-right-width: 0;
-    border-bottom-color: white;
+    border-bottom-color: rgb(221, 220, 220);
     border-style: solid;
 }
 
 .panel-group .panel-heading+.panel-collapse>.panel-body {
     border-top: 0px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(221, 220, 220);
 }
 
 .collapsing {
@@ -567,7 +567,7 @@ p {
 }
 
 #accordion a{
-    color: white !important;
+    color: black !important;
 }
 
 #faq-box {
