@@ -181,7 +181,6 @@ p {
 }
 
 #cover {
-
     background-size: 100vmax;
     background-position: center top;
     background-attachment: fixed;
@@ -217,7 +216,6 @@ p {
     background-size: cover;
 }
 #about {
-
     padding-left: 0;
     padding-right: 0;
     padding-top: 50px;
@@ -338,7 +336,7 @@ p {
 }
 
 #cover-spacer {
-    min-height: 300px;
+    min-height: 275px;
     height: 50vh;
 }
 #subscribe-spacer {
