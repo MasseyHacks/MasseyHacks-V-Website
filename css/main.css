@@ -191,6 +191,7 @@ p {
 .slide {
     color: black;
     width:100%;
+
     display:table;
 
     padding-left: 2%;
@@ -201,7 +202,7 @@ p {
 }
 
 #header {
-    min-height: 650px;
+    min-height: 550px;
     height: 100vh;
     display: block;
     color: white !important;
@@ -217,6 +218,8 @@ p {
 }
 #about {
 
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 50px;
     padding-bottom: 0;
 
@@ -250,6 +253,7 @@ p {
     padding-right: 0%;
 }
 #sponsors {
+    margin-bottom: 50px;
     background: linear-gradient(to bottom, #E2E7ED 0%, #E2E7ED 100%);
     background: #fafafa;
     background-size: cover;
@@ -357,6 +361,19 @@ p {
     text-align: left;
 }
 
+#main-caption {
+    font-weight: bold;
+    font-size: 5vw;
+    text-align: left;
+    line-height: 1em;
+}
+
+#date-time {
+    font-size: 1.5vw;
+}
+
+
+
 @media screen and (min-width: 900px){
     #footer p {
         font-size: 0.9vw;
@@ -381,20 +398,20 @@ p {
     }*/
 
     .cover-content {
-        width: 100vw;
+        /*width: 100vw;*/
 
         position:absolute;
         left:0;
         right:0;
         margin:0;
 
-        max-width:100%;
+        /*max-width:100%;*/
         /*min-height: 440px;*/
 
         transform: translateY(-50%);
 
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 60px;
+        padding-right: 60px;
 
         /*text-align: center;*/
     }
@@ -402,6 +419,18 @@ p {
 
 /* Smaller Screens */
 @media screen and (max-width:720px){
+
+    #cover-video {
+        display: none;
+    }
+
+    #main-caption {
+        font-size: 12vw;
+    }
+
+    #date-time {
+        font-size: 5vw;
+    }
 
     /*
     .cover-content img {
@@ -423,8 +452,8 @@ p {
 
         max-width: 100%;
 
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
 
         /*text-align: center;*/
     }
@@ -665,34 +694,4 @@ p {
     #cover-text h1 {
         font-size: 1.8em;
     }
-}
-
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track disabled */
-::-webkit-scrollbar-track:disabled {
-    background: white;
-}
-
-/* Thumb disabled */
-::-webkit-scrollbar-thumb {
-    background: white;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: lightgray;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: darkgrey;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #575d62;
 }
