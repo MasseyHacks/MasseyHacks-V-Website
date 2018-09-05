@@ -211,7 +211,7 @@ p {
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #fafafa;
-    background-image: url(../images/darkblue.svg);
+    background-image: url(../images/platformgang.png); /*url(../images/darkblue.svg);*/
     background-position: center;
     background-size: cover;
 }
