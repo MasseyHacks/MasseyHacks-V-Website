@@ -48,6 +48,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 	<script src = "js/mail.js" type = "text/javascript"></script>
     <!--<script async src = "js/mail.js" type = "text/javascript"></script>-->
 
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
     <script async src="js/sweetalert2.all.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
@@ -62,8 +63,13 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 
     <!-- Cover -->
     <section id="header" class="slide changeable">
-        <div style="min-height: 100%">
-            <nav class="navbar navbar-inverse navbar-fixed-top" id="nav-main" style="height: 50px; display: none">
+
+        <video autoplay muted loop style="min-width: 100%; min-height: 100%; right: 0; bottom: 0; position: absolute">
+            <source src="images/video.mp4#t=50" type="video/mp4">
+        </video>
+
+        <div style="min-height: 100%; z-index: 600">
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="nav-main" style="height: 50px;">
                 <div id="nav-inner" class="container-fluid container">
                     <div class="navbar-header" id="navheader">
                         <div class="hamburger hamburger--slider pull-right hidden" id="nav-ham" style="color:black;">
@@ -131,7 +137,9 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
             <iframe id="cover-video" src="https://www.youtube.com/embed/RAhe4UmL4pk?ecver=2&rel=0" style="position:absolute;width:40vw;height:22.5vw; max-width: 1920px; max-height: 1080px; right:10vw; transform: translateY(-50%)" width="879" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             -->
 
+            <!--
             <img src="https://media.giphy.com/media/EC5NlYpSCYU8M/giphy.gif" style="position:absolute;width:40vw;height:22.5vw; max-width: 1920px; max-height: 1080px; right:10vw; transform: translateY(-50%)">
+            -->
 
         </div>
     </section>

@@ -1,4 +1,62 @@
 $(document).ready(function () {
+    
+    function updateScroll(position) {
+        switch (position) {
+            case 'hidden': // Hide bar when detached from top
+                $('#nav-main').removeClass('nav-active');
+                $('#nav-main').removeClass('nav-docked');
+                $('#nav-main').addClass('nav-hidden');
+
+                $("#nav-ham").attr("hidden", true);
+
+                break;
+            case 'body': // Body
+                $('#nav-main').css('position', 'fixed');
+
+                $('#nav-main').removeClass('nav-docked');
+                $('#nav-main').addClass('nav-active');
+
+                $('#nav-main').removeClass('nav-hidden');
+
+                // Hide hamburger
+                /*
+                if ($('#nav-main-table').is(":hidden")) {
+                    $("#nav-ham").attr("hidden", false);
+                }*/
+
+                break;
+            default: // Top (Docked)
+                $('#nav-main').css('position', 'absolute');
+                $('#nav-main').addClass('nav-docked');
+                $('#nav-main').removeClass('nav-active');
+                $('#nav-main').removeClass('nav-hidden');
+
+                /*
+                if ($('#nav-main-table').is(":hidden")) {
+                    $("#nav-ham").attr("hidden", false);
+                }*/
+
+                break;
+        }
+    };
+
+    var wp = new Waypoint({
+        element: document.getElementById('about'),
+        handler: function(direction) {
+            updateScroll(direction == 'down' ? 'body' : 'hidden');
+        },
+        offset: '20px'
+    })
+
+    var wp2 = new Waypoint({
+        element: document.getElementById('header'),
+        handler: function(direction) {
+            updateScroll(direction == 'down' ? 'hidden' : 'docked');
+        },
+        offset: '-50px'
+    })
+
+    updateScroll('docked');
 
     $('.js-navbar-link').on('click',function (e) {
         e.preventDefault();
@@ -26,7 +84,7 @@ $(document).ready(function () {
     var bgresize = function () {
 
         var windowz = $(window);
-        //$(".slide").css("height", (windowz.height() - $("#mainnav").height()) + "px");
+        //$(".slide").css("height", (windowz.height() - $("#nav-main").height()) + "px");
         //$("#header").css("height", Math.max(windowz.height(), 500) + "px");
 
         //$(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
