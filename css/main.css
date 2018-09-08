@@ -91,6 +91,24 @@ p {
     cursor: pointer;
 }
 
+.nav-hidden {
+    position: fixed;
+
+    top: -100px;
+}
+
+.nav-docked {
+    background-color: transparent;
+
+    top: 0;
+}
+
+.nav-active {
+    border-color: transparent;
+    background-color: rgb(255,255,255);
+    top: 0;
+}
+
 #nav-main a {
     color:black;
     text-decoration: none;
@@ -106,8 +124,8 @@ p {
 #nav-main {
     z-index: 9500;
     font-family: Avenir;
-    border-color: transparent;
-    background-color: rgb(255,255,255);
+
+    transition: .3s;
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
 }
 
@@ -211,7 +229,7 @@ p {
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #fafafa;
-    background-image: url(../images/platformgang.png); /*url(../images/darkblue.svg);*/
+    background-image: url(../images/darkblue.svg); /*url(../images/platformgang.png);*/
     background-position: center;
     background-size: cover;
 }
