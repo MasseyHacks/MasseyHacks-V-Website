@@ -45,7 +45,7 @@ $(document).ready(function () {
         handler: function(direction) {
             updateScroll(direction == 'down' ? 'body' : 'hidden');
         },
-        offset: '20px'
+        offset: '50px'
     })
 
     var wp2 = new Waypoint({
