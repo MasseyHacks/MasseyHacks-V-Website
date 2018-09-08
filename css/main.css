@@ -99,8 +99,14 @@ p {
 
 .nav-docked {
     background-color: transparent;
+    border-color: transparent;
 
     top: 0;
+}
+
+.nav-docked a {
+    color: white !important;
+    text-decoration: none;
 }
 
 .nav-active {
@@ -121,6 +127,7 @@ p {
     color:lightslategray;
     text-decoration: none;
 }
+
 #nav-main {
     z-index: 9500;
     font-family: Avenir;
