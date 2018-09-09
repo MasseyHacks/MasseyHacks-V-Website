@@ -107,6 +107,11 @@ p {
 .nav-docked a {
     color: white !important;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-docked #nav-logo {
+    display: none;
 }
 
 .nav-active {
