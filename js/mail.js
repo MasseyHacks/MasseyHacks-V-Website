@@ -3,7 +3,7 @@ $(document).ready(function () {
         if (email.val() != '') {
             swal({
                 type: 'info',
-                title: 'Processing subscription'
+                title: 'Processing Subscription'
             });
             swal.showLoading()
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
                         swal({
                             type: 'success',
                             title: 'Subscribed!',
-                            html: 'Get ready for the latest updates about MasseyHacks V! <br>(' + email.val() + ')'
+                            html: 'Get ready for the latest updates about MasseyHacks!<br>(' + email.val() + ')'
                         });
                         email.val("");
 
@@ -51,29 +51,30 @@ $(document).ready(function () {
                 }
 
             });
-        } else {
+        } /* else {
             swal(
                 'Oops...',
                 'Email is blank!',
                 'error'
             );
-        }
+        }*/
     }
 
+    /*
     $('#mce-EMAIL').keydown(function (e) {
         if (e.which == 13 && (document.activeElement.nodeName == 'TEXTAREA' || document.activeElement.nodeName == 'INPUT')) {
             e.preventDefault();
             var email = $('#mce-EMAIL');
 			console.log(email);
             sub(email);
-			$('#mce-EMAIL').val('');
+			//$('#mce-EMAIL').val('');
         }
-    });
+    });*/
 
-    $('#mc-embedded-subscribe').click(function () {
+    function submit() {
         var email = $('#mce-EMAIL');
 		console.log(email);
         sub(email);
-		$('#mce-EMAIL').val('');
-    });
+		//$('#mce-EMAIL').val('');
+    };
 });

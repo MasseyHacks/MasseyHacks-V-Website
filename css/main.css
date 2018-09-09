@@ -107,11 +107,16 @@ p {
 .nav-docked a {
     color: white !important;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-docked #nav-logo {
+    display: none;
 }
 
 .nav-active {
     border-color: transparent;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255,255,255) !important;
     top: 0;
 }
 
@@ -131,6 +136,8 @@ p {
 #nav-main {
     z-index: 9500;
     font-family: Avenir;
+    background-color: transparent;
+    border-color: transparent;
 
     transition: .3s;
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
@@ -276,7 +283,7 @@ p {
     padding-right: 0%;
 }
 #sponsors {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     background: linear-gradient(to bottom, #E2E7ED 0%, #E2E7ED 100%);
     background: #fafafa;
     background-size: cover;
