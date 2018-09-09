@@ -78,7 +78,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                             </div>
                         </div>
 
-                        <a href="#cover" class="navbar-brand js-navbar-link scrollLink navobject" style="padding: 0">
+                        <a id="nav-logo" href="#cover" class="navbar-brand js-navbar-link scrollLink navobject" style="padding: 0">
                             <img src="images/logo/logo.svg" height="100%" width="auto">
                         </a>
                     </div>
@@ -126,10 +126,10 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                 <br>
 
                 <label for="mce-EMAIL" style="font-weight: normal; font-family: Avenir; font-size: 1.2em;">Subscribe to our mailing list for updates!</label>
-                <div id="mc_embed_signup">
+                <form id="mc_embed_signup" onsubmit="return submit()">
                     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="hacker@hackermail.io" required>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="color: black;"></div>
-                </div>
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="color: black;">
+                </form>
 
             </div>
 
@@ -152,7 +152,11 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                     <div id="shaped-container-1">
                         <h3 style="font-family: 'Avenir Next Bold'; text-align: center;">What is MasseyHacks?</h3>
                         <br>
-                        <p style="text-align: left;">MasseyHacks is an event where high school students come together for a fun-filled weekend of hacking! We welcome students of all skill levels: from printing "Hello World", to seasoned coders. We have experienced mentors and workshop hosts onsite to provide an enriching educational experience for those who are just starting as hackers. MasseyHacks is an event where you can let your imagination run wild, create anything related to technology, and win cool prizes at the same time.</p>
+                        <p style="text-align: left;">
+                            MasseyHacks is a high school event where 250+ students of all skill levels — from those who haven't written "Hello World!" to seasoned hackers with SSH enabled power bars — come together to learn and innovate for 24 hours straight.
+                            Provided resources include lots of hardware for great engineering hacks, intelligent and experienced mentors to provide an enriching educational experience and several side events to keep everyone entertained through the night.
+                            In summary, MasseyHacks is a place to immerse yourself in the massive world of computer science and engineering, create any tech you want and let your imagination run free.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -182,6 +186,11 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                 </div>
             </div> -->
         </div>
+
+        <blockquote class="blockquote text-center" style="margin-top: 50px;">
+            <p class="mb-0">It was really fun enjoying it with my friends, and grinding on python all night.</p>
+            <footer class="blockquote-footer">MasseyHacks IV Hacker</footer>
+        </blockquote>
     </section>
 
     <section id="projects" style="display: none;">
