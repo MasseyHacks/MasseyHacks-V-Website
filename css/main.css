@@ -668,7 +668,7 @@ p {
     border-color: black !important;
 }
 #hamburger {
-    color: black;
+    color: white;
 }
 @media (max-width: 768px) {
     h3 {
