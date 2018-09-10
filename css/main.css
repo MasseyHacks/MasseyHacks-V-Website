@@ -110,7 +110,7 @@ p {
 }
 
 .nav-docked a {
-    color: white !important;
+    color: black !important;
     text-decoration: none;
     font-weight: bold;
 }
@@ -126,7 +126,7 @@ p {
 }
 
 #nav-main a {
-    color:white;
+    color:black;
     text-decoration: none;
 }
 #nav-main a:hover {
@@ -149,7 +149,7 @@ p {
 }
 
 .overlay a {
-    color:white;
+    color:black;
     text-decoration: none;
 }
 
@@ -241,7 +241,7 @@ p {
     min-height: 550px;
     height: 100vh;
     display: block;
-    color: white !important;
+    color: black !important;
     margin-top: 0px;
     padding-left: 0%;
     padding-right: 0%;
