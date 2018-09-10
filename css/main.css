@@ -91,6 +91,11 @@ p {
     cursor: pointer;
 }
 
+#nav-logo, #navright {
+    padding: 0;
+    margin: 0;
+}
+
 .nav-hidden {
     position: fixed;
 
@@ -578,14 +583,6 @@ p {
     margin-bottom: 5%;
     align-items: center;
 }
-#shaped-container-1 {
-    /*border-radius: 10px;*/
-/*    box-shadow: 0px 10px 27px 0px rgba(0,0,0,0.34);
-*/    color: black;
-    padding: 2em;
-/*    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);    /*background: #6991c7;*/
-}
 
 #shaped-container-2 {
     border-radius: 10px;
@@ -625,26 +622,6 @@ p {
     background-color:rgba(0,0,0,0);
 }
 
-#accordion a{
-    color: black !important;
-}
-
-#faq-box {
-/*    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-    background: #537895;
-    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);*/
-    /*background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);*/
-    /*border-radius: 10px;*/
-    color: black;
-    padding: 2em;
-/*    box-shadow: 0px 10px 27px 0px rgba(0,0,0,0.34);
-*/}
-#faq-box a {
-    color: rgb(80,80,80);
-    color: inherit;
-    font-family: inherit;
-}
 #img-grid img {
     object-fit: cover;
     object-position: center;
