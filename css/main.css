@@ -110,7 +110,7 @@ p {
 }
 
 .nav-docked a {
-    color: black !important;
+    color: white !important;
     text-decoration: none;
     font-weight: bold;
 }
@@ -241,14 +241,14 @@ p {
     min-height: 550px;
     height: 100vh;
     display: block;
-    color: black !important;
+    color: white !important;
     margin-top: 0px;
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #fafafa;
-    background-image: url(../images/bkg.svg); /*url(../images/platformgang.png);*/
+    background-image: url(../images/darkblue.svg); /*url(../images/platformgang.png);*/
     background-position: center;
     background-size: cover;
 }
