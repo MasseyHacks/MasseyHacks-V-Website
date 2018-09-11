@@ -71,10 +71,11 @@ $(document).ready(function () {
         }
     });*/
 
-    function submit() {
+    function submitEmail() {
         var email = $('#mce-EMAIL');
 		console.log(email);
         sub(email);
 		//$('#mce-EMAIL').val('');
+        return false;
     };
 });
