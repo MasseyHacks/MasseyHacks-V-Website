@@ -241,14 +241,15 @@ p {
     min-height: 550px;
     height: 100vh;
     display: block;
-    color: white !important;
+    color: black !important;
     margin-top: 0px;
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #fafafa;
-    background-image: url(../images/slide/1.jpg), linear-gradient(to bottom, #ddd6f3 0%, #D5DEE7 100%); /*url(../images/platformgang.png);*/
+    background-image: url(../images/humanbg.png); /*url(../images/platformgang.png);*/
+    background-position: right;
     background-size: cover;
 }
 #about {
