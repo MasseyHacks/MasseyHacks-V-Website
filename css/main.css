@@ -111,11 +111,6 @@ p {
 
 .nav-docked a {
     text-decoration: none;
-    font-weight: bold;
-}
-
-.nav-docked #nav-logo {
-    display: none;
 }
 
 .nav-active {
@@ -253,7 +248,7 @@ p {
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #fafafa;
-    background-image: url(../images/humanbg.JPG); /*url(../images/platformgang.png);*/
+    background-image: url(../images/background.gif); /*url(../images/platformgang.png);*/
     background-position: right;
     background-size: cover;
 }
