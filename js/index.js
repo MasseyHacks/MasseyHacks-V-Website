@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    
     function updateScroll(position) {
         switch (position) {
             case 'hidden': // Hide bar when detached from top
@@ -124,10 +123,10 @@ function toggleOverlay() {
     $("#nav-ham").toggleClass("is-active");
 
     if($("#nav-ham").hasClass("is-active")){
-        $(".overlay").css({visibility: "visible"});
+        $(".overlay").css({top: "0"});
         $("html").css({"overflow-y": "hidden"});
     } else{
-        $(".overlay").css({visibility: "hidden"});
+        $(".overlay").css({top: "-100%"});
         $("html").css({"overflow-y": "visible"});
     }
 }
