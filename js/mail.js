@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    $('#mc_embed_signup').submit(function(e) {
+        e.preventDefault();
+        submitEmail();
+    })
+
     function sub (email) {
         if (email.val() != '') {
             swal({
