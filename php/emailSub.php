@@ -1,6 +1,7 @@
 <?php
 include('MailChimp.php');
 require_once('config.php');
+
 use \DrewM\MailChimp\MailChimp;
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
