@@ -112,6 +112,7 @@ p {
 
 .nav-docked a {
     text-decoration: none;
+    color: white !important;
 }
 
 .nav-active {
@@ -242,14 +243,14 @@ p {
     min-height: 550px;
     height: 100vh;
     display: block;
-    color: black !important;
+    color: white !important;
     margin-top: 0px;
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #fafafa;
-    background-image: url(../images/background.gif); /*url(../images/platformgang.png);*/
+    background-image: url(../images/bkg.svg); /*url(../images/platformgang.png);*/
     background-position: right;
     background-size: cover;
 }
@@ -301,8 +302,15 @@ p {
     background-position: center;
     text-align: center;
 }
-#past-sponsors {
+#past-partners {
     padding-bottom: 150px;
+    background: linear-gradient(to bottom, #E2E7ED 0%, #E2E7ED 100%);
+    background: #fafafa;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#past-sponsors {
     background: linear-gradient(to bottom, #E2E7ED 0%, #E2E7ED 100%);
     background: #fafafa;
     background-size: cover;
