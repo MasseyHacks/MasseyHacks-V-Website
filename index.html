@@ -63,9 +63,10 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
     <!-- Cover -->
     <section id="header" class="slide changeable">
 
+        <!--
         <video autoplay muted loop style="min-width: 100%; min-height: 100%; right: 0; bottom: 0; position: absolute">
             <source src="images/wavy.mp4" type="video/mp4">
-        </video>
+        </video>-->
 
         <nav class="navbar navbar-inverse navbar-fixed-top" id="nav-main" style="height: 50px;">
             <div id="nav-inner" class="container-fluid container">
@@ -79,7 +80,10 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                     <ul class="nav navbar-nav navbar-right" id="navright">
 
                         <a id="nav-logo" href="#cover" class="navbar-brand js-navbar-link scrollLink navobject" style="padding-top: 0; padding-bottom: 0; padding-right: 0">
-                            <img src="images/logo/logo.svg" height="100%" width="auto">
+                            <div style="height: 100%">
+                                <img src="images/logo/logo.svg" height="100%" width="auto">
+                                <span style="padding-left: 10px; font-weight: bold">MasseyHacks V</span>
+                            </div>
                         </a>
 
                         <!--
@@ -158,7 +162,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
     </section>
 
     <!-- About -->
-    <section id="about" class="slide container-fluid changeable">
+    <section id="about" class="slide slide-free container-fluid changeable">
         <div id="mh-returns" class="container">
             <div class="row" style="align-items: center;">
                 <div class="col-md-5" id="description">
@@ -201,7 +205,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
         </div>
 
         <!--
-        <blockquote class="blockquote text-center" style="margin-top: 75px; margin-bottom: 0">
+        <blockquote class="blockquote text-center" style="margin-top: 150px; margin-bottom: 0">
             <p class="mb-0">I spent more time on a certain person's FSE than my own.</p>
             <footer class="blockquote-footer">A certain MH V organizer</footer>
         </blockquote> -->
@@ -217,12 +221,12 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
         </div>
     </section>
 
-    <section style="width: 100vw; height: 400px; margin-top: 75px;background-size: cover; background-position: center; background-image: url('images/slide/1.jpg');">
-        <div style="background: rgba(0, 0, 0, 0.7); width: 100%; height: 100%; color: white">
+    <section class="quote-block" style="background-image: url('images/slide/9.jpg');">
+        <div class="quote-block-inner">
 
             <div style="height: 50%; width: 100%"></div>
 
-            <blockquote class="blockquote text-center" style="margin: 0; transform: translateY(-50%); border-style: hidden">
+            <blockquote class="blockquote text-center">
                 <p class="mb-0">"The amount of free swag + the enthusiasm of the organizers was great.<br>Honestly, the entire weekend felt extremely well-organized and made for a great first hackathon."</p>
                 <footer class="blockquote-footer" style="color: white">MasseyHacks IV Hacker</footer>
             </blockquote>
@@ -232,7 +236,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="slide container-fluid changeable">
+    <section id="faq" class="slide slide-free container-fluid changeable">
         <div class="accordionCont hidden" id="faq-box">
             <h3>FAQ</h3>
             <div id="accordion" class="panel-group hidden">
@@ -395,12 +399,12 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
         </div>
     </section>
 
-    <section style="width: 100vw; height: 400px; margin-top: 75px;background-size: cover; background-position: center; background-image: url('images/slide/2.jpg');">
-        <div style="background: rgba(0, 0, 0, 0.7); width: 100%; height: 100%; color: white">
+    <section class="quote-block" style="background-image: url('images/slide/10.jpg');">
+        <div class="quote-block-inner">
 
             <div style="height: 50%; width: 100%"></div>
 
-            <blockquote class="blockquote text-center" style="margin: 0; transform: translateY(-50%); border-style: hidden">
+            <blockquote class="blockquote text-center">
                 <p class="mb-0">"It was really fun enjoying it with my friends, and grinding on python all night."</p>
                 <footer class="blockquote-footer" style="color: white">MasseyHacks IV Hacker</footer>
             </blockquote>
@@ -444,7 +448,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
     </section>
 
     <!-- Past Sponsors -->
-    <section id="past-sponsors" class="slide container-fluid changeable">
+    <section id="past-sponsors" class="slide slide-merge container-fluid changeable">
         <div class="container">
             <h3 style="padding: 0; margin: 0">Past Sponsors</h3>
 
@@ -470,16 +474,14 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                 <a href="https://facebook.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/facebook.jpg" class="zoom"></a>
                 <a href="https://www.edsby.com" target="_blank" class="sponsor-obj"><img src="images/sponsors/edsby.png" class="zoom" id="edsby"></a>
             </div>
-
-
         </div>
     </section>
 
     <!-- Past Partners -->
-    <section id="past-partners" class="slide container-fluid changeable">
+    <section id="past-partners" class="slide slide-merge container-fluid changeable">
         <div class="container">
             <!-- Partners -->
-            <div class="partner sponsor">
+            <div class="partner sponsor" style="padding: 0">
                 <h3>Past Partners</h3>
                 <a href="https://hackthenorth.com" target="_blank" class="sponsor-obj"><img src="images/sponsors/hackthenorth.svg" class="zoom"></a>
                 <a href="https://mlh.io/" target="_blank" class="sponsor-obj"><img src="images/sponsors/mlh-logo-color.svg" class="zoom"></a>
@@ -490,15 +492,42 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 
     <section id="footer">
         <div id="footer-spacer"></div>
-        <div id="footer-content">
-            <ul style="padding: 0; list-style-type: none">
-                <li class="overlay-social-object"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                <li class="overlay-social-object"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                <li class="overlay-social-object"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-                <li class="overlay-social-object"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
-            </ul>
+        <div id="footer-content" class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 style="margin-top: 0">MasseyHacks</h2>
 
-            <p style="font-size: 1em;">&lt/&gt by the MasseyHacks Platform Team with <i class="fa fa-coffee" style="color: white" aria-hidden="true"></i><br>&copy; <span id="year">2018</span></p>
+                    <p style="font-size: 1.1em; color: rgb(50, 50, 50)">
+                        Vincent Massey Secondary School<br>
+                        1800 Liberty St<br>
+                        Windsor, ON N9E 1J2
+                    </p>
+
+                    <p style="font-size: 0.9em">
+                        &lt/&gt by the MasseyHacks Platform Team with <i class="fa fa-coffee" aria-hidden="true"></i><br>
+                        Copyright &copy; <span id="year">2018</span>
+                    </p>
+                </div>
+
+                <div class="col-sm-6">
+                    <ul class="footer-quick-links">
+                        <li><a href="https://mh4.masseyhacks.ca" target="_blank">MasseyHacks IV</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#sponsors">Sponsorship</a></li>
+                        <li><a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a></li>
+
+                        <br>
+
+                        <ul style="padding: 0; list-style-type: none">
+                            <li class="overlay-social-object" style="margin-left: 0"><a href="mailto:hello@masseyhacks.ca"><i class="fa fa-envelope media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                            <li class="overlay-social-object"><a href="https://www.facebook.com/masseyhacks/" target="_blank"><i class="fab fa-facebook-f media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                            <li class="overlay-social-object"><a href="https://www.twitter.com/MasseyHacks" target="_blank"><i class="fab fa-twitter media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                            <li class="overlay-social-object"><a href="https://www.instagram.com/masseyhacks/" target="_blank"><i class="fab fa-instagram media-zoom navsocial" style="font-size: 20px" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 </div>
