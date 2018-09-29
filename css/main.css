@@ -139,7 +139,7 @@ p {
 
 #nav-main {
     z-index: 9500;
-    font-family: Avenir Bold;
+    font-family: Avenir Next Bold;
     background-color: transparent;
     border-color: transparent;
 
@@ -249,16 +249,18 @@ p {
 }
 
 .quote-block-inner {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     width: 100%;
     height: 100%;
-    color: white;
 }
 
 .quote-block-inner blockquote {
     margin: 0;
     transform: translateY(-50%);
     border-style: hidden;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(0,0,0);
 }
 
 .slide-free {
