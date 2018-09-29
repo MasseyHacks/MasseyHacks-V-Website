@@ -27,7 +27,6 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
     </script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="css/checkmark.css" type="text/css" rel="stylesheet"/>
     <link href="css/mailchimp.css" type="text/css" rel="stylesheet"/>
     <link href="css/main.css" type="text/css" rel="stylesheet"/>
     <link href="css/hamburgers.css" rel = "stylesheet" type = "text/css" />
@@ -46,14 +45,12 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
     <script src = "js/underscore-min.js" type = "text/javascript"></script>
     <script defer src = "js/index.js" type = "text/javascript"></script>
 	<script defer src = "js/mail.js" type = "text/javascript"></script>
-    <!--<script async src = "js/mail.js" type = "text/javascript"></script>-->
 
     <script src ="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
     <script async src="js/sweetalert2.all.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -68,7 +65,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
             <source src="images/wavy.mp4" type="video/mp4">
         </video>-->
 
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="nav-main" style="height: 50px;">
+        <nav class="navbar navbar-inverse navbar-fixed-top nav-docked" id="nav-main" style="height: 50px;">
             <div id="nav-inner" class="container-fluid container">
                 <div class="navbar-header" id="navheader">
                     <div class="hamburger hamburger--slider pull-right hidden" id="nav-ham" style="color:white;">
@@ -85,18 +82,6 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                                 <span style="padding-left: 10px; font-weight: bold">MasseyHacks V</span>
                             </div>
                         </a>
-
-                        <!--
-                        <li>
-                            <a id="nav-logo" href="#cover" class="js-navbar-link scrollLink navobject" style="height: 50px; padding: 0;">
-
-                                <img src="images/logo/logo.svg" height="50px" width="auto" style="margin: 0">
-
-                                <span style="font-size: 20px; display: none;">MasseyHacks V</span>
-
-                            </a>
-                        </li>-->
-
                     </ul>
 
 
@@ -149,12 +134,11 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="hacker@hackermail.io" required>
                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="color: black;">
                 </form>
-
-                <!--
-                <img src="images/logo/logo.svg">
-                -->
             </div>
 
+            <!--
+            <iframe id="cover-video" src="https://www.youtube.com/embed/RAhe4UmL4pk?ecver=2&rel=0" style="position:absolute;width:40vw;height:22.5vw; max-width: 1920px; max-height: 1080px; right:10vw; transform: translateY(-50%)" width="879" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            -->
 
         </div>
     </section>
@@ -180,33 +164,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                     </div>
                 </div>
             </div>
-
-<!--             <div id="img-grid" style="margin-top: 50px; align-items: center;">
-                <div class="row" style="min-width: 100%; overflow: hidden; padding-bottom: 25px">
-                    <div class="col-sm-4">
-						<div class="img-wrapper shadow">
-							<img src="images/slide/1.jpg" class="img-fluid scaleonhover" style="width: 100%">
-						</div>
-                    </div>
-                    <div class="col-sm-4">
-						<div class="img-wrapper shadow">
-							<img src="images/slide/5.jpg" class="img-fluid scaleonhover" style="width: 100%">
-						</div>
-                    </div>
-                    <div class="col-sm-4">
-						<div class="img-wrapper shadow">
-							<img src="images/slide/7.jpg" class="img-fluid scaleonhover" style="width: 100%">
-						</div>
-                    </div>
-                </div>
-            </div> -->
         </div>
-
-        <!--
-        <blockquote class="blockquote text-center" style="margin-top: 150px; margin-bottom: 0">
-            <p class="mb-0">I spent more time on a certain person's FSE than my own.</p>
-            <footer class="blockquote-footer">A certain MH V organizer</footer>
-        </blockquote> -->
     </section>
 
     <section id="projects" style="display: none;">
@@ -221,15 +179,11 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 
     <section class="quote-block" style="background-image: url('images/slide/9.jpg');">
         <div class="quote-block-inner">
-
             <div style="height: 50%; width: 100%"></div>
-
             <blockquote class="blockquote text-center">
                 <p class="mb-0">"The amount of free swag + the enthusiasm of the organizers was great.<br>Honestly, the entire weekend felt extremely well-organized and made for a great first hackathon."</p>
-                <footer class="blockquote-footer" style="color: black">MasseyHacks IV Hacker</footer>
+                <footer class="blockquote-footer">MasseyHacks IV Hacker</footer>
             </blockquote>
-
-
         </div>
     </section>
 
@@ -399,15 +353,11 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 
     <section class="quote-block" style="background-image: url('images/slide/10.jpg');">
         <div class="quote-block-inner">
-
             <div style="height: 50%; width: 100%"></div>
-
             <blockquote class="blockquote text-center">
                 <p class="mb-0">"It was really fun enjoying it with my friends, and grinding on python all night."</p>
-                <footer class="blockquote-footer" style="color: black">MasseyHacks IV Hacker</footer>
+                <footer class="blockquote-footer">MasseyHacks IV Hacker</footer>
             </blockquote>
-
-
         </div>
     </section>
 
