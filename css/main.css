@@ -769,7 +769,7 @@ p {
     border-color: black !important;
 }
 #hamburger {
-    color: white;
+    color: white !important;
 }
 @media (max-width: 768px) {
     h3 {
