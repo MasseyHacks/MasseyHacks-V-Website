@@ -559,31 +559,7 @@ p {
 }
 
 /* James's Custom (ugly) CSS*/
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.panel-section {
-    overflow: hidden;
-    margin-bottom: 5%;
-    align-items: center;
-}
 
-#shaped-container-2 {
-    border-radius: 10px;
-    color: white;
-    padding: 5%;
-    background-image: linear-gradient(135deg, #330867 0%, #30cfd0 100%);
-}
 #faq h2 {
     text-align: left !important;
     font-size: 1.5em;
@@ -616,20 +592,6 @@ p {
     background-color:rgba(0,0,0,0);
 }
 
-#img-grid img {
-    object-fit: cover;
-    object-position: center;
-    width: calc(100% - 4px);
-    width: 80%;
-/*    border-radius: 20px;
-*/}
-#gradient1 {
-    font-family: "Avenir Next Bold";
-    background: -webkit-linear-gradient(#fc6076 0%, #ff9a44 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
 #mce-EMAIL {
     /*border-image-source: linear-gradient(#fc6076 0%, #ff9a44 100%) !important;
     border-width: 2pt !important;
@@ -652,18 +614,6 @@ p {
     h3 {
         font-size: 2.7em;
     }
-    #img-grid img {
-        width: 16em;
-        height: 16em;
-		padding: 2%;
-    }
-    /*
-    #shaped-container-1 {
-        background: none;
-        color: black;
-        box-shadow: none;
-    }
-    */
 }
 
 /* Image zoom on hover */
