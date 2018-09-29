@@ -620,8 +620,7 @@ p {
 .img-wrapper {
     display: inline-block; /* change the default display type to inline-block */
     overflow: hidden;      /* hide the overflow */
-/*	border-radius: 20px;
-*/	vertical-align: middle;
+	vertical-align: middle;
 }
 
 /* Only zoom on desktops */
