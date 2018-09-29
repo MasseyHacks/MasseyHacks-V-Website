@@ -1,3 +1,4 @@
+/* Font */
 @font-face {
     font-family: Avenir;
     src: url("../fonts/avenir.otf");
@@ -7,6 +8,8 @@
     src: url("../fonts/avenir-next-bold.ttf");
 }
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+/* Global CSS */
 *{
     font-family: Avenir, sans-serif;
 }
@@ -14,26 +17,15 @@ img {
     -webkit-user-drag: none;
     user-drag: none;
 }
-
 body {
     overflow-x: hidden;
 }
-
-.panel-group {
-    text-align: left;
-}
-
-.collapsing {
-    transition: height 0.6s;
-}
-
 a {
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
 }
-
 h1 {
     font-size: 4em;
     text-align:center;
@@ -51,6 +43,7 @@ p {
     line-height: 1.4em;
 }
 
+/* Standard Buttons */
 .btn {
     width: 150px;
     background-color: white;
@@ -71,6 +64,7 @@ p {
     border-color: black;
 }
 
+/* Zoom */
 .zoom {
     transition: transform .2s;
     transform: scale(1);
@@ -79,30 +73,23 @@ p {
     transform: scale(1.05);
 }
 
-.media-zoom {
-    transition: transform .2s;
-    transform: scale(1);
-}
-.media-zoom:hover {
-    transform: scale(1.2);
-}
-
+/* FAQ Accordian */
 [data-toggle~="collapse"] {
     cursor: pointer;
 }
-
-#navright {
-    padding: 0;
-    margin: 0;
-    font-size: 1.2em;
+.panel-group {
+    text-align: left;
+}
+.collapsing {
+    transition: height 0.6s;
 }
 
+/* Navbar states */
 .nav-hidden {
     position: fixed;
 
     top: -100px;
 }
-
 .nav-docked {
     background-color: transparent;
     border-color: transparent;
@@ -110,13 +97,11 @@ p {
     margin-top: 15px;
     top: 0;
 }
-
 .nav-docked a {
     text-decoration: none;
     color: white !important;
     font-weight: bold;
 }
-
 .nav-active {
     border-color: transparent;
     background-color: rgb(245, 245, 245) !important;
@@ -125,6 +110,7 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
+/* Navbar buttons */
 #nav-main a {
     color:black;
     text-decoration: none;
@@ -138,6 +124,12 @@ p {
     text-decoration: none;
 }
 
+/* Core navbar */
+#navright {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+}
 #nav-main {
     z-index: 9500;
     font-family: Avenir Next Bold;
@@ -145,25 +137,21 @@ p {
     border-color: transparent;
 
     transition: .3s;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
 }
 
+/* Mobile overlay */
 .overlay a {
     color:black;
     text-decoration: none;
 }
-
 .overlay a:hover {
     color:lightgray;
     text-decoration: none;
 }
-
 .overlay a:active {
     color:lightslategray;
     text-decoration: none;
 }
-
-
 .overlay {
     z-index: 9400;
     background: rgba(255, 255, 255, 0.8);
@@ -198,16 +186,6 @@ p {
 
     list-style-type: none;
 }
-
-.navsocial {
-    color: white;
-    font-size: 20px;
-}
-.navobject {
-    margin-left: -6px;
-    margin-right: -6px;
-    color: black;
-}
 .overlay-social {
     display: inline;
     list-style-type: none;
@@ -221,13 +199,18 @@ p {
     display: inline;
 }
 
-#cover {
-    background-size: 100vmax;
-    background-position: center top;
-    background-attachment: fixed;
-    min-height: 100%;
-    overflow-x: hidden;
+/* Social Media */
+.navsocial {
+    color: white;
+    font-size: 20px;
 }
+.navobject {
+    margin-left: -6px;
+    margin-right: -6px;
+    color: black;
+}
+
+/* Master Container */
 .slide {
     color: black;
     width:100%;
@@ -241,25 +224,30 @@ p {
 
     background: linear-gradient(to bottom, #E2E7ED 0%, #E2E7ED 100%);
 }
+.slide-free {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.slide-merge {
+    padding-top: 75px;
+}
 
+/* Quote blocks */
 .quote-block {
     width: 100vw;
     height: 400px;
     background-size: cover;
     background-position: center;
 }
-
 .quote-block-inner {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
 
 }
-
 .blockquote-footer {
     color: white;
 }
-
 .quote-block-inner blockquote {
     margin: 0;
     transform: translateY(-50%);
@@ -267,15 +255,14 @@ p {
     color: white;
 }
 
-.slide-free {
-    padding-top: 150px;
-    padding-bottom: 150px;
+/* Custom section CSS*/
+#cover {
+    background-size: 100vmax;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 100%;
+    overflow-x: hidden;
 }
-
-.slide-merge {
-    padding-top: 75px;
-}
-
 #header {
     min-height: 550px;
     height: 100vh;
@@ -287,17 +274,13 @@ p {
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #fafafa;
-    background-image: url(../images/testbg.png); /*url(../images/platformgang.png);*/
+    background-image: url(../images/testbg.png);
     background-position: center;
     background-size: cover;
 }
 #about {
     padding-left: 0;
     padding-right: 0;
-
-    /*
-    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
-    background-blend-mode: normal,color-burn;*/
     background-image: linear-gradient(to bottom, #ddd6f3 0%, #D5DEE7 100%);
     background: #D5DEE7;
     background: #fafafa;
@@ -329,15 +312,12 @@ p {
     padding-right: 0%;
 }
 #sponsors {
-    /*padding-bottom: 150px;*/
-
     background: #fafafa;
     background-size: cover;
     background-position: center;
     text-align: center;
 }
 #past-sponsors {
-
     background: #fafafa;
     background-size: cover;
     background-position: center;
@@ -345,18 +325,16 @@ p {
 }
 #past-partners {
     padding-bottom: 150px;
-
     background: #fafafa;
     background-size: cover;
     background-position: center;
     text-align: center;
 }
 
+/* Footer */
 #footer {
     height: 350px;
-
     background: rgb(240, 240, 240);
-
     color: black;
     font-family: Avenir;
 }
@@ -376,7 +354,6 @@ p {
 #copyright {
     font-size: 0.9em;
 }
-
 .footer-quick-links {
     padding: 0;
     list-style-type: none;
@@ -391,6 +368,7 @@ p {
     padding-bottom: 2px;
 }
 
+/* Sponsorship */
 .sponsor-obj {
     padding-left: 10px;
     padding-right: 10px;
@@ -400,7 +378,6 @@ p {
     padding-top: 15px;
     padding-bottom: 15px;*/
 }
-
 .co-host img {
     max-height: 600px;
     width: 1000px;
@@ -460,15 +437,6 @@ p {
     height: 50vh;
 }
 
-#outer-social {
-    min-height: 250px;
-    text-align: center;
-    height: 50%;
-}
-#inner-social {
-    top: 80%;
-    position: relative;
-}
 .cover-content p {
     font-size: 1.6em;
     font-family: Avenir;
@@ -539,27 +507,10 @@ p {
 /* Larger Screens */
 @media screen and (min-width: 720px) {
 
-    /* Sections */
-
-    /*
-    .cover-content img {
-        width: 45%;
-        max-width: 400px;
-    }*/
-
     .cover-content {
-        /*width: 100vw;*/
-
         position:absolute;
-
         margin:0;
-
-        /*max-width:100%;*/
-        /*min-height: 440px;*/
-
         transform: translateY(-50%);
-
-        /*text-align: center;*/
     }
 
     blockquote p {
@@ -586,27 +537,13 @@ p {
     #date-time {
         font-size: 5vw;
     }
-
-    /*
-    .cover-content img {
-        max-width: 240px;
-        width: 70%;
-    }*/
-
     .cover-content {
         width: 95em;
-
         position:absolute;
-
         margin:auto;
-
         max-width:100%;
-
         transform: translateY(-50%);
-
         max-width: 100%;
-
-        /*text-align: center;*/
     }
 
     .cover-content h1 {
