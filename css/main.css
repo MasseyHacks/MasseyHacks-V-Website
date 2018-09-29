@@ -87,8 +87,7 @@ p {
 /* Navbar states */
 .nav-hidden {
     position: fixed;
-
-    top: -100px;
+    top: -200px;
 }
 .nav-docked {
     background-color: transparent;
@@ -102,6 +101,9 @@ p {
     color: white !important;
     font-weight: bold;
 }
+.nav-docked #mlh-trust-badge {
+    top: -15px;
+}
 .nav-active {
     border-color: transparent;
     background-color: rgb(245, 245, 245) !important;
@@ -109,6 +111,11 @@ p {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
+
+/*
+#nav-active #logo {
+    content: url("../images/logo/logo.svg") !important;
+}*/
 
 /* Navbar buttons */
 #nav-main a {
@@ -296,7 +303,7 @@ p {
 
 #main-caption {
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 5em;
     text-align: left;
     line-height: 1em;
 }
@@ -443,17 +450,12 @@ p {
 
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 720px){
     #footer p {
-        font-size: 0.9vw;
+        font-size: 0.9em;
     }
 }
 
-@media screen and (min-width: 720px) and (max-width: 900px)  {
-    #footer p {
-        font-size: 1.8vw;
-    }
-}
 
 /* Larger Screens */
 @media screen and (min-width: 720px) {
@@ -470,7 +472,7 @@ p {
 /* Smaller Screens */
 @media screen and (max-width:720px){
     #main-caption {
-        font-size: 12vw;
+        font-size: 4em;
     }
 
     .cover-content {
@@ -506,6 +508,9 @@ p {
         font-size: 1.6em;
     }
 
+    #main-caption {
+        font-size: 3em;
+    }
 }
 
 /* Sponsors - Small Screens */
