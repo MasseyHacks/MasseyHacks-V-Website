@@ -347,7 +347,7 @@ p {
 }
 
 #footer {
-    height: 400px;
+    height: 350px;
 
     background: rgb(240, 240, 240);
 
@@ -362,6 +362,13 @@ p {
 }
 #footer-content {
     transform: translateY(-50%);
+}
+
+#footer-address {
+    font-size: 1.1em;
+}
+#copyright {
+    font-size: 0.9em;
 }
 
 .footer-quick-links {
@@ -473,7 +480,43 @@ p {
     font-size: 1.5vw;
 }
 
+@media screen and (max-width: 800px){
 
+    .footer-quick-links {
+        display: none;
+    }
+
+    #footer-about {
+        display: none;
+    }
+
+    #copyright {
+        font-size: 1em;
+    }
+
+    #footer {
+        text-align: center;
+        height: 300px;
+    }
+
+    .slide-free {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .slide-merge {
+        padding-top: 50px;
+    }
+
+    .slide {
+        padding-top: 50px;
+    }
+
+    #past-partners {
+        padding-bottom: 50px;
+    }
+
+}
 
 @media screen and (min-width: 900px){
     #footer p {
@@ -566,10 +609,6 @@ p {
 
     .cover-content p {
         font-size: 1.3em;
-    }
-
-    #footer {
-        font-size: 2.5vw;
     }
 
     blockquote p {
