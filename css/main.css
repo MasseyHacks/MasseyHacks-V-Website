@@ -222,7 +222,10 @@ p {
 
     padding-top: 150px;
 
-    background: linear-gradient(to bottom, #E2E7ED 0%, #E2E7ED 100%);
+    background: #fafafa;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 }
 .slide-free {
     padding-top: 150px;
@@ -255,14 +258,7 @@ p {
     color: white;
 }
 
-/* Custom section CSS*/
-#cover {
-    background-size: 100vmax;
-    background-position: center top;
-    background-attachment: fixed;
-    min-height: 100%;
-    overflow-x: hidden;
-}
+/* Header */
 #header {
     min-height: 550px;
     height: 100vh;
@@ -278,57 +274,39 @@ p {
     background-position: center;
     background-size: cover;
 }
-#about {
-    padding-left: 0;
-    padding-right: 0;
-    background-image: linear-gradient(to bottom, #ddd6f3 0%, #D5DEE7 100%);
-    background: #D5DEE7;
-    background: #fafafa;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+.cover-content {
+    position:absolute;
+    text-align: left;
+    margin:0;
+    transform: translateY(-50%);
+}
+.cover-content p {
+    font-size: 1.6em;
+    font-family: Avenir;
+    text-align: left;
+}
+#cover-spacer {
+    min-height: 275px;
+    height: 50vh;
+}
+#subscribe-spacer {
+    min-height: 350px;
+    height: 50vh;
 }
 
+#main-caption {
+    font-weight: bold;
+    font-size: 5vw;
+    text-align: left;
+    line-height: 1em;
+}
+
+/* Custom CSS */
 #about-image {
     transform: translateY(-3%);
 }
-
-#faq {
-    background: white;
-    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
-    background: #fafafa;
-    background-blend-mode: normal,color-burn;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-}
-#schedule {
-    background: white;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    min-height: 600px;
-    padding-left: 0%;
-    padding-right: 0%;
-}
-#sponsors {
-    background: #fafafa;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-}
-#past-sponsors {
-    background: #fafafa;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-}
 #past-partners {
     padding-bottom: 150px;
-    background: #fafafa;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
 }
 
 /* Footer */
@@ -428,34 +406,7 @@ p {
     padding-bottom: 20px;
 }
 
-#cover-spacer {
-    min-height: 275px;
-    height: 50vh;
-}
-#subscribe-spacer {
-    min-height: 350px;
-    height: 50vh;
-}
-
-.cover-content p {
-    font-size: 1.6em;
-    font-family: Avenir;
-    text-align: left;
-}
-
-#main-caption {
-    font-weight: bold;
-    font-size: 5vw;
-    text-align: left;
-    line-height: 1em;
-}
-
-#date-time {
-    font-size: 1.5vw;
-}
-
 @media screen and (max-width: 800px){
-
     .footer-quick-links {
         display: none;
     }
@@ -506,13 +457,6 @@ p {
 
 /* Larger Screens */
 @media screen and (min-width: 720px) {
-
-    .cover-content {
-        position:absolute;
-        margin:0;
-        transform: translateY(-50%);
-    }
-
     blockquote p {
         font-size: 1.3em;
     }
@@ -525,18 +469,10 @@ p {
 
 /* Smaller Screens */
 @media screen and (max-width:720px){
-
-    #cover-video {
-        display: none;
-    }
-
     #main-caption {
         font-size: 12vw;
     }
 
-    #date-time {
-        font-size: 5vw;
-    }
     .cover-content {
         width: 95em;
         position:absolute;
@@ -572,7 +508,7 @@ p {
 
 }
 
-/* Smaller Screens */
+/* Sponsors - Small Screens */
 @media screen and (max-width:800px) {
     .co-host img {
         max-width: 95%;
