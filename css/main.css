@@ -772,9 +772,7 @@ p {
     border-radius: 0px !important;
     border-color: black !important;
 }
-#hamburger {
-    color: white;
-}
+
 @media (max-width: 768px) {
     h3 {
         font-size: 2.7em;
