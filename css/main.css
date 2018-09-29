@@ -102,7 +102,7 @@ p {
     font-weight: bold;
 }
 .nav-docked #mlh-trust-badge {
-    top: -15px;
+    top: -16px;
 }
 .nav-active {
     border-color: transparent;
@@ -110,6 +110,9 @@ p {
     top: 0;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.nav-active #mlh-trust-badge {
+    top: -1px;
 }
 
 /*
@@ -121,6 +124,7 @@ p {
 #nav-main a {
     color:black;
     text-decoration: none;
+    margin-top: 1px;
 }
 #nav-main a:hover {
     color:darkgrey;
@@ -450,15 +454,8 @@ p {
 
 }
 
-@media screen and (min-width: 720px){
-    #footer p {
-        font-size: 0.9em;
-    }
-}
-
-
 /* Larger Screens */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 767px) {
     blockquote p {
         font-size: 1.3em;
     }
@@ -467,21 +464,26 @@ p {
         font-size: 0.9em;
         font-weight: lighter;
     }
+
+    #footer p {
+        font-size: 0.9em;
+    }
 }
 
 /* Smaller Screens */
-@media screen and (max-width:720px){
+@media screen and (max-width:767px){
+
+    .nav-docked {
+        margin-top: 0px;
+    }
+
     #main-caption {
         font-size: 4em;
     }
 
     .cover-content {
-        width: 95em;
-        position:absolute;
         margin:auto;
-        max-width:100%;
-        transform: translateY(-50%);
-        max-width: 100%;
+        width: calc(100vw - 30px);
     }
 
     .cover-content h1 {

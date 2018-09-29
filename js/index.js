@@ -111,6 +111,14 @@ $(document).ready(function () {
 
             $("#nav-inner").addClass("container");
         }
+
+
+        if($("#nav-ham").hasClass("is-active")){
+            $("#nav-ham").toggleClass("is-active");
+            $(".overlay").css({top: "-100%"});
+            $("html").css({"overflow-y": "visible"});
+        }
+
     }
 
     bgresize();
