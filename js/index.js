@@ -91,12 +91,7 @@ $(document).ready(function () {
     });
 
     var bgresize = function () {
-
         var windowz = $(window);
-        //$(".slide").css("height", (windowz.height() - $("#nav-main").height()) + "px");
-        //$("#header").css("height", Math.max(windowz.height(), 500) + "px");
-
-        //$(".right-nav").css("margin-right", $("#mlh-trust-badge-cover").width() + 5 + "px");
 
         if ($(window).width() <= 767) {
 
@@ -122,19 +117,16 @@ $(document).ready(function () {
             $("#nav-inner").addClass("container");
         }
 
-
         if($("#nav-ham").hasClass("is-active")){
             $("#nav-ham").toggleClass("is-active");
             $(".overlay").css({top: "-100%"});
             $("html").css({"overflow-y": "visible"});
         }
-
     }
 
     bgresize();
     $(window).resize(bgresize);
     $(window).on("orientationchange", bgresize);
-
 });
 
 function toggleOverlay() {
