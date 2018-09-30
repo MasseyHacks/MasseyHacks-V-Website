@@ -19,6 +19,9 @@ $(document).ready(function () {
 
                 $('#nav-logo').attr('src', 'images/logo/logo.svg');
 
+                $('#mobile-overlay').removeClass('overlay-dark');
+                $('#mobile-overlay').addClass('overlay-light');
+
                 // Hide hamburger
                 /*
                 if ($('#nav-main-table').is(":hidden")) {
@@ -32,8 +35,10 @@ $(document).ready(function () {
                 $('#nav-main').removeClass('nav-active');
                 $('#nav-main').removeClass('nav-hidden');
 
-
                 $('#nav-logo').attr('src', 'images/logo/logo-white.svg');
+
+                $('#mobile-overlay').addClass('overlay-dark');
+                $('#mobile-overlay').removeClass('overlay-light');
 
                 /*
                 if ($('#nav-main-table').is(":hidden")) {

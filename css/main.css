@@ -160,21 +160,31 @@ p {
 }
 
 /* Mobile overlay */
-.overlay a {
+.overlay-dark a {
+    color:white;
+    text-decoration: none;
+}
+.overlay-light a {
     color:black;
     text-decoration: none;
 }
 .overlay a:hover {
-    color:lightgray;
+    color:darkgrey;
     text-decoration: none;
 }
 .overlay a:active {
-    color:lightslategray;
+    color:darkgrey;
     text-decoration: none;
+}
+.overlay-light {
+    background: rgba(255, 255, 255, 0.8);
+}
+.overlay-dark {
+    background: rgba(0, 0, 0, 0.7);
 }
 .overlay {
     z-index: 9400;
-    background: rgba(255, 255, 255, 0.8);
+    /*background: rgba(255, 255, 255, 0.8);*/
     top: -100%;
 
     height: 100%;
