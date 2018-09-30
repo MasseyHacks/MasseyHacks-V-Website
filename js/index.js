@@ -17,7 +17,7 @@ $(document).ready(function () {
 
                 $('#nav-main').removeClass('nav-hidden');
 
-                $('#nav-logo').attr('src', 'images/logo/logo.svg');
+                //$('#nav-logo').attr('src', 'images/logo/logo.svg');
 
                 $('#mobile-overlay').removeClass('overlay-dark');
                 $('#mobile-overlay').addClass('overlay-light');
@@ -35,7 +35,7 @@ $(document).ready(function () {
                 $('#nav-main').removeClass('nav-active');
                 $('#nav-main').removeClass('nav-hidden');
 
-                $('#nav-logo').attr('src', 'images/logo/logo-white.svg');
+                //$('#nav-logo').attr('src', 'images/logo/logo.svg');
 
                 $('#mobile-overlay').addClass('overlay-dark');
                 $('#mobile-overlay').removeClass('overlay-light');
