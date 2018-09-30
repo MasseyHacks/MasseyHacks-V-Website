@@ -104,6 +104,15 @@ p {
 .nav-docked #mlh-trust-badge {
     top: -16px;
 }
+.nav-docked #hamburger {
+    background-color: white;
+}
+.nav-docked #hamburger::before {
+    background-color: white;
+}
+.nav-docked #hamburger::after {
+    background-color: white;
+}
 .nav-active {
     border-color: transparent;
     background-color: rgb(245, 245, 245) !important;
@@ -621,9 +630,7 @@ p {
     border-radius: 0px !important;
     border-color: black !important;
 }
-#hamburger {
-    color: white !important;
-}
+
 @media (max-width: 768px) {
     h3 {
         font-size: 2.7em;
