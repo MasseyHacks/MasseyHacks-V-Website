@@ -300,8 +300,8 @@ p {
     padding-top: 0%;
     padding-bottom: 0%;
     /*background-color: #00fafa;*/
-    background-image: url(../images/testbg.png);
-    background-position: center;
+    background-image: url(../images/first_frame.png);
+    background-position: right;
     background-size: cover;
     overflow: hidden;
 }
