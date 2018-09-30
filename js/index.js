@@ -17,6 +17,8 @@ $(document).ready(function () {
 
                 $('#nav-main').removeClass('nav-hidden');
 
+                $('#nav-logo').attr('src', 'images/logo/logo.svg');
+
                 // Hide hamburger
                 /*
                 if ($('#nav-main-table').is(":hidden")) {
@@ -29,6 +31,9 @@ $(document).ready(function () {
                 $('#nav-main').addClass('nav-docked');
                 $('#nav-main').removeClass('nav-active');
                 $('#nav-main').removeClass('nav-hidden');
+
+
+                $('#nav-logo').attr('src', 'images/logo/logo-white.svg');
 
                 /*
                 if ($('#nav-main-table').is(":hidden")) {
