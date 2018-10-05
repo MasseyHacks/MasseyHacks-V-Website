@@ -1,1 +1,1 @@
-Testing auto-pull
+Testing auto-pull with SSL
