@@ -48,7 +48,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 	<script defer src = "js/mail.js" type = "text/javascript"></script>
 
     <script src ="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js"></script>
     <script async src="js/sweetalert2.all.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -58,8 +58,9 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 <div id="cover" class="wrapper">
 
     <!-- Cover -->
-    <section id="header" class="slide changeable" style="background-color: black">
+    <section id="header" class="slide changeable" style="background-color: black; background-image: url(images/first_frame.png);">
 
+        <!-- Magically speeds up loading? -->
         <img src="display: none;" src="images/first_frame.png" alt="">
 
         <!--
@@ -88,7 +89,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                 </div>
 
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right" id="navright" style="font-weight: bold;">
+                    <ul class="nav navbar-nav navbar-right" id="navright">
                         <li><a href="#about" class="js-navbar-link scrollLink navobject">About</a></li>
                         <li><a href="#faq" class="js-navbar-link scrollLink navobject">Questions</a></li>
                         <!--<li><a href="#schedule" class="js-navbar-link scrollLink navobject">Schedule</a></li>-->
@@ -157,9 +158,9 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                     <h3 style="font-family: 'Avenir Next Bold'; text-align: center;">What is MasseyHacks?</h3>
                     <br>
                     <p style="text-align: left;">
-                        MasseyHacks is a high school event where 250+ students of all skill levels — from those who haven't written "Hello World!" to seasoned hackers with SSH enabled power bars — come together to learn and innovate for 24 hours straight.
-                        Provided resources include lots of hardware for great engineering hacks, intelligent and experienced mentors to provide an enriching educational experience and several side events to keep everyone entertained through the night.
-                        In summary, MasseyHacks is a place to immerse yourself in the massive world of computer science and engineering, create any tech you want and let your imagination run free.
+                        MasseyHacks is a high school hackathon where 200+ students of all skill levels — from those who haven't written "Hello World!" to seasoned hackers with SSH enabled power bars — come together to learn and create something amazing for 24 hours straight.
+                        Provided resources include lots of hardware for hardware hacks, intelligent and experienced mentors to provide an enriching educational experience, several side events to keep everyone entertained throughout the event, and lots of food and snacks!
+                        In summary, MasseyHacks is a place to immerse yourself in the massive world of computer science and engineering, create anything you want and let your imagination run freely.
                     </p>
 
                 </div>
@@ -199,7 +200,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                         </h4>
                     </div>
                     <div id="faq1" class="panel-collapse collapse">
-                        <div class="panel-body">A hackathon is an event where people, usually students, of any background and discipline come together to immerse themselves in a condensed period of computer science-infused activity, from tech workshops to learning code to building amazing projects of limitless creativity.</div>
+                        <div class="panel-body">A hackathon is an event where people, usually students, of any background and discipline come together to immerse themselves in a condensed period of computer science-infused activity, from knowledge filled workshops to learning code to create amazing projects of limitless creativity.</div>
                     </div>
 
                     <div class="panel-heading"  data-toggle="collapse" data-parent="#accordion" href="#faq2">
@@ -208,7 +209,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                         </h4>
                     </div>
                     <div id="faq2" class="panel-collapse collapse">
-                        <div class="panel-body">Not at all — in fact, newcomers are encouraged to come and participate in hackathons in general. There, we’ll teach you the fundamentals of code, programmer essentials and lots more!</div>
+                        <div class="panel-body">Not at all — in fact, we encourage newcomers to come and participate in hackathons in general. We’ll teach you the fundamentals of programming, essentials and lots more!</div>
                     </div>
 
                     <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq3">
@@ -226,7 +227,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                         </h4>
                     </div>
                     <div id="faq4" class="panel-collapse collapse">
-                        <div class="panel-body">You can always hack by yourself, but teams are usually preferred. Teams are composed of no more than 4 people. You’re encouraged to form your own team for the event beforehand, but we will have a team formation period where you can find other hackers to work with for the event.</div>
+                        <div class="panel-body">You go solo and create something by youself, but we encourage you to form a team beforehand. There aren't any restrictions with who you can team up with, but a team can only have up to 4 people. Don't worry if you don't have a team at the event, as we will have a team formation event where we will find teammates for you.</div>
                     </div>
 
                     <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq6">
@@ -254,7 +255,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                         </h4>
                     </div>
                     <div id="faq8" class="panel-collapse collapse">
-                        <div class="panel-body">We will know in time... Lemme ask the director. Everything is a mystery, and that keeps the fun in things.</div>
+                        <div class="panel-body">First, make sure you have submited your application! We will send an email to you with your status :)</div>
                     </div>
 
                     <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq9">
@@ -415,11 +416,11 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                 <a href="http://www.bravecs.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/brave.png" class="zoom"></a>
                 <a href="https://www.stickermule.com/uses/laptop-stickers?utm_source=sponsorship&utm_campaign=mlh-sponsorship&utm_medium=referral" target="_blank" class="sponsor-obj"><img src="images/sponsors/sticker-mule.png" class="zoom"></a>
                 <a href="https://balsamiq.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/balsamiq.svg" class="zoom"></a>
-                <a href="http://radixinc.ca" target="_blank" class="sponsor-obj"><img src="images/sponsors/radix.jpg" class="zoom"></a>
+                <a href="http://radixinc.ca" target="_blank" class="sponsor-obj"><img src="images/sponsors/radix.png" class="zoom"></a>
                 <a href="http://windsor.ieee.ca/" target="_blank" class="sponsor-obj"><img src="images/sponsors/ieee.png" class="zoom" id="ieee"></a>
                 <a href="https://google.com" target="_blank" class="sponsor-obj"><img src="images/sponsors/google.png" class="zoom"></a>
                 <a href="https://discordapp.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/discord.png" class="zoom"></a>
-                <a href="https://facebook.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/facebook.jpg" class="zoom"></a>
+                <a href="https://facebook.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/facebook.png" class="zoom"></a>
                 <a href="https://www.edsby.com" target="_blank" class="sponsor-obj"><img src="images/sponsors/edsby.png" class="zoom" id="edsby"></a>
             </div>
         </div>
