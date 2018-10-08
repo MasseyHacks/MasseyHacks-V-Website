@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    var slides = [1, 2, 3, 5, 6, 11, 12, 13, 14, 15, 16];
+    var target = Math.floor(Math.random() * slides.length);
+
+    console.log(target, 'url("images/slide/' + slides[target] + '.jpg");');
+    $('#header').css('background-image', 'url("images/slide/' + slides[target] + '.jpg");');
+
     function updateScroll(position) {
         switch (position) {
             case 'hidden': // Hide bar when detached from top
