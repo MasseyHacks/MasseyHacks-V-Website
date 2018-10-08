@@ -242,6 +242,7 @@ p {
     font-size: 20px;
 }
 .navobject {
+    outline: 0px;
     margin-left: -6px;
     margin-right: -6px;
     color: black;
@@ -307,7 +308,7 @@ p {
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: #000000;
-    background-position: right;
+    background-position: center;
     background-size: cover;
     overflow: hidden;
 }
