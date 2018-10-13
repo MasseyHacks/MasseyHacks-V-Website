@@ -61,7 +61,7 @@ $(document).ready(function () {
         handler: function(direction) {
             updateScroll(direction == 'down' ? 'body' : 'hidden');
         },
-        offset: '50px'
+        offset: '80px'
     })
 
     var wp2 = new Waypoint({
@@ -69,7 +69,7 @@ $(document).ready(function () {
         handler: function(direction) {
             updateScroll(direction == 'down' ? 'hidden' : 'docked');
         },
-        offset: '-50px'
+        offset: '-80px'
     })
 
     updateScroll('docked');
