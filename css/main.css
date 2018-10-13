@@ -106,7 +106,6 @@ p {
 .nav-docked a {
     text-decoration: none;
     color: white !important;
-    font-weight: bold;
 }
 .nav-docked #mlh-trust-badge {
     top: -16px;
@@ -122,10 +121,10 @@ p {
 }
 .nav-active {
     border-color: transparent;
-    background-color: rgb(245, 245, 245) !important;
+    background-color: rgb(253, 253, 253) !important;
     top: 0;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 .nav-active #mlh-trust-badge {
     top: -1px;
@@ -138,7 +137,7 @@ p {
 
 /* Navbar buttons */
 #nav-main a {
-    color:black;
+    color: rgb(10, 10, 10);
     text-decoration: none;
     margin-top: 1px;
 }
@@ -164,6 +163,9 @@ p {
     border-color: transparent;
 
     transition: .3s;
+
+    height: 80px;
+    padding-top: 15px;
 }
 
 /* Mobile overlay */
