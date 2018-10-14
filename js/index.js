@@ -61,7 +61,7 @@ $(document).ready(function () {
         handler: function(direction) {
             updateScroll(direction == 'down' ? 'body' : 'hidden');
         },
-        offset: '80px'
+        offset: $("#nav-main").height()
     })
 
     var wp2 = new Waypoint({
@@ -69,7 +69,7 @@ $(document).ready(function () {
         handler: function(direction) {
             updateScroll(direction == 'down' ? 'hidden' : 'docked');
         },
-        offset: '-80px'
+        offset: -1 * $("#nav-main").height()
     })
 
     updateScroll('docked');
@@ -81,7 +81,7 @@ $(document).ready(function () {
         var $target = $(target);
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - $("#nav-main").height()
+            'scrollTop': $target.offset().top - $("#nav-main").height() + 10
         }, 500, 'swing', function () {
 
         });

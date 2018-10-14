@@ -125,6 +125,9 @@ p {
     top: 0;
 
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+
+    height: 80px;
+    padding-top: 15px;
 }
 .nav-active #mlh-trust-badge {
     top: -1px;
@@ -163,9 +166,6 @@ p {
     border-color: transparent;
 
     transition: .3s;
-
-    height: 80px;
-    padding-top: 15px;
 }
 
 /* Mobile overlay */
@@ -511,10 +511,10 @@ p {
 @media screen and (max-width:766px){
 
     .nav-docked {
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
-    #nav-main {
+    .nav-active {
         height: 50px;
         padding-top: 0px;
     }
