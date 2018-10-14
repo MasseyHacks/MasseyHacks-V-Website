@@ -310,11 +310,13 @@ p {
     padding-top: 0%;
     padding-bottom: 0%;
 
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-color: black;
     background-position: center;
     background-size: cover;
     overflow: hidden;
+
+
 }
 .cover-content {
     position:absolute;
