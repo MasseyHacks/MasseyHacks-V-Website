@@ -98,9 +98,7 @@ $(document).ready(function () {
     });
 
     var bgresize = function () {
-        var windowz = $(window);
-
-        if ($(window).width() <= 767) {
+        if ($(document).width() <= 767) {
 
             $("#accordion").removeClass("hidden");
             $(".accordionCont").removeClass("hidden");
