@@ -51,6 +51,35 @@ p {
     line-height: 1.4em;
 }
 
+/* Mouse
+
+Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
+
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+}
+
 /* Standard Buttons */
 .btn {
     width: 150px;
@@ -284,7 +313,7 @@ p {
     background-position: center;
 }
 .quote-block-inner {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
 
@@ -316,7 +345,6 @@ p {
     background-position: center;
     background-size: cover;
     overflow: hidden;
-
 
 }
 .cover-content {
@@ -458,6 +486,11 @@ p {
 }
 
 @media screen and (max-width: 995px){
+
+    #mouse {
+        display: none;
+    }
+
     .footer-quick-links {
         display: none;
     }
@@ -654,10 +687,10 @@ p {
     border-radius: 0px !important;
 }
 #mc-embedded-subscribe {
-    background-color: black !important;
+    background-color: transparent !important;
     color: white !important;
     border-radius: 0px !important;
-    border-color: black !important;
+    border-color: white !important;
 }
 
 @media (max-width: 768px) {
