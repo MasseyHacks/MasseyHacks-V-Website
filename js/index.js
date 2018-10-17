@@ -25,6 +25,7 @@ $(document).ready(function () {
                 $('#nav-main').removeClass('nav-hidden');
 
                 $('#nav-logo').attr('src', 'images/logo/logo.svg');
+                //$('#nav-logo-group').attr("hidden", false);
 
                 $('#mobile-overlay').removeClass('overlay-dark');
                 $('#mobile-overlay').addClass('overlay-light');
@@ -43,6 +44,7 @@ $(document).ready(function () {
                 $('#nav-main').removeClass('nav-hidden');
 
                 $('#nav-logo').attr('src', 'images/logo/logo-white.svg');
+                //$('#nav-logo-group').attr("hidden", true);
 
                 $('#mobile-overlay').addClass('overlay-dark');
                 $('#mobile-overlay').removeClass('overlay-light');
