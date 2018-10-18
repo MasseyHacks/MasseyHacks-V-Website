@@ -386,11 +386,11 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 #footer {
     height: 350px;
     background: rgb(240, 240, 240);
-    color: black;
+    color: rgb(70, 70, 70);
     font-family: Avenir;
 }
 #footer i {
-    color: black;
+    color: rgb(70, 70, 70);
 }
 #footer-spacer {
     height: 50% !important;
@@ -411,7 +411,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     font-size: 1.1em;
 }
 .footer-quick-links a {
-    color: black;
+    color: rgb(70, 70, 70);
     font-weight: bold;
 }
 .footer-quick-links li {
