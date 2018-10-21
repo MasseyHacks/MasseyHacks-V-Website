@@ -83,7 +83,7 @@ $(document).ready(function () {
         var $target = $(target);
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 50
+            'scrollTop': $target.offset().top
         }, 500, 'swing', function () {
 
         });
