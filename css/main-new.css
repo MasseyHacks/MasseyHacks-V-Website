@@ -137,6 +137,10 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     text-decoration: none;
     color: white !important;
 }
+.nav-docked a:hover {
+    text-decoration: none;
+    color: lightgray !important;
+}
 .nav-docked #mlh-trust-badge {
     top: -16px;
 }
@@ -689,6 +693,13 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 #mc-embedded-subscribe {
     background-color: transparent !important;
     color: white !important;
+    border-radius: 0px !important;
+    border-color: white !important;
+}
+#mc-embedded-subscribe:hover {
+    background-color: transparent !important;
+    color: black !important;
+    background-color: #FFFFFF !important;
     border-radius: 0px !important;
     border-color: white !important;
 }
