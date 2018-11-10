@@ -161,8 +161,8 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 
-    height: 60px;
-    padding-top: 5px;
+    height: 70px;
+    padding-top: 10px;
 }
 .nav-active #mlh-trust-badge {
     top: -1px;
