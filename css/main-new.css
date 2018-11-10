@@ -144,24 +144,25 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 .nav-docked #mlh-trust-badge {
     top: -16px;
 }
-.nav-docked #hamburger {
+#hamburger {
     background-color: white;
 }
-.nav-docked #hamburger::before {
+#hamburger::before {
     background-color: white;
 }
-.nav-docked #hamburger::after {
+#hamburger::after {
     background-color: white;
 }
+
 .nav-active {
     border-color: transparent;
-    background-color: rgb(253, 253, 253) !important;
+    background-color: #001126 !important;
     top: 0;
 
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 
-    height: 60px;
-    padding-top: 5px;
+    height: 75px;
+    padding-top: 13px;
 }
 .nav-active #mlh-trust-badge {
     top: -1px;
@@ -174,7 +175,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 
 /* Navbar buttons */
 #nav-main a {
-    color: rgb(10, 10, 10);
+    color: white;
     text-decoration: none;
     margin-top: 1px;
 }
@@ -317,7 +318,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     background-position: center;
 }
 .quote-block-inner {
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 5, 10, 0.60);
     width: 100%;
     height: 100%;
 
@@ -555,8 +556,8 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     }
 
     .nav-active {
-        height: 50px;
-        padding-top: 0px;
+        height: 60px;
+        padding-top: 5px;
     }
 
     #main-caption {
