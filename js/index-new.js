@@ -27,8 +27,8 @@ $(document).ready(function () {
                 //$('#nav-logo').attr('src', 'images/logo/logo.svg');
                 //$('#nav-logo-group').attr("hidden", false);
 
-                $('#mobile-overlay').removeClass('overlay-dark');
-                $('#mobile-overlay').addClass('overlay-light');
+                //$('#mobile-overlay').removeClass('overlay-dark');
+                //$('#mobile-overlay').addClass('overlay-light');
 
                 // Hide hamburger
                 /*
@@ -46,8 +46,8 @@ $(document).ready(function () {
                 //$('#nav-logo').attr('src', 'images/logo/logo-white.svg');
                 //$('#nav-logo-group').attr("hidden", true);
 
-                $('#mobile-overlay').addClass('overlay-dark');
-                $('#mobile-overlay').removeClass('overlay-light');
+                //$('#mobile-overlay').addClass('overlay-dark');
+                //$('#mobile-overlay').removeClass('overlay-light');
 
                 /*
                 if ($('#nav-main-table').is(":hidden")) {

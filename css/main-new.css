@@ -156,7 +156,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 
 .nav-active {
     border-color: transparent;
-    background-color: #001126 !important;
+    background-color: #021a37 !important;
     top: 0;
 
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
@@ -224,7 +224,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     background: rgba(255, 255, 255, 0.8);
 }
 .overlay-dark {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 10, 20, 0.75);
 }
 .overlay {
     z-index: 9400;
