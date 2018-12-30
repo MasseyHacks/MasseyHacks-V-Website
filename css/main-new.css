@@ -144,13 +144,13 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 .nav-docked #mlh-trust-badge {
     top: -16px;
 }
-#hamburger {
+.nav-docked #hamburger {
     background-color: white;
 }
-#hamburger::before {
+.nav-docked #hamburger::before {
     background-color: white;
 }
-#hamburger::after {
+.nav-docked #hamburger::after {
     background-color: white;
 }
 
