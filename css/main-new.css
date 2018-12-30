@@ -738,7 +738,18 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     }
 }
 
-/* Past sponsors */
+/* Sponsors */
+#brave {
+    max-height: 115px;
+    max-width: 310px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 #ieee {
     max-height: 115px;
     max-width: 310px;
