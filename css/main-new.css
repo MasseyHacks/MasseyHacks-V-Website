@@ -142,7 +142,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     color: lightgray !important;
 }
 .nav-docked #mlh-trust-badge {
-    top: -16px;
+    top: -16px !important;
 }
 .nav-docked #hamburger {
     background-color: white;

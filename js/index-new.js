@@ -25,6 +25,7 @@ $(document).ready(function () {
                 $('#nav-main').removeClass('nav-hidden');
 
                 $('#nav-logo').attr('src', 'images/logo/logo.svg');
+                $('#bannerImg').attr('src', 'https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-blue.svg');
                 //$('#nav-logo-group').attr("hidden", false);
 
                 $('#mobile-overlay').removeClass('overlay-dark');
@@ -44,6 +45,7 @@ $(document).ready(function () {
                 $('#nav-main').removeClass('nav-hidden');
 
                 $('#nav-logo').attr('src', 'images/logo/logo-white.svg');
+                $('#bannerImg').attr('src', 'https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg');
                 //$('#nav-logo-group').attr("hidden", true);
 
                 $('#mobile-overlay').addClass('overlay-dark');
