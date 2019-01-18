@@ -109,10 +109,10 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     border: 1px solid #ABB0B2;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 4px;
     letter-spacing: .03em;
     background: none;
-    color: #FFFFFF;
+    color: #FFFFFF!important;
     background-color: transparent;
     box-sizing: border-box;
     height: 32px;
@@ -120,12 +120,13 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     padding: 0 18px;
     display: inline-block;
     margin: 0;
+
     transition: all 0.23s ease-in-out 0s;
 }
 
 .mcbutton:hover {
     background-color: #FFFFFF;
-    color: #0A1939;
+    color: #0A1939!important;
     cursor: pointer;
 }
 /* Zoom */
