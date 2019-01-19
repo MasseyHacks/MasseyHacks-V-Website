@@ -551,6 +551,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 
 @media screen and (max-width: 995px){
 
+
     #mouse {
         display: none;
     }
@@ -609,6 +610,17 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 
 /* Smaller Screens */
 @media screen and (max-width:766px){
+
+
+    .btn-white {
+
+        font-size: 1.3em;
+
+        width: 100%;
+        height: 50px;
+        margin-bottom: 10px;
+
+    }
 
     .nav-docked {
         margin-top: 10px;
