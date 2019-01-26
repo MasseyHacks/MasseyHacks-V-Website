@@ -645,7 +645,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 /* Sponsors - Small Screens */
 @media screen and (max-width:800px) {
     .co-host img {
-        max-width: 95%;
+        max-width: 100%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
@@ -653,7 +653,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
         padding-bottom: 20px;
     }
     .gold img {
-        max-width: 93%;
+        max-width: 100%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
@@ -661,7 +661,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
         padding-bottom: 5px;
     }
     .silver img {
-        max-width: 70%;
+        max-width: 90%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
@@ -669,7 +669,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
         padding-bottom: 5px;
     }
     .partner img {
-        max-width: 60%;
+        max-width: 90%;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
@@ -677,7 +677,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
         padding-bottom: 10px;
     }
     .bronze img {
-        max-width: 50% !important;
+        max-width: 60% !important;
         margin-left: 10px;
         margin-right: 10px;
         vertical-align: middle;
