@@ -6,6 +6,16 @@ $(document).ready(function () {
     console.log(target, 'url("images/slide/' + slides[target] + '.jpg");');
     $('#header').css('background-image', 'url("images/slide/' + slides[target] + '.jpg");');
 
+    $("#applybtn").click(function () {
+        swal({title: 'I am applying as a...',
+            showCancelButton: false,
+            showCloseButton: true,
+            showConfirmButton: false,
+            html:'<a href="https://register.masseyhacks.ca/" target="_blank"><button type="button" class="btn btn-large btn-wide">Hacker</button><br></a>' +
+                '<a href="https://masseyhacks.typeform.com/to/VXS7HM" target="_blank"><button type="button" class="btn btn-large btn-wide">Mentor/Workshop Host</button></a>'});
+    })
+
+
     function updateScroll(position) {
         switch (position) {
             case 'hidden': // Hide bar when detached from top
