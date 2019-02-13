@@ -180,25 +180,33 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 .nav-docked #mlh-trust-badge {
     top: -16px !important;
 }
-.nav-docked #hamburger {
+#hamburger {
     background-color: white;
 }
-.nav-docked #hamburger::before {
+#hamburger::before {
     background-color: white;
 }
-.nav-docked #hamburger::after {
+#hamburger::after {
     background-color: white;
 }
 
 .nav-active {
     border-color: transparent;
+
+    /*
     background-color: rgb(253, 253, 253) !important;
     top: 0;
 
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);*/
+
+
+    border-color: transparent;
+    background-color: #051930 !important;
+
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 
-    height: 60px;
-    padding-top: 5px;
+    height: 70px;
+    padding-top: 10px;
 }
 .nav-active #mlh-trust-badge {
     top: -1px;
@@ -211,7 +219,7 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 
 /* Navbar buttons */
 #nav-main a {
-    color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin-top: 1px;
 }
@@ -611,11 +619,6 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 
     .nav-docked {
         margin-top: 10px;
-    }
-
-    .nav-active {
-        height: 60px;
-        padding-top: 5px;
     }
 
     #main-caption {
