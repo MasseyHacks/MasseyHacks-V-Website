@@ -12,7 +12,7 @@ $(document).ready(function () {
             showCloseButton: true,
             showConfirmButton: false,
             html:'<a href="https://register.masseyhacks.ca/" target="_blank"><button type="button" class="btn btn-large btn-wide">Hacker</button><br></a>' +
-                '<a href="https://masseyhacks.typeform.com/to/VXS7HM" target="_blank"><button type="button" class="btn btn-large btn-wide">Mentor/Workshop Host</button></a>'});
+                '<a href="https://masseyhacks.ca" target="_blank"><button type="button" disabled="true" class="btn btn-large btn-wide">Mentor/Workshop Host</button></a>'});
     })
 
 
