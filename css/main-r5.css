@@ -828,6 +828,16 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     padding-bottom: 20px;
 }
 
+#canada {
+    max-height: 150px;
+    max-width: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 #gecdsb {
     max-height: 150px;
     max-width: 275px;
