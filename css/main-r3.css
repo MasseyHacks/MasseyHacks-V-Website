@@ -838,6 +838,16 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     padding-bottom: 20px;
 }
 
+#welco {
+    max-height: 200px;
+    max-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 #impac {
     max-height: 200px;
     max-width: 275px;
