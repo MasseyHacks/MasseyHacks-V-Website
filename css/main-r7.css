@@ -878,3 +878,76 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     padding-bottom: 20px;
 }
 
+
+/* Schedule */
+.time {
+    transform: translate(50%, -45px);
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+}
+.time-heading {
+    transform: translate(50%, -65px);
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+}
+.schedule-label {
+    height: 2px;
+    position: absolute;
+    text-align: left;
+    color: black;
+    padding: 0;
+    margin: 0;
+    display: grid;
+}
+#label-container {
+    height: 0;
+}
+.inner-label {
+    position: relative;
+    transform: translateY(-52px);
+    padding-left: 1px;
+    margin: 0;
+    white-space: nowrap;
+}
+.label-caption {
+    padding: 0;
+    transform: translateY(12px);
+}
+.label-description {
+    font-size: 13px;
+}
+.schedule-outer {
+    padding-top: 20px;
+    width: 100%;
+    height: 600px;
+    overflow-x: scroll;
+    overflow-y: hide;
+    -webkit-overflow-scrolling:touch;
+}
+.schedule-inner {
+    padding: 0;
+
+    padding-top: 30px;
+    width: 100%;
+    min-height: 500px;
+    height: 90%;
+    white-space: nowrap;
+    -webkit-overflow-scrolling:touch;
+    font-size: 0;
+}
+.schedule-obj {
+    width: 200px;
+    min-height: 500px;
+    height: 100%;
+    border-right-color: #ededed;
+    border-right-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+
+
+}
