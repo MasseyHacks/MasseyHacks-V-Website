@@ -189,6 +189,15 @@
         "xe": 19.75,
         "y": 2
     }, {
+        "caption": "Submissions",
+        "start": "8:00AM",
+        "end": "11:00AM",
+        "location": "Devpost",
+        "color": "#4d94ff",
+        "xs": 21,
+        "xe": 24,
+        "y": 0
+    }, {
         "caption": "Breakfast",
         "start": "7:00AM",
         "end": "9:00AM",
@@ -201,7 +210,7 @@
         "caption": "Therapy Dogs",
         "start": "9:00AM",
         "end": "10:00AM",
-        "location": "Front Desk",
+        "location": "Room 150",
         "color": "#ff9900",
         "xs": 22,
         "xe": 23,
