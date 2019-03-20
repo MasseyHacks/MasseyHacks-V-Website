@@ -1,6 +1,7 @@
  [
     {
         "caption": "Check-In",
+		"date": "March 23 2019",
         "start": "11:00AM",
         "end": "12:00PM",
         "location": "Front Desk",
@@ -10,6 +11,7 @@
         "y": 0
     }, {
         "caption": "Lunch",
+		"date": "March 23 2019",
         "start": "11:30AM",
         "end": "12:20PM",
         "location": "Cafeteria",
@@ -19,6 +21,7 @@
         "y": 1
     }, {
         "caption": "Opening Ceremonies",
+		"date": "March 23 2019",
         "start": "12:15PM",
         "end": "1:00PM",
         "location": "North Gym",
@@ -28,6 +31,7 @@
         "y": 0
     }, {
         "caption": "Team Formation/Hacking Begins!",
+		"date": "March 23 2019",
         "start": "1:00PM",
         "end": "1:30PM",
         "location": "Cafeteria",
@@ -37,6 +41,7 @@
         "y": 1
     }, {
         "caption": "Git/GitHub",
+		"date": "March 23 2019",
         "start": "1:45PM",
         "end": "2:45PM",
         "location": "Room 150",
@@ -46,6 +51,7 @@
         "y": 3
     }, {
         "caption": "Python Crash Course",
+		"date": "March 23 2019",
         "start": "2:15PM",
         "end": "3:15PM",
         "location": "Room 154",
@@ -55,6 +61,7 @@
         "y": 4
     }, {
         "caption": "Hackenger Hunt 1",
+		"date": "March 23 2019",
         "start": "2:30PM",
         "end": "4:30PM",
         "location": "Massey (of course!)",
@@ -64,6 +71,7 @@
         "y": 2
     }, {
         "caption": "Frontend Web Development",
+		"date": "March 23 2019",
         "start": "3:30PM",
         "end": "4:30PM",
         "location": "Room 150",
@@ -73,6 +81,7 @@
         "y": 3
     }, {
         "caption": "Vim",
+		"date": "March 23 2019",
          "start": "3:30PM",
          "end": "4:30PM",
          "location": "Room 154",
@@ -82,6 +91,7 @@
          "y": 4
     }, {
         "caption": "Firebase",
+		"date": "March 23 2019",
         "start": "4:45PM",
         "end": "5:45PM",
         "location": "Room 154",
@@ -91,6 +101,7 @@
         "y": 4
     }, {
         "caption": "Blind Coding",
+		"date": "March 23 2019",
         "start": "5:00PM",
         "end": "6:00PM",
         "location": "Room 150",
@@ -100,6 +111,7 @@
         "y": 2
     }, {
         "caption": "Intro to Deep Learning",
+		"date": "March 23 2019",
         "start": "6:00PM",
         "end": "7:00PM",
         "location": "Room 154",
@@ -109,6 +121,7 @@
         "y": 3
     }, {
         "caption": "Dinner",
+		"date": "March 23 2019",
         "start": "7:00PM",
         "end": "9:00PM",
         "location": "Cafeteria",
@@ -118,6 +131,7 @@
         "y": 1
     }, {
         "caption": "3D Modeling/Printing",
+		"date": "March 23 2019",
         "start": "8:00PM",
         "end": "9:00PM",
         "location": "Room 150",
@@ -127,6 +141,8 @@
         "y": 4
     }, {
         "caption": "Hackenger Hunt 2",
+		"date": "March 23 2019",
+		"dateEnd": "March 24 2019",
         "start": "8:30PM",
         "end": "3:30AM",
         "location": "Massey (of course!)",
@@ -136,6 +152,7 @@
         "y": 2
     }, {
         "caption": "Cup Stacking",
+		"date": "March 23 2019",
         "start": "9:00PM",
         "end": "10:00PM",
         "location": "Cafeteria",
@@ -145,6 +162,7 @@
         "y": 3
     }, {
         "caption": "Karaoke",
+		"date": "March 23 2019",
         "start": "10:00PM",
         "end": "11:00PM",
         "location": "Cafeteria",
@@ -154,6 +172,8 @@
         "y": 4
     }, {
         "caption": "Giant Jenga & Water Pong",
+		"date": "March 23 2019",
+		"dateEnd": "March 24 2019",
         "start": "11:00PM",
         "end": "12:30AM",
         "location": "Cafeteria",
@@ -163,6 +183,7 @@
         "y": 3
     }, {
         "caption": "Game Show Night",
+		"date": "March 24 2019",
         "start": "12:30AM",
         "end": "1:30AM",
         "location": "Cafeteria",
@@ -172,6 +193,7 @@
         "y": 4
     }, {
         "caption": "Moonlight Mafia",
+		"date": "March 24 2019",
         "start": "1:45AM",
         "end": "2:30AM",
         "location": "Room 150",
@@ -181,6 +203,7 @@
         "y": 3
     }, {
         "caption": "Morning Yoga",
+		"date": "March 24 2019",
         "start": "6:00AM",
         "end": "6:45AM",
         "location": "North Gym",
@@ -190,6 +213,7 @@
         "y": 2
     }, {
         "caption": "Submissions",
+		"date": "March 24 2019",
         "start": "8:00AM",
         "end": "11:00AM",
         "location": "Devpost",
@@ -199,6 +223,7 @@
         "y": 0
     }, {
         "caption": "Breakfast",
+		"date": "March 24 2019",
         "start": "7:00AM",
         "end": "9:00AM",
         "location": "Cafeteria",
@@ -208,6 +233,7 @@
         "y": 1
     }, {
         "caption": "Therapy Dogs",
+		"date": "March 24 2019",
         "start": "9:00AM",
         "end": "10:00AM",
         "location": "Room 150",
@@ -217,6 +243,7 @@
         "y": 2
     }, {
         "caption": "Lunch",
+		"date": "March 24 2019",
         "start": "11:40AM",
         "end": "12:30PM",
         "location": "Cafeteria",
@@ -226,6 +253,7 @@
         "y": 1
     }, {
         "caption": "Demos Begin!",
+		"date": "March 24 2019",
         "start": "1:00PM",
         "end": "3:00PM",
         "location": "Cafeteria",
@@ -235,6 +263,7 @@
         "y": 0
     }, {
         "caption": "Demos Final Stages",
+		"date": "March 24 2019",
         "start": "3:20PM",
         "end": "3:50PM",
         "location": "North Gym",
@@ -244,6 +273,7 @@
         "y": 0
     }, {
         "caption": "Return MLH Equipment",
+		"date": "March 24 2019",
         "start": "3:00PM",
         "end": "4:15PM",
         "location": "Hardware Lab",
@@ -253,6 +283,7 @@
         "y": 1
     }, {
         "caption": "Awards & Closing Ceremonies",
+		"date": "March 24 2019",
         "start": "4:20PM",
         "end": "4:50PM",
         "location": "North Gym",
