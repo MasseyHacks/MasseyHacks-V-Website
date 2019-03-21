@@ -129,8 +129,8 @@ button.toast-close-button {
     -webkit-box-shadow: 0 0 12px #999;
     box-shadow: 0 0 12px #999;
     color: #FFF;
-    opacity: .1;
-    -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=110);
+    opacity: 1;
+    -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     filter: alpha(opacity=100)
 }
 
