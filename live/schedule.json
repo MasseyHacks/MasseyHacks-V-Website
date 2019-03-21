@@ -1,0 +1,295 @@
+ [
+    {
+        "caption": "Check-In",
+		"date": "March 23 2019",
+        "start": "11:00AM",
+        "end": "12:00PM",
+        "location": "Front Desk",
+        "color": "#4d94ff",
+        "xs": 0,
+        "xe": 1,
+        "y": 0
+    }, {
+        "caption": "Lunch",
+		"date": "March 23 2019",
+        "start": "11:30AM",
+        "end": "12:20PM",
+        "location": "Cafeteria",
+        "color": "#ff3333",
+        "xs": 0.5,
+        "xe": 1.3,
+        "y": 1
+    }, {
+        "caption": "Opening Ceremonies",
+		"date": "March 23 2019",
+        "start": "12:15PM",
+        "end": "1:00PM",
+        "location": "North Gym",
+        "color": "#4d94ff",
+        "xs": 1.25,
+        "xe": 2,
+        "y": 0
+    }, {
+        "caption": "Team Formation/Hacking Begins!",
+		"date": "March 23 2019",
+        "start": "1:00PM",
+        "end": "1:30PM",
+        "location": "Cafeteria",
+        "color": "#4d94ff",
+        "xs": 2,
+        "xe": 2.5,
+        "y": 1
+    }, {
+        "caption": "Git/GitHub",
+		"date": "March 23 2019",
+        "start": "1:45PM",
+        "end": "2:45PM",
+        "location": "Room 150",
+        "color": "#00b200",
+        "xs": 2.75,
+        "xe": 3.75,
+        "y": 3
+    }, {
+        "caption": "Python Crash Course",
+		"date": "March 23 2019",
+        "start": "2:15PM",
+        "end": "3:15PM",
+        "location": "Room 154",
+        "color": "#00b200",
+        "xs": 3.25,
+        "xe": 4.25,
+        "y": 4
+    }, {
+        "caption": "Hackenger Hunt 1",
+		"date": "March 23 2019",
+        "start": "2:30PM",
+        "end": "4:30PM",
+        "location": "Massey (of course!)",
+        "color": "#ff9900",
+        "xs": 3.5,
+        "xe": 5.5,
+        "y": 2
+    }, {
+        "caption": "Frontend Web Development",
+		"date": "March 23 2019",
+        "start": "3:30PM",
+        "end": "4:30PM",
+        "location": "Room 150",
+        "color": "#00b200",
+        "xs": 4.5,
+        "xe": 5.5,
+        "y": 3
+    }, {
+        "caption": "Vim",
+		"date": "March 23 2019",
+         "start": "3:30PM",
+         "end": "4:30PM",
+         "location": "Room 154",
+         "color": "#00b200",
+         "xs": 4.5,
+         "xe": 5.5,
+         "y": 4
+    }, {
+        "caption": "Firebase",
+		"date": "March 23 2019",
+        "start": "4:45PM",
+        "end": "5:45PM",
+        "location": "Room 154",
+        "color": "#00b200",
+        "xs": 5.75,
+        "xe": 6.75,
+        "y": 4
+    }, {
+        "caption": "Blind Coding",
+		"date": "March 23 2019",
+        "start": "5:00PM",
+        "end": "6:00PM",
+        "location": "Room 150",
+        "color": "#ff9900",
+        "xs": 6,
+        "xe": 7,
+        "y": 2
+    }, {
+        "caption": "Intro to Deep Learning",
+		"date": "March 23 2019",
+        "start": "6:00PM",
+        "end": "7:00PM",
+        "location": "Room 154",
+        "color": "#00b200",
+        "xs": 7,
+        "xe": 8,
+        "y": 3
+    }, {
+        "caption": "Dinner",
+		"date": "March 23 2019",
+        "start": "7:00PM",
+        "end": "9:00PM",
+        "location": "Cafeteria",
+        "color": "#ff3333",
+        "xs": 8,
+        "xe": 10,
+        "y": 1
+    }, {
+        "caption": "3D Modeling/Printing",
+		"date": "March 23 2019",
+        "start": "8:00PM",
+        "end": "9:00PM",
+        "location": "Room 150",
+        "color": "#00b200",
+        "xs": 9,
+        "xe": 10,
+        "y": 4
+    }, {
+        "caption": "Hackenger Hunt 2",
+		"date": "March 23 2019",
+		"dateEnd": "March 24 2019",
+        "start": "8:30PM",
+        "end": "3:30AM",
+        "location": "Massey (of course!)",
+        "color": "#ff9900",
+        "xs": 9.5,
+        "xe": 16.5,
+        "y": 2
+    }, {
+        "caption": "Cup Stacking",
+		"date": "March 23 2019",
+        "start": "9:00PM",
+        "end": "10:00PM",
+        "location": "Cafeteria",
+        "color": "#ff9900",
+        "xs": 10,
+        "xe": 11,
+        "y": 3
+    }, {
+        "caption": "Karaoke",
+		"date": "March 23 2019",
+        "start": "10:00PM",
+        "end": "11:00PM",
+        "location": "Cafeteria",
+        "color": "#ff9900",
+        "xs": 11,
+        "xe": 12,
+        "y": 4
+    }, {
+        "caption": "Giant Jenga & Water Pong",
+		"date": "March 23 2019",
+		"dateEnd": "March 24 2019",
+        "start": "11:00PM",
+        "end": "12:30AM",
+        "location": "Cafeteria",
+        "color": "#ff9900",
+        "xs": 12,
+        "xe": 13.5,
+        "y": 3
+    }, {
+        "caption": "Game Show Night",
+		"date": "March 24 2019",
+        "start": "12:30AM",
+        "end": "1:30AM",
+        "location": "Cafeteria",
+        "color": "#ff9900",
+        "xs": 13.5,
+        "xe": 14.5,
+        "y": 4
+    }, {
+        "caption": "Moonlight Mafia",
+		"date": "March 24 2019",
+        "start": "1:45AM",
+        "end": "2:30AM",
+        "location": "Room 150",
+        "color": "#ff9900",
+        "xs": 14.75,
+        "xe": 15.5,
+        "y": 3
+    }, {
+        "caption": "Morning Yoga",
+		"date": "March 24 2019",
+        "start": "6:00AM",
+        "end": "6:45AM",
+        "location": "North Gym",
+        "color": "#ff9900",
+        "xs": 19,
+        "xe": 19.75,
+        "y": 2
+    }, {
+        "caption": "Submissions",
+		"date": "March 24 2019",
+        "start": "8:00AM",
+        "end": "11:00AM",
+        "location": "Devpost",
+        "color": "#4d94ff",
+        "xs": 21,
+        "xe": 24,
+        "y": 0
+    }, {
+        "caption": "Breakfast",
+		"date": "March 24 2019",
+        "start": "7:00AM",
+        "end": "9:00AM",
+        "location": "Cafeteria",
+        "color": "#ff3333",
+        "xs": 20,
+        "xe": 22,
+        "y": 1
+    }, {
+        "caption": "Therapy Dogs",
+		"date": "March 24 2019",
+        "start": "9:00AM",
+        "end": "10:00AM",
+        "location": "Room 150",
+        "color": "#ff9900",
+        "xs": 22,
+        "xe": 23,
+        "y": 2
+    }, {
+        "caption": "Lunch",
+		"date": "March 24 2019",
+        "start": "11:40AM",
+        "end": "12:30PM",
+        "location": "Cafeteria",
+        "color": "#ff3333",
+        "xs": 24.6,
+        "xe": 25.5,
+        "y": 1
+    }, {
+        "caption": "Demos Begin!",
+		"date": "March 24 2019",
+        "start": "1:00PM",
+        "end": "3:00PM",
+        "location": "Cafeteria",
+        "color": "#4d94ff",
+        "xs": 26,
+        "xe": 28,
+        "y": 0
+    }, {
+        "caption": "Demos Final Stages",
+		"date": "March 24 2019",
+        "start": "3:20PM",
+        "end": "3:50PM",
+        "location": "North Gym",
+        "color": "#4d94ff",
+        "xs": 28.3,
+        "xe": 28.8,
+        "y": 0
+    }, {
+        "caption": "Return MLH Equipment",
+		"date": "March 24 2019",
+        "start": "3:00PM",
+        "end": "4:15PM",
+        "location": "Hardware Lab",
+        "color": "#aaaaaa",
+        "xs": 28,
+        "xe": 29.25,
+        "y": 1
+    }, {
+        "caption": "Awards & Closing Ceremonies",
+		"date": "March 24 2019",
+        "start": "4:20PM",
+        "end": "4:50PM",
+        "location": "North Gym",
+        "color": "#4d94ff",
+        "xs": 29.3,
+        "xe": 29.8,
+        "y": 0
+    }
+]
