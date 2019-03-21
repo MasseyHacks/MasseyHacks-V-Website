@@ -51,36 +51,6 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
     <script defer src ="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" crossorigin="anonymous"></script>
     <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-	<script>
-	var oneBlocked = false;
-	$(function() {
-	
-	if (typeof window.OneSignal === 'function') {
-		  var OneSignal = window.OneSignal || [];
-		  OneSignal.push(function() {
-			OneSignal.init({
-			  appId: "f79ef9a4-58cb-4cfd-a3ab-b1753fce999f",
-			});
-		  });
-	  } 
-	  else {
-		console.log("blah")
-		oneBlocked = true;
-	 }
-	})
-	
-	 function askPermission(){
-		OneSignal.showNativePrompt();
-	 /*
-		if(oneBlocked){
-			alert("Unable to contact server. Please ensure that any ad-blockers or firewalls are not blocking access to cdn.onesignal.com");
-		}
-		else{
-			OneSignal.showNativePrompt();
-		}*/
-	 }
-	</script>
 </head>
 
 <body>
