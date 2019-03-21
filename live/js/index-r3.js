@@ -197,43 +197,53 @@ function to24(time){
 	if(minutes<10) sMinutes = "0" + sMinutes;
 	return `${sHours}:${sMinutes}`
 }
-$.ajax({
-    type: 'GET',
-    url: '../schedule.json',
-    dataType: 'json',
-    success: function (data) {
-        var exp = '';
-		var currentDate = new Date();
-        for (var i = 0; i < data.length; i++) {
-            var d = data[i];
-			var actStart = new Date(d['date'] + " " + to24(d['start']));
-			if(!d['dateEnd']){
-				d['dateEnd']  = d['date']
-			}
-			var actEnd = new Date(d['dateEnd'] + " " + to24(d['end']));
-			var nowModded, upModded = false;
-			if(actStart < currentDate && actEnd > currentDate){
-				if(!nowModded){
-					$('#schedulenow').empty();
-				}
-				nowModded = true;
-				$('#schedulenow').append(`<h2>${d['caption']}: ${d['start'].toLowerCase()} - ${d['end'].toLowerCase()}</h2>`);
-				$('#schedulenow').append(`<p>Location: ${d['location']}</p>`);
-			}
-			else if(actStart-currentDate <= 3600000){
-				if(!upModded){
-					$('#scheduleupcoming').empty();
-				}
-				upModded = true;
-				$('#scheduleupcoming').append(`<h2>${d['caption']}: ${d['start'].toLowerCase()} - ${d['end'].toLowerCase()}</h2>`);
-				$('#scheduleupcoming').append(`<p>Location: ${d['location']}</p>`);
-			}
-			
-        }
 
-    },
-    error: function (data) {
-        $('#schedulenow').html('<b><h2>Server error occurred<br>Unable to get schedule</h2></b>');
-		$('#scheduleupcoming').html('<b><h2>Server error occurred<br>Unable to get schedule</h2></b>');
-    }
-})
+function updateSchedule(){
+	$.ajax({
+		type: 'GET',
+		url: '../schedule.json',
+		dataType: 'json',
+		success: function (data) {
+			document.getElementById("schedulenow").innerHTML = "<h2>There are no activities</h2>";
+			document.getElementById("scheduleupcoming").innerHTML = "<h2>There are no activities</h2>";
+			var exp = '';
+			var currentDate = new Date();
+			for (var i = 0; i < data.length; i++) {
+				var d = data[i];
+				var actStart = new Date(d['date'] + " " + to24(d['start']));
+				if(!d['dateEnd']){
+					d['dateEnd']  = d['date']
+				}
+				var actEnd = new Date(d['dateEnd'] + " " + to24(d['end']));
+				var nowModded, upModded = false;
+				if(actStart < currentDate && actEnd > currentDate){
+					if(!nowModded){
+						document.getElementById("schedulenow").innerHTML = "";
+					}
+					nowModded = true;
+					document.getElementById("schedulenow").innerHTML +=`<h2>${d['caption']}: ${d['start'].toLowerCase()} - ${d['end'].toLowerCase()}</h2>`;
+					document.getElementById("schedulenow").innerHTML +=`<p>Location: ${d['location']}</p>`;
+				}
+				else if(actStart-currentDate <= 3600000){
+					if(!upModded){
+						document.getElementById("scheduleupcoming").innerHTML = "";
+					}
+					upModded = true;
+					document.getElementById("scheduleupcoming").innerHTML +=`<h2>${d['caption']}: ${d['start'].toLowerCase()} - ${d['end'].toLowerCase()}</h2>`;
+					document.getElementById("scheduleupcoming").innerHTML +=`<p>Location: ${d['location']}</p>`;
+				}
+				
+			}
+			$("#schedulenow").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+			$("#scheduleupcoming").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+
+		},
+		error: function (data) {
+			$('#schedulenow').html('<b><h2>Server error occurred<br>Unable to get schedule</h2></b>');
+			$('#scheduleupcoming').html('<b><h2>Server error occurred<br>Unable to get schedule</h2></b>');
+		}
+	})
+}
+updateSchedule();
+// Update the schedule every 5 minutes
+var xy = setInterval(updateSchedule(), 300000);

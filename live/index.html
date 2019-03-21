@@ -28,7 +28,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
     </script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="css/mailchimp-new.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/mailchimp-new.css" type="text/css" rel="stylesheet"/>
     <link href="css/main-r7.css" type="text/css" rel="stylesheet"/>
     <link href="css/hamburgers.css" rel = "stylesheet" type = "text/css" />
     <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
@@ -45,7 +45,6 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
     <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
 
     <script defer src = "js/index-r3.js" type = "text/javascript"></script>
-	<script defer src = "js/live-additional.js" type = "text/javascript"></script>
 	<script defer src = "js/mail-new.js" type = "text/javascript"></script>
 
     <script defer src ="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>
@@ -131,15 +130,12 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                 <div class="cover-content">
 
                     <p id="main-caption">
-                        MasseyHacks
+                        MasseyHacks Live
                     </p>
 
                     <p id="date-time">
                         
                     </p>
-                    <br>
-
-                    <button id="notbtn" type="button" class="btn-white btn-large" onclick="askPermission();">Push Notifications</button>
 
                     <!--
                     <br>
@@ -705,5 +701,8 @@ var x = setInterval(function() {
   gtag('config', 'UA-112529950-1');
 
 </script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-messaging.js"></script>
+<script src="js/firepush.js"></script>
 
 </html>
