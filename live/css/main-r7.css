@@ -357,12 +357,12 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 /* Quote blocks */
 .quote-block {
     width: 100vw;
-    height: 400px;
+    height: 200px;
     background-size: cover;
     background-position: center;
 }
 .quote-block-inner {
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(240, 240, 240, 1);
     width: 100%;
     height: 100%;
 
@@ -379,8 +379,8 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 
 /* Header */
 #header {
-    min-height: 550px;
-    height: 100vh;
+    /*min-height: 550px;
+    height: 100vh;*/
     display: block;
     color: white !important;
     margin-top: 0px;
@@ -950,4 +950,9 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
     padding-top: 20px;
 
 
+}
+.count {
+	font-size: 45px;
+	margin: 0;
+	color: #000;
 }

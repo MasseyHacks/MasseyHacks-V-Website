@@ -17,6 +17,7 @@ $(document).ready(function () {
 
 
     function updateScroll(position) {
+		return
         switch (position) {
             case 'hidden': // Hide bar when detached from top
                 $('#nav-main').removeClass('nav-active');

@@ -61,7 +61,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 <div id="cover" class="wrapper">
 
     <!-- Cover -->
-    <section id="header" class="slide changeable" style="background-color: black; background-image: url(images/slide/23.jpg);">
+    <section id="header" class="slide changeable" style="background-color: #FEFEFE;">
 
         <!--
         <video id="background-video" autoplay muted loop oncontextmenu="return false;" style="width: auto; height: 100vh; right: 0; bottom: 0; position: absolute;">
@@ -69,7 +69,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
         </video>
         -->
 
-        <nav class="navbar navbar-inverse navbar-fixed-top nav-docked" id="nav-main" style="position: absolute">
+        <nav class="navbar navbar-inverse navbar-fixed-top nav-active" id="nav-main" style="position: fixed">
             <div id="nav-inner" class="container-fluid container">
                 <div class="navbar-header" id="navheader">
 
@@ -114,7 +114,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
         </nav>
 
 
-        <div style="background: rgba(0, 0, 0, 0.6); height: 100%">
+        <div style="background: rgba(0, 0, 0, 0.6);">
             <div id="mobile-overlay" class="overlay overlay-dark">
                 <ul class="overlay-list">
                     <li><a href="#header" class="js-navbar-link scrollLink overlayLink">Home</a></li>
@@ -125,19 +125,11 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                     <li><a href="https://register.masseyhacks.ca/">Login</a></li>
                 </ul>
             </div>
-
-            <div style="min-height: 100%; z-index: 600;" class="container">
-
-                <div id="cover-spacer"></div>
-                <div class="cover-content">
-
-                    <p id="main-caption">
-                        MasseyHacks Live
-                    </p>
-
-                    <p id="date-time">
-                        
-                    </p>
+			<section id="header-live" class="slide-live changeable" style="min-height: 0; margin-top: 70px">
+				<div style="display: table-cell; vertical-align: middle; width: 100vw; height: 54.25vw">
+					<iframe style="transform: scaleY(1.025)" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmasseyhacks%2Fvideos%2F2132793856737104%2F&width=400" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+				</div>
+			</section>
 
                     <!--
                     <br>
@@ -149,22 +141,16 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="color: black">
                     </form>
                     -->
-                </div>
-                <div class="mentor-container">
 
-                </div>
-
-                <!--
-                <iframe id="cover-video" src="https://www.youtube.com/embed/RAhe4UmL4pk?ecver=2&rel=0" style="position:absolute;width:40em;height:22.5em; max-width: 1920px; max-height: 1080px; transform: translateY(-50%)" width="879" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                -->
-            </div>
-
-            <!--
-            <div id="mouse" style="width: 100%; height: 100%; position: absolute; margin: auto; left: calc(50% - 18px) ; right: 0; bottom: 0; top: 160%;">
-                <div class="mousey">
-                    <div class="scroller"></div>
-                </div>
-            </div>-->
+        </div>
+    </section>
+	
+	 <section class="quote-block">
+        <div class="quote-block-inner">
+            <div style="height: 50%; width: 100%"></div>
+            <blockquote class="blockquote text-center">
+                 <p class="count" id="date-time"></p>
+            </blockquote>
         </div>
     </section>
 	
