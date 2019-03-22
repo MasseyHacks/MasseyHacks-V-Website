@@ -115,9 +115,6 @@ $(document).ready(function () {
     var bgresize = function () {
         if ($(document).width() <= 767) {
 
-            $("#accordion").removeClass("hidden");
-            $(".accordionCont").removeClass("hidden");
-            $("#full-faq").addClass("hidden");
             $("#nav-ham").removeClass("hidden");
 
             //$("#navleft").hide();
@@ -126,9 +123,6 @@ $(document).ready(function () {
             $("#nav-inner").removeClass("container");
         } else {
 
-            $("#accordion").addClass("hidden");
-            $(".accordionCont").addClass("hidden");
-            $("#full-faq").removeClass("hidden");
             $("#nav-ham").addClass("hidden");
 
             //$("#navleft").show();
