@@ -193,6 +193,27 @@ function to24(time){
 	return `${sHours}:${sMinutes}`
 }
 
+var oldEvents = [];
+var oldEventsUp = [];
+var hasRun = false;
+
+function randomString(length, chars='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+    var result = '';
+    for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+    return result;
+}
+
+function getCardHTML(name, start, end, body){
+	var id = "card"+randomString(15);
+	var cardHTML = `
+	<div class="activity-card" id="${id}">
+		<h2>${name}: ${start} - ${end}</h2>
+		<p>${body}</p>
+	</div>
+	`
+	return [id,cardHTML]
+}
+
 function updateSchedule(){
 	$.ajax({
 		type: 'GET',
@@ -201,8 +222,12 @@ function updateSchedule(){
 		success: function (data) {
 			document.getElementById("schedulenow").innerHTML = "<h2>There are no activities</h2>";
 			document.getElementById("scheduleupcoming").innerHTML = "<h2>There are no activities</h2>";
+			console.log("hi")
 			var exp = '';
 			var currentDate = new Date();
+			var addedEvents = [];
+			var addedEventsUp = [];
+			var nowModded, upModded = false;
 			for (var i = 0; i < data.length; i++) {
 				var d = data[i];
 				var actStart = new Date(d['date'] + " " + to24(d['start']));
@@ -210,27 +235,59 @@ function updateSchedule(){
 					d['dateEnd']  = d['date']
 				}
 				var actEnd = new Date(d['dateEnd'] + " " + to24(d['end']));
-				var nowModded, upModded = false;
+				
+				console.log(d['caption'])
+				console.log(actStart-currentDate);
 				if(actStart < currentDate && actEnd > currentDate){
+					console.log("hello")
 					if(!nowModded){
 						document.getElementById("schedulenow").innerHTML = "";
 					}
 					nowModded = true;
-					document.getElementById("schedulenow").innerHTML +=`<h2>${d['caption']}: ${d['start'].toLowerCase()} - ${d['end'].toLowerCase()}</h2>`;
-					document.getElementById("schedulenow").innerHTML +=`<p>Location: ${d['location']}</p>`;
+					var eventCard = getCardHTML(d['caption'], d['start'].toLowerCase(), d['end'].toLowerCase(), d['location']);
+					document.getElementById("schedulenow").innerHTML += eventCard[1];
+					if(oldEvents.indexOf(d['caption']) == -1){
+						$("#"+eventCard[0]).fadeIn(250);
+						if(hasRun){
+							toastr["info"](`${d['caption']}: ${d['start'].toLowerCase()} - ${d['end'].toLowerCase()} in ${d['location']}`, "Activity starting!");
+						}
+					}
+					else{
+						$("#"+eventCard[0]).toggle(true);
+					}
+					if(d['important']){
+						$("#"+eventCard[0]).addClass("important-card")
+					}
+					addedEvents.push(d['caption'])
+					//document.getElementById("schedulenow").innerHTML += getCardHTML(d['caption'], d['start'].toLowerCase(), d['end'].toLowerCase(), d['location']);
 				}
 				else if(actStart-currentDate <= 3600000){
 					if(!upModded){
+						console.log("boo!")
 						document.getElementById("scheduleupcoming").innerHTML = "";
 					}
 					upModded = true;
-					document.getElementById("scheduleupcoming").innerHTML +=`<h2>${d['caption']}: ${d['start'].toLowerCase()} - ${d['end'].toLowerCase()}</h2>`;
-					document.getElementById("scheduleupcoming").innerHTML +=`<p>Location: ${d['location']}</p>`;
+					var eventCard = getCardHTML(d['caption'], d['start'].toLowerCase(), d['end'].toLowerCase(), d['location']);
+					console.log(eventCard)
+					document.getElementById("scheduleupcoming").innerHTML += eventCard[1];
+					if(oldEventsUp.indexOf(d['caption']) == -1){
+						$("#"+eventCard[0]).fadeIn(250);
+					}
+					else{
+						$("#"+eventCard[0]).toggle(true);
+					}
+					if(d['important']){
+						$("#"+eventCard[0]).addClass("important-card")
+					}
+					addedEventsUp.push(d['caption'])
 				}
 				
 			}
-			$("#schedulenow").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
-			$("#scheduleupcoming").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+			//$("#schedulenow").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+			//$("#scheduleupcoming").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+			oldEvents = addedEvents;
+			oldEventsUp = addedEventsUp;
+			hasRun = true;
 
 		},
 		error: function (data) {
@@ -242,3 +299,4 @@ function updateSchedule(){
 updateSchedule();
 // Update the schedule every 5 minutes
 var xy = setInterval(updateSchedule(), 300000);
+//var xy = setInterval(updateSchedule, 1000);

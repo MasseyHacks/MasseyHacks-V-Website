@@ -956,3 +956,19 @@ Courtesy of https://codepen.io/2xsamurai/pen/WwmjKQ*/
 	margin: 0;
 	color: #000;
 }
+.activity-card {
+	margin-top: 20px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px; /* 5px rounded corners */
+  padding: 1px 15px 3px 15px;
+  display: none;
+  background-color: #EEEEEE;
+}
+
+.important-card {
+	background-color: #FAFAFA !important;
+}
+
+.activity-card h2{
+	margin-top:15px !important;
+}
