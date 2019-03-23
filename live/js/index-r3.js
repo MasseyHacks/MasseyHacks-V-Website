@@ -261,7 +261,7 @@ function updateSchedule(){
 					addedEvents.push(d['caption'])
 					//document.getElementById("schedulenow").innerHTML += getCardHTML(d['caption'], d['start'].toLowerCase(), d['end'].toLowerCase(), d['location']);
 				}
-				else if(actStart-currentDate <= 3600000){
+				else if(actStart-currentDate <= 3600000 && actEnd > currentDate){
 					if(!upModded){
 						console.log("boo!")
 						document.getElementById("scheduleupcoming").innerHTML = "";
