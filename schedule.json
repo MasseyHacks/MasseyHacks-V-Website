@@ -73,11 +73,11 @@
         "caption": "Frontend Web Development",
 		"date": "March 23 2019",
         "start": "3:30PM",
-        "end": "4:30PM",
+        "end": "4:45PM",
         "location": "Room 150",
         "color": "#00b200",
         "xs": 4.5,
-        "xe": 5.5,
+        "xe": 5.75,
         "y": 3
     }, {
         "caption": "Vim",
