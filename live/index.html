@@ -61,7 +61,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
 <div id="cover" class="wrapper">
 
     <!-- Cover -->
-    <section id="header" class="slide changeable" style="background-color: black; background-image: url(images/slide/23.jpg);">
+    <section id="header" class="slide changeable" style="background-color: #F0F0F0;">
 
         <!--
         <video id="background-video" autoplay muted loop oncontextmenu="return false;" style="width: auto; height: 100vh; right: 0; bottom: 0; position: absolute;">
@@ -69,7 +69,7 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
         </video>
         -->
 
-        <nav class="navbar navbar-inverse navbar-fixed-top nav-docked" id="nav-main" style="position: absolute">
+        <nav class="navbar navbar-inverse navbar-fixed-top nav-active" id="nav-main" style="position: fixed">
             <div id="nav-inner" class="container-fluid container">
                 <div class="navbar-header" id="navheader">
 
@@ -91,12 +91,8 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right" id="navright">
                         <li><a href="#activities" class="js-navbar-link scrollLink navobject">Activities</a></li>
+						<li><a href="#map" class="js-navbar-link scrollLink navobject">Map</a></li>
 						<li><a href="#schedule" class="js-navbar-link scrollLink navobject">Schedule</a></li>
-                        <li><a href="#faq" class="js-navbar-link scrollLink navobject">Questions</a></li>
-                        <!--<li><a href="#schedule" class="js-navbar-link scrollLink navobject">Schedule</a></li>-->
-                        
-                        <li><a href="#sponsors" class="js-navbar-link scrollLink navobject">Sponsors</a></li>
-
                         <li><a href="https://register.masseyhacks.ca/" target="_blank" class="navobject">Login</a></li>
 
                         <li>
@@ -114,30 +110,24 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
         </nav>
 
 
-        <div style="background: rgba(0, 0, 0, 0.6); height: 100%">
+        <div style="background: #F0F0F0;">
             <div id="mobile-overlay" class="overlay overlay-dark">
                 <ul class="overlay-list">
                     <li><a href="#header" class="js-navbar-link scrollLink overlayLink">Home</a></li>
                     <li><a href="#activities" class="js-navbar-link scrollLink overlayLink">Activities</a></li>
+					<li><a href="#map" class="js-navbar-link scrollLink overlayLink">Schedule</a></li>
                     <li><a href="#schedule" class="js-navbar-link scrollLink overlayLink">Schedule</a></li>
-					<li><a href="#faq" class="js-navbar-link scrollLink overlayLink">Questions</a></li>
-                    <li><a href="#sponsors" class="js-navbar-link scrollLink overlayLink">Sponsors</a></li>
                     <li><a href="https://register.masseyhacks.ca/">Login</a></li>
                 </ul>
             </div>
-
-            <div style="min-height: 100%; z-index: 600;" class="container">
-
-                <div id="cover-spacer"></div>
-                <div class="cover-content">
-
-                    <p id="main-caption">
-                        MasseyHacks Live
-                    </p>
-
-                    <p id="date-time">
-                        
-                    </p>
+			<section id="header-live" class="slide-live changeable" style="min-height: 0; margin-top: 70px">
+				<div style="display: table-cell; vertical-align: middle; width: 100vw; height: 54.25vw">
+				<!--
+					<iframe style="transform: scaleY(1.015)" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmasseyhacks%2Fvideos%2F2132793856737104%2F&width=400" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+				-->
+				<iframe style="transform: scaleY(1.015)" src="https://www.youtube-nocookie.com/embed/b4eU2gTsjA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"  allowfullscreen="true" allowTransparency="true"></iframe>
+				</div>
+			</section>
 
                     <!--
                     <br>
@@ -149,22 +139,16 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="color: black">
                     </form>
                     -->
-                </div>
-                <div class="mentor-container">
 
-                </div>
-
-                <!--
-                <iframe id="cover-video" src="https://www.youtube.com/embed/RAhe4UmL4pk?ecver=2&rel=0" style="position:absolute;width:40em;height:22.5em; max-width: 1920px; max-height: 1080px; transform: translateY(-50%)" width="879" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                -->
-            </div>
-
-            <!--
-            <div id="mouse" style="width: 100%; height: 100%; position: absolute; margin: auto; left: calc(50% - 18px) ; right: 0; bottom: 0; top: 160%;">
-                <div class="mousey">
-                    <div class="scroller"></div>
-                </div>
-            </div>-->
+        </div>
+    </section>
+	
+	 <section class="quote-block">
+        <div class="quote-block-inner">
+            <div style="height: 50%; width: 100%"></div>
+            <blockquote class="blockquote text-center">
+                 <p class="count" id="date-time"></p>
+            </blockquote>
         </div>
     </section>
 	
@@ -185,10 +169,19 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                         <h3 style="text-align: left">Upcoming</h3>
 						<span id="scheduleupcoming">
 							<h2>There are no activities</h2>
+							
 						</span>
                     </div>
 				</div>
             </div>
+        </div>
+    </section>
+	
+	<section id="map" class="slide container-fluid changeable">
+        <div class="container">
+            <h3>Map</h3>
+			<h4>Click <a href="images/map.png">here</a> to open the image in another tab</h4>
+			<img src="images/map.png" style="margin-top:20px; max-width: 80vw; max-height: 70vh;">
         </div>
     </section>
 	
@@ -304,298 +297,6 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="slide slide-free container-fluid changeable" style="padding-bottom: 0">
-        <div class="accordionCont hidden" id="faq-box">
-            <h3>FAQ</h3>
-            <div id="accordion" class="panel-group hidden">
-                <div class="panel panel-default">
-                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq1">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">What is a hackathon?</a>
-                        </h4>
-                    </div>
-                    <div id="faq1" class="panel-collapse collapse">
-                        <div class="panel-body">A hackathon is an event where students of all backgrounds and disciplines come together to immerse themselves in computer science-infused activities, such as attending tech workshops or building projects and hacks of their own. Creativity and innovation are intrinsic to the hackathon experience. <a href="https://masseyhacks4.devpost.com/" target="_blank">Check out last year's projects</a> to get an idea of what a hackathon's like.</div>
-                    </div>
-
-                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faqIdk">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">Who can participate?</a>
-                        </h4>
-                    </div>
-                    <div id="faqIdk" class="panel-collapse collapse">
-                        <div class="panel-body">Any high school student can participate. If you've graduated from high school, you can apply to be a mentor.</div>
-                    </div>
-
-
-                    <div class="panel-heading"  data-toggle="collapse" data-parent="#accordion" href="#faq2">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">Do I need to know how to program?</a>
-                        </h4>
-                    </div>
-                    <div id="faq2" class="panel-collapse collapse">
-                        <div class="panel-body">Not at all — in fact, we encourage newcomers to come and participate in MasseyHacks. We’ll teach you the fundamentals of programming, tech essentials and lots more!</div>
-                    </div>
-
-                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq3">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">What should I bring?</a>
-                        </h4>
-                    </div>
-                    <div id="faq3" class="panel-collapse collapse">
-                        <div class="panel-body">Paperwork such as your waiver and ID are necessary for entry. Bring your own laptop and charger; power strips, sleeping bags and toiletries are recommended. As for other necessities like food, freedom and fun, rest assured that we’ve got you covered.</div>
-                    </div>
-
-                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq4">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">How will the teams work?</a>
-                        </h4>
-                    </div>
-                    <div id="faq4" class="panel-collapse collapse">
-                        <div class="panel-body">You can go solo and create something by youself, but we encourage you to form a team beforehand — everything's better with friends. Teams can have up to 4 members. Don't worry if you don't have a team at the event, as we will have a team formation event for hackers to find potential team members.</div>
-                    </div>
-
-                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq6">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">I know a company that wants to sponsor, what should I tell them?</a>
-                        </h4>
-                    </div>
-                    <div id="faq6" class="panel-collapse collapse">
-                        <div class="panel-body">Tell them thanks, firstly. Then ask them to email us at <a href="mailto:sponsorship@masseyhacks.ca" target="_blank">sponsorship@masseyhacks.ca</a> to get started! We greatly appreciate support of any kind!</div>
-                    </div>
-
-                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq7">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">How much does it cost?</a>
-                        </h4>
-                    </div>
-                    <div id="faq7" class="panel-collapse collapse">
-                        <div class="panel-body">MasseyHacks charges nothing for entry — the event is free for all attendees!</div>
-                    </div>
-
-
-                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq8">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">How will I know if I got accepted?</a>
-                        </h4>
-                    </div>
-                    <div id="faq8" class="panel-collapse collapse">
-                        <div class="panel-body">Once you've submitted your application, keep an eye on your <i>application dashboard</i> and your email for further updates. <i>More info will be released closer to the time of the event.</i></div>
-                    </div>
-
-                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq9">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">How do I get to MasseyHacks V?</a>
-                        </h4>
-                    </div>
-                    <div id="faq9" class="panel-collapse collapse">
-                        <div class="panel-body">For students in Toronto and Waterloo, we'll be sending a bus your way if funding permits. If you're within a reasonable distance of the event, you're responsbile for securing your own transportation. No other reimbursements are available at this time. <i>Additional information will be provided closer to the time of the event.</i></div>
-                    </div>
-
-                    <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" href="#faq12">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">Do I have to stay for the entire event?</a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="faq12">
-                        <div class="panel-body">
-                            We suggest that you stay for the entire event, but if you can't stay the night, you can leave during the night and come back. If are under 18, you can get a parent to pick you up <b>before midnight</b> and drop you back at the event after 5 am. If you are 18, you do not need a parent.
-
-                        </div>
-                    </div>
-
-
-                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq10">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">Code of Conduct?</a>
-                        </h4>
-                    </div>
-                    <div id="faq10" class="panel-collapse collapse">
-                        <div class="panel-body">Yes, of course! All hackers must abide by the MLH Code of Conduct found <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here</a>.</div>
-                    </div>
-
-                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#faq11">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle">Still have questions?</a>
-                        </h4>
-                    </div>
-                    <div id="faq11" class="panel-collapse collapse">
-                        <div class="panel-body" style="border-bottom: 0">Send us an email at <a href="mailto:hello@masseyhacks.ca" target="_blank">hello@masseyhacks.ca</a> and we'll get back to you as soon as we can!</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="full-faq" class="row">
-            <div class="container">
-                <h3>FAQ</h3>
-				<div class="row">
-					<div class="col-sm-6">
-						<h2>What is a hackathon?</h2>
-                        <div id="faqOne">
-    						<p>A hackathon is an event where students of all backgrounds and disciplines come together to immerse themselves in computer science-infused activities, such as attending tech workshops or building projects and hacks of their own. Creativity and innovation are intrinsic to the hackathon experience. <a href="https://masseyhacks4.devpost.com/" target="_blank">Check out last year's projects</a> to get an idea of what a hackathon's like.</p>
-                        </div>
-
-						<h2>Do I need to know how to program?</h2>
-                        <div id="faqTwo">
-    						<p>Not at all — in fact, we encourage newcomers to come and participate in MasseyHacks. We’ll teach you the fundamentals of programming, tech essentials and lots more!</p>
-                        </div>
-
-                        <h2>How will the teams work?</h2>
-                        <div id="faqEight">
-                            <p>You can go solo and create something by youself, but we encourage you to form a team beforehand — everything's better with friends. Teams can have up to 4 members. Don't worry if you don't have a team at the event, as we will have a team formation event for hackers to find potential team members.</p>
-                        </div>
-
-
-                        <h2>What should I bring?</h2>
-                        <div id="faqFour">
-    						<p>Paperwork such as your waiver and ID are necessary for entry. Bring your own laptop and charger; power strips, sleeping bags and toiletries are recommended. As for other necessities like food, freedom and fun, rest assured that we’ve got you covered.</p>
-                        </div>
-
-                        <h2>How will I know if I got accepted?</h2>
-                        <div id="faqFive">
-                            <p>Once you've submitted your application, keep an eye on your <i>application dashboard</i> and your email for further updates. <i>More info will be released closer to the time of the event.</i></p>
-                        </div>
-
-					</div>
-					<div class="col-sm-6">
-
-                        <h2>Who can participate?</h2>
-                        <div id="faqIdk">
-                            <p>Any high school student can participate. If you've graduated from high school, you can apply to be a mentor.</p>
-                        </div>
-
-
-                        <h2>I know a company that wants to sponsor, what should I tell them?</h2>
-                        <div id="faqSix">
-                            <p>Tell them thanks, firstly. Then ask them to email us at <a href="mailto:sponsorship@masseyhacks.ca" target="_blank">sponsorship@masseyhacks.ca</a> to get started! We greatly appreciate support of any kind!</p>
-                        </div>
-
-						<h2>How will I get to MasseyHacks V?</h2>
-                        <div id="faqSeven">
-    						<p>For students in Toronto and Waterloo, we'll be sending a bus your way if funding permits. If you're within a reasonable distance of the event, you're responsible for securing your own transportation. No other reimbursements are available at this time. <i>Additional information will be provided closer to the time of the event.</i></p>
-                        </div>
-
-                        <h2>Do I have to stay for the entire event?</h2>
-                        <div id="faqTen">
-                         <p>
-                             We suggest that you stay for the entire event, but if you can't stay the night, you can leave during the night and come back. If are under 18, you can get a parent to pick you up <b>before midnight</b> and drop you back at the event after 5 am. If you are 18, you do not need a parent.
-                         </p>
-                        </div>
-
-                        <h2>How much does it cost?</h2>
-                        <div id="faqThree">
-                            <p>MasseyHacks charges nothing for entry — the event is free for all attendees!</p>
-                        </div>
-
-
-						<h2>Code of Conduct?</h2>
-                        <div id="faqNine">
-                            <p>Yes, of course! All hackers must abide to the MLH Code of Conduct found <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here.</a></p>
-                        </div>
-
-                        <h2>Still have questions?</h2>
-                        <div id="faqNine">
-                            <p>Send us an email at <a href="mailto:hello@masseyhacks.ca" target="_blank">hello@masseyhacks.ca</a> and we'll get back to you as soon as we can!</p>
-                        </div>
-
-                    </div>
-				</div>
-            </div>
-        </div>
-    </section>
-	
-    <section id="sponsors" class="slide container-fluid changeable">
-        <div class="container" style="padding-bottom: 150px;">
-            <h3>Sponsors</h3>
-            <!--<h4 style="font-family: 'Avenir'; padding-top: 10px; padding-bottom: 10px">A big thank you to the following sponsors:</h4>-->
-
-
-
-            <!-- Cohost -->
-            <div class="co-host sponsor" style="display: none">
-            </div>
-
-            <!-- Gold -->
-            <div class="gold sponsor">
-                <a class="sponsor-obj" href="https://www.devdegree.ca/" target="_blank"><img class="zoom"
-                                                                                             src="images/sponsors/devdegree.svg"></a>
-
-                <!--
-                <a class="sponsor-obj" href="https://www.subway.com/en-CA" target="_blank"><img class="zoom"
-                                                                                         src="images/sponsors/subway.png"></a>
-                -->
-            </div>
-
-            <!-- Silver -->
-            <div class="silver sponsor">
-                <a href="https://www.tigweb.org/" target="_blank" class="sponsor-obj"><img src="images/sponsors/takingitglobal.png" class="zoom"></a>
-
-                <a href="https://edsby.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/edsby.png" class="zoom"></a>
-                <a href="https://www.wetech-alliance.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/wetech.png" class="zoom"></a>
-                <a class="sponsor-obj" href="https://shopify.com/" target="_blank"><img class="zoom"
-                                                                                        src="images/sponsors/shopify.svg"></a>
-
-            </div>
-
-            <!-- Bronze -->
-            <div class="bronze sponsor">
-
-                <a href="https://www.canada.ca/en/" target="_blank" class="sponsor-obj"><img src="images/sponsors/gceng.png" class="zoom" id="canada"></a>
-                <a href="https://www.canada.ca/fr/" target="_blank" class="sponsor-obj"><img src="images/sponsors/gcfr.png" class="zoom" id="canada"></a>
-
-                <a href="https://www.optimist.org/" target="_blank" class="sponsor-obj"><img src="images/sponsors/optimistriverside.png" class="zoom"></a>
-                <a href="https://www.wfsltd.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/wfsltd.png" class="zoom"></a>
-                <a href="https://www.bravecs.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/brave.png" class="zoom" id="brave"></a>
-                <a href="http://windsor.ieee.ca/" target="_blank" class="sponsor-obj"><img src="images/sponsors/ieee.png" class="zoom" id="ieee"></a>
-                <a href="http://www.uwindsor.ca/science/computerscience/" target="_blank" class="sponsor-obj"><img src="images/sponsors/uwindsor.png" class="zoom" id="uwindsor"></a>
-                <a href="https://publicboard.ca" target="_blank" class="sponsor-obj"><img src="images/sponsors/gecdsb.png" class="zoom" id="gecdsb"></a>
-
-                <a href="https://www.canada.ca/en/employment-social-development/services/canada-service-corps.html" target="_blank" class="sponsor-obj"><img src="images/sponsors/canadaservicecorp.png" class="zoom" id="gecdsb"></a>
-                <a href="https://www.canada.ca/fr/emploi-developpement-social/services/service-jeunesse-canada.html" target="_blank" class="sponsor-obj"><img src="images/sponsors/canadaservicecorpfr.png" class="zoom" id="gecdsb"></a>
-
-                <a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank" class="sponsor-obj"><img src="images/sponsors/stickermule.png" class="zoom" id="gecdsb"></a>
-                <a href="http://www.epicentreuwindsor.ca/" target="_blank" class="sponsor-obj"><img src="images/sponsors/epicentre.png" class="zoom" id="gecdsb"></a>
-                <a href="http://www.uwindsor.ca/science/" target="_blank" class="sponsor-obj"><img src="images/sponsors/uwindsorscience.png" class="zoom" id="gecdsb"></a>
-                <a href="http://www1.uwindsor.ca/glier/" target="_blank" class="sponsor-obj"><img src="images/sponsors/glier.png" class="zoom" id="gecdsb"></a>
-
-                <a class="sponsor-obj" href="https://discordapp.com/" target="_blank"><img class="zoom" id="gecdsb"
-                                                                                           src="images/sponsors/discord.png"></a>
-
-                <a class="sponsor-obj" href="https://www.publicboard.ca/school/Massey/parents/Pages/IMPAC.aspx"
-                   target="_blank"><img class="zoom" id="impac" src="images/sponsors/impac.png"></a>
-                <a class="sponsor-obj" href="http://hamoudis.ca" target="_blank"><img class="zoom" id="gecdsb"
-                                                                                      src="images/sponsors/hamoudis.png"></a>
-
-
-                <a class="sponsor-obj" href="http://exoduswindsor.com/" target="_blank"><img class="zoom" id="gecdsb"
-                                                                                      src="images/sponsors/exodus.png"></a>
-
-
-                <a href="https://www.timhortons.com" target="_blank" class="sponsor-obj"><img class="zoom" src="images/sponsors/timhorton.svg"></a>
-                <a class="sponsor-obj" href="http://pedlerrealestate.ca/our-team-2/nejla-horasan/" target="_blank"><img
-                        class="zoom" src="images/sponsors/nejla.png" id="nejla"></a>
-                <a class="sponsor-obj" href="#" target="_blank"><img
-                        class="zoom" src="images/sponsors/swmc.png"></a>
-
-                <a class="sponsor-obj" href="https://www.subway.com/en-CA" target="_blank"><img
-                        class="zoom" src="images/sponsors/subway.png" id="subway"></a>
-
-            </div>
-
-            <!-- Partners -->
-            <div class="partner sponsor">
-                <h3>Partners</h3>
-
-                <a href="https://hackthenorth.com/" target="_blank" class="sponsor-obj"><img src="images/sponsors/hackthenorth.svg" class="zoom"></a>
-                <a href="https://mlh.io/" target="_blank" class="sponsor-obj"><img src="images/sponsors/mlh-logo-color.svg" class="zoom"></a>
-                <a href="https://hackthevalley.io/" target="_blank" class="sponsor-obj"><img src="images/sponsors/htv.svg" class="zoom"></a>
-
-            </div>
-        </div>
-    </section>
-
     <section id="footer">
         <div id="footer-spacer"></div>
         <div id="footer-content" class="container">
@@ -606,9 +307,9 @@ Developed by: Henry Tu, Ryan Zhang, David Hui, James Xu
                 <div class="col-md-5">
                     <ul class="footer-quick-links">
                         <li><a href="https://masseyhacks.ca" target="_blank">MasseyHacks</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#sponsors">Sponsorship</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#map">Map</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
                         <li><a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a></li>
                     </ul>
 
