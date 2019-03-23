@@ -298,5 +298,5 @@ function updateSchedule(){
 }
 updateSchedule();
 // Update the schedule every 1 minute
-var feawtratgr = setInterval(updateSchedule(), 60000);
+var feawtratgr = setInterval(updateSchedule, 60000);
 //var xy = setInterval(updateSchedule, 1000);
