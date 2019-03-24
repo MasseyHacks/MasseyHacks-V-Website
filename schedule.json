@@ -278,17 +278,6 @@
         "xe": 28.8,
         "y": 0
     }, {
-        "caption": "Return MLH Equipment",
-		"date": "March 24 2019",
-        "start": "3:00PM",
-        "end": "4:15PM",
-		"important": true,
-        "location": "Hardware Lab",
-        "color": "#aaaaaa",
-        "xs": 28,
-        "xe": 29.25,
-        "y": 1
-    }, {
         "caption": "Awards & Closing Ceremonies",
 		"date": "March 24 2019",
         "start": "4:20PM",
