@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://masseyhacks.ca/</loc>
+  <lastmod>2019-08-17T03:27:36+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://masseyhacks.ca/blog/</loc>
+  <lastmod>2019-08-17T03:44:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://masseyhacks.ca/files/transparency.pdf</loc>
+  <lastmod>2019-08-17T03:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://masseyhacks.ca/blog/index.php/category/guides/</loc>
+  <lastmod>2019-08-17T03:50:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masseyhacks.ca/blog/index.php/category/hackathon/</loc>
+  <lastmod>2019-08-17T03:50:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masseyhacks.ca/blog/index.php/category/projects/</loc>
+  <lastmod>2019-08-17T03:50:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masseyhacks.ca/blog/index.php/category/uncategorized/</loc>
+  <lastmod>2019-08-17T03:50:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masseyhacks.ca/blog/index.php/privacy-policy/</loc>
+  <lastmod>2019-08-17T03:50:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masseyhacks.ca/blog/index.php/2019/08/16/welcome-to-the-masseyhacks-blog/</loc>
+  <lastmod>2019-08-17T03:50:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
